@@ -1,0 +1,19 @@
+:root {
+    --base-fs: 18px;
+    --base-lh: 28px;
+
+    --white-color: #FFFFFF;
+    --orange-color: #EE7828;
+    --black-color: #2C2C2C;
+    --dark-gray-color: #7D8EA0;
+    --dark-gray-color2: #4D4B4B;
+    --middle-gray: #CED8E3;
+    --light-gray-color: #EEF2F6;
+    --light-gray-color2: #A9B6C5;
+
+
+    --border-color: #9A9A9A;
+    --simple-border: 1px solid var(--border-color);
+    --light-gray-border: 1px solid #4D4B4B;
+    --orange-border: 1px solid var(--orange-color);
+}

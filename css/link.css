@@ -1,0 +1,23 @@
+.link {
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--orange-color);
+}
+
+.link_primary {
+    transition: color .2s;
+}
+
+.link_simple:hover {
+    color: var(--dark-gray-color);
+}
+
+.link_semibold {
+    font-family: 500;
+}
+
+.link_menu {
+    text-decoration: none;
+}

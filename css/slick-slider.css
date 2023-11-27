@@ -1,0 +1,76 @@
+.slick-arrow {
+    z-index: 2;
+    width: 29px;
+    height: 29px;
+}
+
+.slick-prev {
+    left: 0;
+}
+.slick-prev::before {
+    content: url('../img/logo/arrow-prev.svg');
+}
+.slick-prev:hover::before {
+    content: url('../img/logo/arrow-prev-active.svg');
+}
+
+.slick-next {
+    right: 0;
+}
+.slick-next::before {
+    content: url('../img/logo/arrow-next.svg');
+}
+.slick-next:hover::before {
+    content: url('../img/logo/arrow-next-active.svg');
+}
+
+.slick-dots li {
+    margin: 0 10px;
+}
+.slick-dots li button:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: var(--middle-gray);
+    border-radius: 50%;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slick-dots li.slick-active button:before {
+    width: 19px;
+    height: 19px;
+    background: var(--orange-color);
+}
+
+
+.projects-slider > .slick-prev {
+    left: 25px;
+}
+.projects-slider > .slick-next {
+    right: 25px;
+}
+.projects-slider > .slick-dots {
+    position: absolute;
+    bottom: 10px;
+}
+
+.project-item__photos-list .slick-arrow {
+    width: 98px;
+    height: 98px;
+}
+.project-item__photos-list .slick-arrow::before {
+    opacity: 1;
+}
+.project-item__photos-list > .slick-prev {
+    left: -45px;
+}
+.project-item__photos-list > .slick-prev::before {
+    content: url('../img/logo/circle-arrow-prev.svg');
+}
+.project-item__photos-list > .slick-next {
+    right: -45px;
+}
+.project-item__photos-list > .slick-next::before {
+    content: url('../img/logo/circle-arrow-next.svg');
+}

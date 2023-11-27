@@ -1,0 +1,16 @@
+.custom-list li {
+    position: relative;
+    list-style-type: none;
+}
+.custom-list li::before {
+    display: inline-block;
+    content: "";
+    font-weight: 400;
+    width: 8px;
+    height: 8px;
+    background: var(--orange-color);
+    font-size: var(--base-fs);
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-bottom: 2px;
+}

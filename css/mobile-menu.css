@@ -1,0 +1,92 @@
+.mobile-menu {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    background: rgba(0,0,0, .5);
+    justify-content: end;
+}
+.mobile-menu_open {
+    display: flex;
+}
+
+.mobile-menu__wrp {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    background: var(--black-color);
+    padding: 50px 35px;
+}
+
+.mobile-menu__close-btn {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    background: transparent;
+    border: none;
+}
+.mobile-menu__close-btn img {
+    width: 16px;
+}
+
+.mobile-menu__nav {
+    border-bottom: 1px solid var(--dark-gray-color2);
+    margin-bottom: 30px;
+}
+
+.mobile-menu__list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.mobile-menu__item {
+    margin-bottom: 15px;
+}
+.mobile-menu__item_with-sub .mobile-menu__label::after {
+    content: url('../img/logo/chevron.svg');
+    margin-left: 10px;
+}
+.mobile-menu__item_with-sub .mobile-menu__label:hover::after {
+    content: url('../img/logo/chevron_active.svg');
+}
+
+.mobile-menu__label {
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+.mobile-menu__label:hover,
+.mobile-menu__label_active {
+    color: var(--orange-color)
+}
+
+.mobile-menu__sublist {
+    display: none;
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 5px;
+}
+.mobile-menu__sublist_show {
+    display: block;
+}
+
+.mobile-menu__subitem {
+    margin-bottom: 6px;
+}
+
+.mobile-menu__sublabel {
+    font-size: 14px;
+    color: var(--dark-gray-color);
+    text-decoration: none;
+}
+
+.mobile-menu__email-link {
+    color: var(--dark-gray-color);
+}
+
+.mobile-menu__social-links {
+    margin-top: 14px;
+}

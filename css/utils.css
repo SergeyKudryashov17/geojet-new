@@ -1,0 +1,22 @@
+.text-white {
+    color: var(--white-color);
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-bold {
+    font-weight: 700;
+}
+.text-semibold {
+    font-weight: 600;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.w-100 {
+    width: 100%;
+}

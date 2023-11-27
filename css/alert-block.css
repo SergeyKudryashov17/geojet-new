@@ -1,0 +1,18 @@
+.alert-block {
+    padding: 20px 60px;
+}
+
+.alert-block_default {
+    background: var(--light-gray-color);
+}
+
+.alert-block_rounded {
+    border-radius: 15px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .alert-block {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,126 @@
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.nav-menu__item {
+    list-style-type: none;
+    margin: 0 25px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.nav-menu__item:first-child {
+    margin-left: 0;
+}
+.nav-menu__item:last-child {
+    margin-right: 0;
+}
+.nav-menu__item:hover .nav-menu__label {
+    color: var(--orange-color);
+}
+.nav-menu__label {
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.nav-menu__item_group {
+    position: relative;
+}
+.nav-menu__item_group .nav-menu__label::after {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    content: url('../img/logo/chevron.svg');
+    transition: content .2s;
+}
+.nav-menu__item_group:hover .nav-menu__submenu {
+    display: block;
+}
+.nav-menu__item_group:hover .nav-menu__label::after {
+    content: url('../img/logo/chevron_active.svg');
+}
+
+.nav-menu__label {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-menu__submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 4px;
+    transform: translateX(50%);
+    background: var(--black-color);
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    border-radius: 15px;
+    padding: 8px;
+}
+.nav-menu__submenu::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom: 10px solid var(--black-color);
+}
+
+.nav-menu__subitem {
+    color: var(--white-color);
+    text-align: center;
+    padding: 8px 20px;
+    border-bottom: var(--light-gray-border);
+    cursor: pointer;
+}
+.nav-menu__subitem:first-child {
+    padding-top: 0;
+}
+.nav-menu__subitem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.nav-menu__subitem:hover .nav-menu__sublabel {
+    color: var(--orange-color);
+}
+
+.nav-menu__sublabel {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-menu__label,
+    .nav-menu__sublabel {
+        font-size: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .nav-menu__item {
+        margin: 0 15px;
+    }
+
+    .nav-menu__item_group .nav-menu__label::after {
+        top: 8px;
+    }
+
+    .nav-menu__label,
+    .nav-menu__sublabel {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .nav-menu__subitem {
+        padding: 6px 20px;
+    }
+}
