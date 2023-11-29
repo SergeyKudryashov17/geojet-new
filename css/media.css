@@ -148,6 +148,10 @@
         line-height: 24px;
     }
 
+    .list-categories-methods-bg {
+        width: 550px;
+    }
+
     .category-methods__title {
         font-size: 22px;
     }
