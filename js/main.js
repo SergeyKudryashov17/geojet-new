@@ -21,6 +21,12 @@ $('.project-item__photos-list').slick({
 });
 
 
+window.addEventListener('scroll', () => {
+    const headerTopBlock = document.querySelector('.header__top');
+    headerTopBlock.classList.toggle('header__top_slim', window.pageYOffset !== 0);
+});
+
+
 
 const mobileMenuLabels = document.querySelectorAll('.mobile-menu__label');
 mobileMenuLabels.forEach(menuLabel => {
@@ -33,12 +39,10 @@ mobileMenuLabels.forEach(menuLabel => {
 
 
 const mobileMenu = document.querySelector('.mobile-menu');
-
 const mobileMenuCloseBtn = document.querySelector('.mobile-menu__close-btn');
 mobileMenuCloseBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('mobile-menu_open');
 });
-
 const mobileMenuOpenBtn = document.querySelector('.mobile-menu-btn');
 mobileMenuOpenBtn.addEventListener('click', () => {
     mobileMenu.classList.add('mobile-menu_open');

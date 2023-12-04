@@ -40,6 +40,7 @@ main {
     top: 0;
     z-index: 3;
     background: var(--white-color);
+    box-shadow: 0 4px 15px 0 rgba(44, 44, 44, 0.10);
 }
 .header__top,
 .footer__top {
@@ -48,6 +49,10 @@ main {
     justify-content: space-between;
     padding: 17px 0;
     border-bottom: var(--simple-border);
+    transition: padding .4s;
+}
+.header__top_slim {
+    padding: 10px 0;
 }
 .header__action-btn,
 .footer__action_btn {
@@ -131,8 +136,8 @@ main {
 .main-section__video {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
+    transform: translate(-50%, -50%);
+    top: 50%;
     width: 100%;
     min-width: 2000px;
 }
@@ -230,6 +235,7 @@ main {
     border-radius: 15px;
     padding: 28px 38px 60px;
     overflow: hidden;
+    box-shadow: 0 10px 20px 0 rgba(44, 44, 44, 0.10);
 }
 .achievements-block_1 {
     grid-area: ab1;
@@ -552,4 +558,46 @@ main {
     border-radius: 15px;
     padding: 47px 45px;
     margin-top: 80px;
+}
+
+.text-block {
+    margin-bottom: 50px;
+}
+
+.block-stages-change {
+    position: relative;
+    padding: 55px;
+    border: 10px solid var(--light-gray-color);
+    border-radius: 20px;
+    max-width: 860px;
+    margin: 0 auto 50px;
+}
+.block-stages-change__title {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+    background: var(--white-color);
+    padding: 5px 50px;
+    white-space: nowrap;
+}
+.block-stages-change__arrow {
+    margin: 0 30px;
+}
+.block-stages-change__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.block-stages-change__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }

@@ -20,3 +20,26 @@
 .w-100 {
     width: 100%;
 }
+
+.grid {
+    display: grid;
+}
+.grid_column2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+}
+.grid_row1 {
+    grid-template-rows: 1fr;
+}
+
+.rounded-img {
+    border-radius: 20px;
+}
+
+.gray-gradient-bg {
+    background: var(--3, linear-gradient(180deg, #F9FAFB 0%, #EEF2F6 100%));
+}
+
+.rounded {
+    border-radius: 20px;
+}

@@ -40,6 +40,10 @@
     border: none;
 }
 
+.button_section {
+    margin-top: 50px;
+}
+
 @media (max-width: 1199px) {
     .button {
         padding: 9px 17px;
