@@ -35,14 +35,14 @@
     margin-bottom: 16px;
 }
 .form__field_icon .form__input {
-    padding-left: 95px;
+    padding-left: 75px;
 }
 .form__field_icon::before {
     content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 28px;
+    left: 15px;
     width: 48px;
     height: 48px;
 }
@@ -60,7 +60,7 @@
 }
 .form__field_inline {
     width: auto;
-    margin: 0 8px;
+    margin: 0 5px;
 }
 
 
@@ -93,7 +93,7 @@
     }
 
     .form__field_icon::before {
-        left: 16px;
+        left: 12px;
     }
 
     .form__input {
@@ -103,7 +103,7 @@
 
     }
     .form__field_icon .form__input {
-        padding-left: 80px;
+        padding-left: 67px;
     }
 }
 

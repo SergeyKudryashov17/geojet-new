@@ -44,6 +44,68 @@
     margin-top: 50px;
 }
 
+.button_scroll-up {
+    position: fixed;
+    left: calc(50% - 600px);
+    transform: translateX(-100%);
+    bottom: 47px;
+    background: var(--white-color);
+}
+
+.button_scroll-up,
+.button_messengers,
+.button_telegramm,
+.button_whatsapp,
+.button_messengers-close {
+    border-radius: 50%;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 3px 15px 0 rgba(44, 44, 44, 0.10);
+    transition: transform .5s, opacity .4s;
+}
+
+.button_messengers {
+    position: relative;
+    z-index: 1;
+}
+
+.button_messengers-close,
+.button_telegramm,
+.button_whatsapp {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translate(0, 0);
+}
+
+.button_messengers-close_open,
+.button_telegramm_open,
+.button_whatsapp_open {
+    opacity: 1;
+    z-index: 2;
+}
+.button_messengers-close_open {
+    transform: translateX(-90px);
+}
+.button_telegramm_open {
+    transform: translateY(-90px);
+}
+.button_whatsapp_open {
+    transform: translateY(-180px);
+}
+
+.button_scroll-up img,
+.button_messengers img,
+.button_whatsapp img,
+.button_telegramm img,
+.button_messengers-close img {
+    width: 70px;
+}
+
+
+
 @media (max-width: 1199px) {
     .button {
         padding: 9px 17px;

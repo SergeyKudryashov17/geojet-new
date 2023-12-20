@@ -1,10 +1,15 @@
-import { scrollToElement } from './utils.js';
+import {
+    displayControlMessengersBtns,
+    displayControlScrollUpBtn,
+    scrollToElement,
+    scrollToPosition,
+    squeezeHeader
+} from './utils.js';
 
 
 $('.projects-slider').slick({
     dots: true
 });
-
 $('.project-item__photos-list').slick({
     infinite: true,
     slidesToShow: 3,
@@ -21,9 +26,10 @@ $('.project-item__photos-list').slick({
 });
 
 
+
 window.addEventListener('scroll', () => {
-    const headerTopBlock = document.querySelector('.header__top');
-    headerTopBlock.classList.toggle('header__top_slim', window.pageYOffset !== 0);
+    squeezeHeader(window.pageYOffset);
+    displayControlScrollUpBtn(window.pageYOffset);
 });
 
 
@@ -58,6 +64,11 @@ mainPageScrollDownBtn.addEventListener('click', () => {
 
 
 
+const scrollUpBtn = document.querySelector('.button_scroll-up');
+scrollUpBtn.addEventListener('click', () => scrollToPosition(10));
+
+
+
 const selectorsFeedbackBtns = [
     'header__action-btn',
     'main-section__btn-feedback',
@@ -68,4 +79,14 @@ selectorsFeedbackBtns.forEach(selectorBtn => {
     document.querySelector(`.${selectorBtn}`).addEventListener('click', () => {
         scrollToElement(wrpFeedbackForm);
     })
-})
+});
+
+
+
+const messengersBtn = document.querySelector('.button_messengers');
+messengersBtn.addEventListener('click', displayControlMessengersBtns);
+
+
+
+const messengersCloseBtn = document.querySelector('.button_messengers-close');
+messengersCloseBtn.addEventListener('click', () => displayControlMessengersBtns());

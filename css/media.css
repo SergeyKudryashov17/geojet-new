@@ -1,3 +1,15 @@
+@media (max-width: 1345px) {
+    .button_scroll-up {
+        left: calc(50% - 580px);
+        transform: translateX(0);
+    }
+
+    .messenger-bts-wrp {
+        left: calc(50% + 580px);
+        transform: translateX(-100%);
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     :root {
         --base-fs: 16px;
@@ -53,6 +65,39 @@
     .project-item {
         padding: 40px 150px 85px;
     }
+
+    .footer__nav-title {
+        font-size: 15px;
+    }
+    .footer__menu-link {
+        font-size: 13px;
+    }
+
+    .button_scroll-up,
+    .button_messengers,
+    .button_telegramm,
+    .button_whatsapp,
+    .button_messengers-close {
+        padding: 0;
+    }
+
+    .button_scroll-up img,
+    .button_messengers img,
+    .button_whatsapp img,
+    .button_telegramm img,
+    .button_messengers-close img {
+        width: 60px;
+    }
+
+    .button_scroll-up {
+        left: calc(50% - 480px);
+        transform: translateX(0);
+    }
+
+    .messenger-bts-wrp {
+        left: calc(50% + 480px);
+        transform: translateX(-100%);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -62,6 +107,7 @@
 
     .logo {
         max-width: 213px;
+        margin-right: 20px;
     }
 
     .header__link-mail, .footer__link-mail {
@@ -176,13 +222,13 @@
     .mini-feedback-form .form__field_icon::before {
         width: 35px;
         height: 35px;
-        left: 15px;
+        left: 10px;
     }
     .mini-feedback-form .form__input::placeholder {
         font-size: 14px;
     }
     .mini-feedback-form .form__input_icon {
-        padding-left: 60px;
+        padding-left: 50px;
     }
 
     .warning-main-feedback-form {
@@ -190,13 +236,67 @@
         line-height: 20px;
     }
 
-    .footer__bottom {
-        font-size: 12px;
-        line-height: 20px;
+    .footer__menu {
+        display: none;
     }
-    .footer__bottom img {
-        width: 37px;
-        height: 37px;
+
+    .footer__wrapper-bottom {
+        grid-template-areas: 'dt sc cr';
+        align-items: center;
+    }
+    .footer__slogan {
+        display: none;
+    }
+    .footer__social-links {
+        display: block;
+        grid-area: sc;
+    }
+    .footer__social-links img {
+        width: 50px;
+    }
+    .footer__company-data {
+        grid-area: dt;
+        text-align: left;
+    }
+    .footer__copyright {
+        grid-area: cr;
+        text-align: right;
+    }
+
+    .button_scroll-up,
+    .button_messengers,
+    .button_telegramm,
+    .button_whatsapp,
+    .button_messengers-close {
+        padding: 0;
+    }
+
+    .button_scroll-up img,
+    .button_messengers img,
+    .button_whatsapp img,
+    .button_telegramm img,
+    .button_messengers-close img {
+        width: 60px;
+    }
+
+    .button_messengers-close_open {
+        transform: translateX(-70px);
+    }
+    .button_telegramm_open {
+        transform: translateY(-70px);
+    }
+    .button_whatsapp_open {
+        transform: translateY(-140px);
+    }
+
+    .button_scroll-up {
+        left: calc(50% - 384px);
+        transform: translateX(0);
+    }
+
+    .messenger-bts-wrp {
+        left: calc(50% + 384px);
+        transform: translateX(-100%);
     }
 }
 
@@ -222,8 +322,6 @@
     .logo {
         max-width: 213px;
     }
-
-
 
     .header__link-mail, .footer__link-mail {
         display: none;
@@ -379,22 +477,75 @@
         margin-right: 0;
     }
 
-    .footer__bottom {
-        font-size: 12px;
-        line-height: 20px;
+    .footer__menu {
+        display: none;
     }
-    .footer__bottom img {
-        width: 37px;
-        height: 37px;
+
+    .footer__wrapper-bottom {
+        grid-template-areas: 'dt sc em'
+                             'cr cr cr';
+        align-items: center;
+        font-size: 13px;
     }
-    .footer__copyright {
-        grid-column: span 3;
-        text-align: center;
-        margin-top: 15px;
+    .footer__slogan {
+        display: none;
+    }
+    .footer__social-links {
+        display: block;
+        grid-area: sc;
+    }
+    .footer__social-links img {
+        width: 50px;
+    }
+    .footer__company-data {
+        grid-area: dt;
+        text-align: left;
     }
     .footer__link-email {
-        display: inline-block;
+        display: block;
+        grid-area: em;
         text-align: right;
+    }
+    .footer__copyright {
+        grid-area: cr;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .button_scroll-up,
+    .button_messengers,
+    .button_telegramm,
+    .button_whatsapp,
+    .button_messengers-close {
+        padding: 0;
+    }
+
+    .button_scroll-up img,
+    .button_messengers img,
+    .button_whatsapp img,
+    .button_telegramm img,
+    .button_messengers-close img {
+        width: 55px;
+    }
+
+    .button_messengers-close_open {
+        transform: translateX(-70px);
+    }
+    .button_telegramm_open {
+        transform: translateY(-70px);
+    }
+    .button_whatsapp_open {
+        transform: translateY(-140px);
+    }
+
+    .button_scroll-up {
+        left: calc(50% - 288px);
+        transform: translateX(0);
+    }
+
+    .messenger-bts-wrp {
+        left: calc(50% + 288px);
+        transform: translateX(-100%);
     }
 }
 
@@ -521,7 +672,7 @@
         position: initial;
         width: calc(100% - 24px);
         max-width: 400px;
-        margin-top: 35px;
+        margin-top: 65px;
         margin-bottom: 35px;
         margin-right: auto;
         margin-left: auto;
@@ -536,7 +687,7 @@
         bottom: 0;
         transform: translateX(-50%);
         width: auto;
-        margin-bottom: 25px;
+        margin-bottom: 40px;
     }
 
     .grid-company-service {
@@ -598,6 +749,7 @@
 
     .bottom-feedback-form .wrapper-main-feedback-form {
         display: block;
+        padding-top: 15px;
     }
     .bottom-feedback-form .mini-feedback-form {
         display: none;
@@ -612,22 +764,40 @@
         margin-right: 0;
     }
 
-    .footer__bottom {
-        font-size: 8px;
-        line-height: 14px;
+    .footer__menu {
+        display: none;
     }
-    .footer__bottom img {
-        width: 37px;
-        height: 37px;
+
+    .footer__wrapper-bottom {
+        grid-template-areas: 'dt sc em'
+                             'cr cr cr';
+        align-items: center;
+        font-size: 10px;
+        line-height: 18px;
     }
-    .footer__copyright {
-        grid-column: span 3;
-        text-align: center;
-        margin-top: 15px;
+    .footer__slogan {
+        display: none;
+    }
+    .footer__social-links {
+        display: block;
+        grid-area: sc;
+    }
+    .footer__social-links img {
+        width: 30px;
+    }
+    .footer__company-data {
+        grid-area: dt;
+        text-align: left;
     }
     .footer__link-email {
-        display: inline-block;
+        display: block;
+        grid-area: em;
         text-align: right;
+    }
+    .footer__copyright {
+        grid-area: cr;
+        text-align: center;
+        margin-top: 20px;
     }
 
     .projects-slider-container {
@@ -642,7 +812,6 @@
     .project-item__photos-list > .slick-prev::before {
         display: inline-block;
         content: '';
-        /*background: url(../img/logo/circle-arrow-next.svg);*/
         width: 70px;
         height: 70px;
         overflow: hidden;
@@ -660,6 +829,43 @@
     }
     .projects-slider > .slick-prev {
         left: 0px;
+    }
+
+    .button_scroll-up,
+    .button_messengers,
+    .button_telegramm,
+    .button_whatsapp,
+    .button_messengers-close {
+        padding: 0;
+    }
+
+    .button_scroll-up img,
+    .button_messengers img,
+    .button_whatsapp img,
+    .button_telegramm img,
+    .button_messengers-close img {
+        width: 50px;
+    }
+
+    .button_messengers-close_open {
+        transform: translateX(-65px);
+    }
+    .button_telegramm_open {
+        transform: translateY(-65px);
+    }
+    .button_whatsapp_open {
+        transform: translateY(-130px);
+    }
+
+    .button_scroll-up {
+        left: 0;
+        bottom: 20px;
+        transform: translateX(0);
+    }
+
+    .messenger-bts-wrp {
+        left: 100%;
+        bottom: 20px;
     }
 }
 
