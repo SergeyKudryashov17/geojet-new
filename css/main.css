@@ -523,8 +523,9 @@ main {
     margin-top: 50px;
 }
 
-.projects-slider {
-    
+.projects-slider .slick-arrow {
+    width: 66px;
+    height: 62px;
 }
 
 .project-item {
@@ -541,12 +542,23 @@ main {
     border: 28px solid transparent; 
     border-top: 12px solid var(--middle-gray);
 }
+.project-item__container {
+    display: flex;
+}
+.project-item__report-wrp {
+    /*width: 40%;*/
+    /*max-width: 300px;*/
+    margin-right: 35px;
+}
+.project-item__report {
+    width: 100%;
+    box-shadow: 0 2.735px 15px 0 rgba(44, 44, 44, 0.10);
+}
 .project-item__title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
-    text-align: center;
     margin-bottom: 30px;
 }
 .project-item__photos-list {
@@ -596,6 +608,48 @@ main {
 }
 .project-item__detail {
     margin-bottom: 15px;
+}
+.project-item__quota {
+    position: relative;
+    padding: 15px 50px;
+    border-radius: 20px;
+    border: 3px solid var(--middle-gray);
+    background: #EEF2F6;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.project-item__quota::before {
+    position: absolute;
+    left: 18px;
+    content: url('../img/logo/quotation-mark.svg');
+}
+.project-item__customer-wrp {
+    display: inline-grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 'a n'
+                         'a c';
+}
+.project-item__customer-avatar {
+    background: var(--middle-gray);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    grid-area: a;
+    margin-right: 12px;
+}
+.project-item__customer-name {
+    font-weight: 700;
+    grid-area: n;
+}
+.project-item__customer-company {
+    font-size: 15px;
+    grid-area: c;
+    line-height: 1;
+    color: var(--dark-gray-color2);
 }
 
 .bottom-feedback-form .wrapper-main-feedback-form {

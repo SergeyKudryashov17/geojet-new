@@ -10,20 +10,6 @@ import {
 $('.projects-slider').slick({
     dots: true
 });
-$('.project-item__photos-list').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    draggable: false,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-    ]
-});
 
 
 
