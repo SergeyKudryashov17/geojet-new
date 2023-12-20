@@ -41,14 +41,20 @@ main {
     background: var(--white-color);
     box-shadow: 0 4px 15px 0 rgba(44, 44, 44, 0.10);
 }
+.footer {
+    background: var(--black-color);
+    color: var(--white-color);
+}
 .header__top,
 .footer__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 17px 0;
-    border-bottom: var(--simple-border);
     transition: padding .4s;
+}
+.header__top {
+    border-bottom: var(--simple-border);
 }
 .header__top_slim {
     padding: 10px 0;
@@ -58,8 +64,11 @@ main {
     font-size: 14px;
     text-transform: uppercase;
 }
+.footer__top {
+    border-bottom: var(--footer-border);
+}
 .footer__bottom {
-    background: #F9FAFB;
+    background: #262626;
 }
 .footer__wrapper-bottom {
     display: grid;
@@ -68,28 +77,27 @@ main {
     grid-column-gap: 20px;
     font-size: 14px;
     line-height: 22px;
-    padding: 25px 0;
+    padding: 20px 0;
     color: var(--light-gray-color2);
-}
-.footer__social-links {
-    display: none;
+    align-items: center;
 }
 .footer__link-email {
     display: none;
-}
-.footer__copyright {
-    text-align: center;
 }
 .footer__company-data {
     text-align: right;
 }
-.footer__link-email {
-    display: none;
+.footer__link-privacy {
+    text-align: right;
+}
+.footer__social-links img {
+    width: 45px;
 }
 .footer__menu {
     display: flex;
     justify-content: space-between;
     padding: 20px 0 5px;
+    border-bottom: var(--footer-border);
 }
 .footer__menu-list {
     padding-left: 0;
@@ -110,6 +118,13 @@ main {
 }
 .footer__menu-icon {
     width: 30px;
+}
+.footer__middle {
+    display: grid;
+    grid-template-columns: minmax(auto, 400px) max-content minmax(auto, 400px);
+    font-size: 14px;
+    padding: 30px 0;
+    justify-content: space-between;
 }
 
 .mobile-menu-btn {
@@ -641,4 +656,25 @@ main {
     left: calc(50% + 600px);
     bottom: 47px;
     z-index: 1;
+}
+
+.telegram-chat-link {
+    display: flex;
+    text-decoration: none;
+}
+.telegram-chat-link:hover {
+    color: inherit;
+}
+.telegram-chat-link__logo {
+    margin-right: 12px;
+}
+.telegram-chat-link__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.telegram-chat-link__desc {
+    color: var(--dark-gray-color);
+    font-size: 12px;
+    line-height: 18px;
 }

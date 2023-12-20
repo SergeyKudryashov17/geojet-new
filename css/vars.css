@@ -16,4 +16,5 @@
     --simple-border: 1px solid var(--border-color);
     --light-gray-border: 1px solid #4D4B4B;
     --orange-border: 1px solid var(--orange-color);
+    --footer-border: 1px solid rgb(76, 76, 76);
 }
