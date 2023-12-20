@@ -605,10 +605,12 @@ main {
     display: block;
     border: 12px solid var(--dark-gray-color);
     border-radius: 15px;
-    padding: 47px 25px;
+    padding: 47px 60px;
     margin-top: 80px;
 }
-
+.mini-feedback-form .warning-main-feedback-form {
+    margin-bottom: 25px;
+}
 .text-block {
     margin-bottom: 50px;
 }
