@@ -30,6 +30,15 @@ mobileMenuLabels.forEach(menuLabel => {
 
 
 
+const mobileFooterMenuLabels = document.querySelectorAll('.footer__nav-title');
+mobileFooterMenuLabels.forEach(menuLabel => {
+    menuLabel.addEventListener('click', () => {
+        menuLabel.closest('.footer__nav-block').classList.toggle('footer__nav-block_active');
+    });
+});
+
+
+
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuCloseBtn = document.querySelector('.mobile-menu__close-btn');
 mobileMenuCloseBtn.addEventListener('click', () => {
