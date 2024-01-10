@@ -18,6 +18,7 @@
 @import url('./alert-block.css');
 @import url('./mobile-menu.css');
 @import url('./slick-slider.css');
+@import url('./card.css');
 
 
 body {
@@ -747,4 +748,61 @@ main {
     color: var(--dark-gray-color);
     font-size: 12px;
     line-height: 18px;
+}
+
+.wrp-gray-gradient {
+    background: linear-gradient(180deg, #F9FAFB 0%, #EEF2F6 100%);
+    border-radius: 20px;
+    padding: 35px 65px 60px;
+}
+
+.group-cards {
+    margin-top: 35px;
+}
+
+.list-key-value {
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.key-value-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    list-style-type: none;
+    background: #F9FAFB;
+    margin-bottom: 22px;
+    padding-left: 90px;
+}
+.key-value-item__title {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+}
+.key-value-item__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: var(--white-color);
+    border: 6px solid var(--middle-gray);
+    border-radius: 50%;
+}
+.key-value-item__logo::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 15px solid transparent;
+    border-left: 25px solid var(--middle-gray);
+}
+.key-value-item__img {
+    height: 60px;
 }

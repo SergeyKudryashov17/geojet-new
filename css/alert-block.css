@@ -10,6 +10,16 @@
     border-radius: 15px;
 }
 
+.alert-block_orange-border {
+    padding: 40px 40px 45px;
+    border-left: 4px solid var(--orange-color);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.alert-block_light-gray-bg {
+    background: #F9FAFB;
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .alert-block {
