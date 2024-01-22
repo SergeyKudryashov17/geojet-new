@@ -19,7 +19,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-
 const mobileMenuLabels = document.querySelectorAll('.mobile-menu__label');
 mobileMenuLabels.forEach(menuLabel => {
     menuLabel.addEventListener('click', () => {
