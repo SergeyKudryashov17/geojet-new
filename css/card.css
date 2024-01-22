@@ -64,4 +64,5 @@
     height: 40px;
     background: var(--orange-color);
     border-radius: 50%;
+    flex-shrink: 0;
 }
