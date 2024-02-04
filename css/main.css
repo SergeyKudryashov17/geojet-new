@@ -803,11 +803,13 @@ main {
     background: #F9FAFB;
     margin-bottom: 22px;
     padding-left: 90px;
+    border-radius: 12px;
 }
 .key-value-item__title {
     text-transform: uppercase;
     font-size: 21px;
     font-weight: 700;
+    padding-right: 10px;
 }
 .key-value-item__logo {
     display: flex;
@@ -824,7 +826,7 @@ main {
 }
 .key-value-item__logo::after {
     content: ''; 
-    position: absolute; /* Абсолютное позиционирование */
+    position: absolute;
     right: -40px;
     top: 50%;
     transform: translateY(-50%);
@@ -833,4 +835,8 @@ main {
 }
 .key-value-item__img {
     height: 60px;
+}
+
+.about-pm-areas {
+    position: relative;
 }

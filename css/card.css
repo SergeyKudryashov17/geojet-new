@@ -40,6 +40,7 @@
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 15px;
+    word-break: break-word;
 }
 
 .card__title-logo {
