@@ -10,7 +10,11 @@
 }
 
 .headline_section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.headline_feedback {
+    font-size: 25px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

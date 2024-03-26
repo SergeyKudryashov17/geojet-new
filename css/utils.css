@@ -1,6 +1,9 @@
 .text-white {
     color: var(--white-color);
 }
+.text-orange {
+    color: var(--orange-color);
+}
 .text-center {
     text-align: center;
 }

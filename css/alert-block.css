@@ -1,5 +1,7 @@
 .alert-block {
-    padding: 20px 60px;
+    padding: 28px 30px;
+    font-size: 18px;
+    border-radius: var(--base-radius);
 }
 
 .alert-block_default {
@@ -19,6 +21,11 @@
 
 .alert-block_light-gray-bg {
     background: #F9FAFB;
+}
+
+.alert-block_light-orange-bg {
+    background: var(--light-orange-color);
+    color: var(--black-color);
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

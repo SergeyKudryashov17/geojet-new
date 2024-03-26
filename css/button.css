@@ -1,7 +1,10 @@
 .button {
-    padding: 10px 27px;
+    display: inline-block;
+    padding: 10px 30px;
     border: 0;
     outline: none;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 .button_rounded {
@@ -13,12 +16,36 @@
     background: var(--orange-color);
     color: var(--white-color);
     border: var(--orange-border);
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 500;
 }
 .button_primary:hover {
     background: var(--white-color);
     color: var(--orange-color);
+}
+
+.button_dark {
+    transition: border, color, background .3s;
+    background: var(--dark-gray-color);
+    color: var(--white-color);
+    border: 1px solid var(--dark-gray-color);
+    font-weight: 500;
+}
+.button_dark:hover {
+    background: var(--white-color);
+    color: var(--dark-gray-color);
+}
+
+.button_primary-light {
+    transition: border, color, background .3s;
+    background: var(--light-orange-color);
+    color: var(--orange-color);
+    border: 1px solid var(--light-orange-color);
+    font-weight: 500;
+}
+.button_primary-light:hover {
+    background: var(--white-color);
+    color: var(--orange-color);
+    border: 1px solid var(--orange-color);
 }
 
 .button_center {
@@ -32,7 +59,11 @@
 
 .button_big {
     display: block;
-    padding: 19px 25px;
+    height: 60px;
+}
+
+.button_lg {
+    height: 60px;
 }
 
 .button_icon {
@@ -45,6 +76,7 @@
 }
 
 .button_scroll-up {
+    display: none;
     position: fixed;
     left: calc(50% - 600px);
     transform: translateX(-100%);

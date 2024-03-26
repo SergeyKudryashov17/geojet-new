@@ -15,9 +15,26 @@
 }
 
 .link_semibold {
-    font-family: 500;
+    font-weight: 500;
 }
 
 .link_menu {
     text-decoration: none;
+}
+
+.link_btn {
+    display: inline-block;
+    line-height: 1;
+    padding: 15px 25px;
+    border-radius: 50px;
+}
+
+.link_light-orange {
+    color: var(--orange-color);
+    background: var(--light-orange-color);
+}
+
+.link_white {
+    color: var(--orange-color);
+    background: var(--white-color);
 }

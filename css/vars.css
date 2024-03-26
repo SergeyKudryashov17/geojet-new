@@ -1,10 +1,13 @@
 :root {
-    --base-fs: 18px;
+    --base-fs: 16px;
     --base-lh: 28px;
+    --base-radius: 10px;
 
     --white-color: #FFFFFF;
     --orange-color: #EE7828;
+    --light-orange-color: #fdf1e9;
     --black-color: #2C2C2C;
+    --black-color-rgb: 44, 44, 44;
     --black-color2: #262626;
     --dark-gray-color: #7D8EA0;
     --dark-gray-color2: #4D4B4B;
@@ -13,8 +16,9 @@
     --light-gray-color2: #A9B6C5;
 
 
-    --border-color: #9A9A9A;
+    --border-color: rgba(var(--black-color-rgb), .2); 
     --simple-border: 1px solid var(--border-color);
+    --base-border: 1px solid var(--border-color);
     --light-gray-border: 1px solid #4D4B4B;
     --orange-border: 1px solid var(--orange-color);
     --footer-border: 1px solid rgb(76, 76, 76);

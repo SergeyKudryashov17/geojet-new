@@ -1,0 +1,9 @@
+.modal-window {
+    max-width: 565px;
+    border-radius: 10px;
+    padding: 30px 30px 35px;
+    margin: 0 auto;
+}
+.modal-window__content {
+    padding: 0;
+}
