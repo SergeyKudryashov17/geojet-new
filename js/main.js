@@ -51,7 +51,7 @@ mobileMenuOpenBtn.addEventListener('click', () => {
 
 
 const mainPageScrollDownBtn = document.querySelector('.main-section__btn');
-mainPageScrollDownBtn.addEventListener('click', () => {
+mainPageScrollDownBtn?.addEventListener('click', () => {
     const target = document.querySelectorAll('.page-section');
     scrollToElement(target[0]);
 });
@@ -59,7 +59,7 @@ mainPageScrollDownBtn.addEventListener('click', () => {
 
 
 const scrollUpBtn = document.querySelector('.button_scroll-up');
-scrollUpBtn.addEventListener('click', () => scrollToPosition(10));
+scrollUpBtn?.addEventListener('click', () => scrollToPosition(10));
 
 
 
@@ -70,7 +70,7 @@ const selectorsFeedbackBtns = [
 ];
 const wrpFeedbackForm = document.querySelector('.section-feedback-form');
 selectorsFeedbackBtns.forEach(selectorBtn => {
-    document.querySelector(`.${selectorBtn}`).addEventListener('click', () => {
+    document.querySelector(`.${selectorBtn}`)?.addEventListener('click', () => {
         scrollToElement(wrpFeedbackForm);
     })
 });
@@ -78,9 +78,17 @@ selectorsFeedbackBtns.forEach(selectorBtn => {
 
 
 const messengersBtn = document.querySelector('.button_messengers');
-messengersBtn.addEventListener('click', displayControlMessengersBtns);
+messengersBtn?.addEventListener('click', displayControlMessengersBtns);
 
 
 
 const messengersCloseBtn = document.querySelector('.button_messengers-close');
-messengersCloseBtn.addEventListener('click', () => displayControlMessengersBtns());
+messengersCloseBtn?.addEventListener('click', () => displayControlMessengersBtns());
+
+scrollProgressBar();
+function scrollProgressBar() {
+    $(window).scroll(function () {
+        var ratio = $(document).scrollTop () / (($(document).height () - $(window).height ()) / 100);
+        $(".progress-bar").width (ratio + "%");
+    });
+}

@@ -114,6 +114,10 @@
     .wrapper-list-categories-methods {
         grid-template-columns: 1fr minmax(auto, 200px);
     }
+
+    .main-feedback-block {
+        height: 850px
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -337,6 +341,11 @@
 
     .wrapper-list-categories-methods {
         grid-template-columns: 1fr;
+    }
+
+    .main-feedback-block {
+        display: block;
+        height: 850px
     }
 }
 
@@ -1242,7 +1251,7 @@
         margin-left: 0;
     }
     .category-method_multy-labels .category-method__label {
-        padding-right: 0;
+        padding-right: 10px;
     }
 }
 

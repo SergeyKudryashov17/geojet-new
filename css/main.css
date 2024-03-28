@@ -42,7 +42,7 @@ main {
     top: 0;
     z-index: 3;
     background: var(--white-color);
-    box-shadow: 0 4px 15px 0 rgba(44, 44, 44, 0.10);
+    box-shadow: 0 4px 15px 0 rgba(44, 44, 44, .1);
 }
 .footer {
     background: var(--black-color);
@@ -147,6 +147,17 @@ main {
 }
 .mobile-menu-btn img {
     width: 22px;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(255,116, 69);
+    transition: width 0s;
+    border-radius: 5px;
 }
 
 .phone-block {
