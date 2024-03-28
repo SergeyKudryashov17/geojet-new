@@ -142,15 +142,9 @@
     .button {
         padding: 9px 17px;
     }
-    .button_big {
-        padding: 19px 25px;
-    }
 }
 @media (max-width: 575px) {
     .button {
         padding: 9px 15px;
-    }
-    .button_big {
-        padding: 10px 25px;
     }
 }
