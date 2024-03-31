@@ -147,6 +147,10 @@
         width: 42px;
         height: 42px;
     }
+
+    .form__subtext {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -175,8 +179,8 @@
     }
 
     .form__fields-group {
-        max-width: 300px;
-        margin: 20px auto;
+        /* max-width: 300px; */
+        /* margin: 20px auto; */
     }
 
     .form__submit {

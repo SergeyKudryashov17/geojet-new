@@ -85,6 +85,9 @@ messengersBtn?.addEventListener('click', displayControlMessengersBtns);
 const messengersCloseBtn = document.querySelector('.button_messengers-close');
 messengersCloseBtn?.addEventListener('click', () => displayControlMessengersBtns());
 
+
+
+/* Работа скролл-бара */
 scrollProgressBar();
 function scrollProgressBar() {
     $(window).scroll(function () {
@@ -92,3 +95,36 @@ function scrollProgressBar() {
         $(".progress-bar").width (ratio + "%");
     });
 }
+
+
+
+/* Блок "Отзывы" - работа модального окна "Информация о проекте" */
+const aboutProjectBtns = document.querySelectorAll('.project-item__about-btn');
+aboutProjectBtns.forEach(btn => {
+    btn?.addEventListener('click', () => {
+        const modalNode = document.querySelector('#modalAboutProject');
+        const projectDescItems = btn.closest('.project-item').querySelectorAll('.project-item__desc [data-project-info-item]');
+        projectDescItems.forEach(item => {
+            modalNode.querySelector(`[data-project-info-item="${item.dataset.projectInfoItem}"]`).textContent = item.textContent;
+        });
+
+        const modalAboutProject = new bootstrap.Modal(modalNode);
+        modalAboutProject.show();
+    });
+});
+
+
+
+/* Просмотр полного изображения отзыва клиента */
+const fullReviewBtns = document.querySelectorAll('.project-item__full-review-image');
+fullReviewBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const imageURL = btn.dataset.href;
+        const modalNode = document.querySelector(`#modalFullReviewImage`);
+        const imageNode = modalNode.querySelector('.fullReviewImage');
+
+        imageNode.setAttribute('src', imageURL);
+        const modalFullReviewImage = new bootstrap.Modal(modalNode);
+        modalFullReviewImage.show();
+    });
+})

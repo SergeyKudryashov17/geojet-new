@@ -1,8 +1,25 @@
+.modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #FFF;
+    border-radius: 50%;
+    border: none;
+}
+
 .modal-window {
     max-width: 565px;
     border-radius: 10px;
     padding: 30px 30px 35px;
     margin: 0 auto;
+}
+.modal-window_default {
+    padding: 0;
 }
 .modal-window__content {
     padding: 0;

@@ -587,6 +587,9 @@ main {
     grid-gap: 0;
 }
 .project-item__review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 30px;
 }
 .project-item__client {
@@ -663,9 +666,43 @@ main {
 .project-item__table td {
     border-bottom: var(--base-border);
 }
+.project-item__about-btn {
+    display: none;
+}
 
+#modalAboutProject .modal-window {
+    max-width: 400px;
+}
+.reviewAboutProject {
 
+}
+.reviewAboutProject__title {
+    padding: 20px 15px;
+    border-bottom: var(--orange-border);
+    color: var(--orange-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+.reviewAboutProject__info {
+    padding: 15px;
+    border-bottom: var(--base-border);
+}
+.reviewAboutProject__info:last-child {
+    padding-bottom: 20px;
+}
+.reviewAboutProject__label {
+    font-weight: 600;
+    color: var(--dark-gray-color);
+    margin-bottom: 15px;
+}
+.reviewAboutProject__content {
+    line-height: 1.3;
+}
 
+.fullReviewImage {
+    width: 100%;
+}
 
 .bottom-feedback-form .wrapper-main-feedback-form {
     display: none;
