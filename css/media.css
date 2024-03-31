@@ -118,6 +118,10 @@
     .main-feedback-block {
         height: 850px
     }
+
+    .mini-feedback-form {
+        padding: 40px 80px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -241,27 +245,7 @@
     }
 
     .mini-feedback-form {
-        padding: 20px;
-    }
-    .mini-feedback-form .form__fields-group {
-        margin-top: 25px;
-    }
-    .mini-feedback-form .form__title {
-        font-size: 18px;
-    }
-    .mini-feedback-form .form__input {
-        padding: 12px 25px;
-    }
-    .mini-feedback-form .form__field_icon::before {
-        width: 35px;
-        height: 35px;
-        left: 10px;
-    }
-    .mini-feedback-form .form__input::placeholder {
-        font-size: 14px;
-    }
-    .mini-feedback-form .form__input_icon {
-        padding-left: 50px;
+        padding: 40px;
     }
 
     .warning-main-feedback-form {
@@ -690,13 +674,6 @@
         line-height: 1.3;
     }
 
-    .bottom-feedback-form .wrapper-main-feedback-form {
-        display: block;
-    }
-    .bottom-feedback-form .mini-feedback-form {
-        display: none;
-    }
-
     .warning-main-feedback-form {
         font-size: 14px;
         line-height: 20px;
@@ -811,6 +788,17 @@
         margin: 0 auto;
         width: 100%;
     }
+
+    .mini-feedback-form {
+        margin: 0 auto;
+        padding: 40px 60px;
+    }
+    .mini-feedback-form .form__fields-group_inline {
+        display: block;
+    }
+    .mini-feedback-form .form__fields-group_inline .form__field {
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 575px) {
@@ -834,14 +822,15 @@
     }
 
     .logo {
-        max-width: 213px;
+        max-width: 150px;
     }
 
     .header__link-mail, .footer__link-mail {
         display: none;
     }
 
-    .phone-block {
+    .header .phone-block,
+    .footer .phone-block {
         font-size: 10px;
         flex-shrink: 0;
         margin-right: 0;
@@ -978,6 +967,9 @@
         text-align: center;
         font-size: 14px;
     }
+    .alert-company-service .alert-block__text {
+        padding: 0 10px;
+    }
     .alert-company-service .button {
         margin-top: 30px;
         width: 100%;
@@ -1093,14 +1085,6 @@
     .project-item__about-btn {
         display: inline-block;
         margin-top: 18px;
-    }
-
-    .bottom-feedback-form .wrapper-main-feedback-form {
-        display: block;
-        padding-top: 15px;
-    }
-    .bottom-feedback-form .mini-feedback-form {
-        display: none;
     }
 
     .warning-main-feedback-form {
@@ -1269,10 +1253,24 @@
     .page-section_main-feedback {
         display: none;
     }
+
+    .mini-feedback-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 30px 10px;
+    }
+    .mini-feedback-form .form__fields-group_inline {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .mini-feedback-form .form__fields-group_inline .form__field {
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 460px) {
-    .phone-block {
+    .header .phone-block,
+    .footer .phone-block {
         display: none;
     }
 

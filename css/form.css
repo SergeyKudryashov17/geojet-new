@@ -155,14 +155,14 @@
 
 @media (max-width: 575px) {
     .form__title {
-        font-size: 12px;
+        font-size: 14px;
     }
     .form__fields-group {
         margin-top: 20px;
     }
 
     .form__input {
-        padding: 10px 15px;
+        padding: 15px 10px;
     }
     .form__input::placeholder {
         font-size: 12px;
@@ -175,17 +175,15 @@
     }
 
     .form__field_icon .form__input {
-        padding-left: 55px;
+        padding-left: 45px;
     }
 
-    .form__fields-group {
-        /* max-width: 300px; */
-        /* margin: 20px auto; */
+    .form__subtext {
+        font-size: 12px;
     }
 
     .form__submit {
         display: block;
-        max-width: 300px;
         margin: 0 auto;
         padding-top: 10px;
         padding-bottom: 10px;

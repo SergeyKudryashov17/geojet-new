@@ -29,7 +29,8 @@
                     Оставить заявку
                 </button>
                 <button class="button button_icon mobile-menu-btn">
-                    <img src="./img/logo/menu-icon.svg">
+                    <img class="mobile-menu-btn__icon" src="./img/logo/menu-icon.svg">
+                    <span class="mobile-menu-btn__label">Меню</span>
                 </button>
             </div>
             <div class="header__bottom">
@@ -230,9 +231,19 @@
                 <a class="mobile-menu__email-link" href="mailto:info@geojetexploration.com">
                     info@geojetexploration.com
                 </a>
+                <div class="mobile-menu__phone-block phone-block">
+                    <a class="phone-block__number link link_primary" href="tel:+74954776332">+ 7 (495) 477-63-32</a>
+                    <span class="phone-block__city">Москва</span>
+                    <a class="phone-block__number link link_primary" href="tel:+77273304832">+ 7 (727) 330-48-32</a>
+                    <span class="phone-block__city">Алматы</span>
+                </div>
                 <div class="mobile-menu__social-links">
-                    <a href=""><img src="./img/logo/whatsapp.svg" alt=""></a>
-                    <a href=""><img src="./img/logo/telegramm.svg" alt=""></a>
+                    <a href="" target="_blank">
+                        <img src="./img/whatsapp_color.svg" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./img/telegram_color.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -424,7 +435,9 @@
                     </div>
                 </div>
                 <div class="alert-block alert-block_light-orange-bg alert-company-service">
-                    Получите бесплатный аудит программы ГРР и <br>рекомендации по выбору методов разведки. 
+                    <div class="alert-block__text">
+                        Получите бесплатный аудит программы ГРР и рекомендации по выбору методов разведки. 
+                    </div>
                     <button class="button button_primary button_lg">
                         🎁 Получить бонус
                     </button>
@@ -706,31 +719,6 @@
                             в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006
                         </div>
                     </form>
-                </div>
-
-                <div class="wrapper-main-feedback-form">
-                    <img class="bg-main-feedback-form" src="./img/bgform.png" alt="">
-                    <form class="form main-feedback-form">
-                        <h3 class="form__title text-center">Заполните необходимые поля</h3>
-                        <div class="form__fields-group">
-                            <div class="form__field form__field_icon form__field_name">
-                                <input class="form__input form__input_full-width" type="text" placeholder="Ваше имя*">
-                            </div>
-                            <div class="form__field form__field_icon form__field_phone">
-                                <input class="form__input form__input_full-width" type="text" placeholder="Ваш телефон*">
-                            </div>
-                            <div class="form__field form__field_icon form__field_email">
-                                <input class="form__input form__input_full-width" type="text" placeholder="Ваш email*">
-                            </div>
-                        </div>
-                        <button class="button button_rounded button_primary button_full-width form__submit">Получить консультацию</button>
-                    </form>
-                    <div class="container">
-                        <div class="warning-main-feedback-form">
-                            Заполняя данную форму вы соглашаетесь на <a href="#" class="link" target="_blank">обработку персональных данных</a> «ГЕОДЖЕТ-ГРУПП»
-                            в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
