@@ -13,8 +13,17 @@
     margin-bottom: 40px;
 }
 
+.headline_big {
+    font-size: 35px;
+}
+
 .headline_feedback {
     font-size: 25px;
+}
+
+.headline_page {
+    text-transform: uppercase;
+    font-size: 60px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

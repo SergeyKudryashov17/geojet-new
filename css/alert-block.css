@@ -23,9 +23,17 @@
     background: #F9FAFB;
 }
 
+.alert-block_gray-bg {
+    background: var(--light-gray-color);
+}
+
 .alert-block_light-orange-bg {
     background: var(--light-orange-color);
     color: var(--black-color);
+}
+
+.alert-block_bold {
+    font-weight: 600;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
