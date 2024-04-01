@@ -918,6 +918,11 @@
     .block-tasks-solved__title {
         font-size: 16px;
     }
+    .block-tasks-solved__btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
 
     .feedback-form-label {
         font-size: 12px;
