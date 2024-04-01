@@ -233,7 +233,7 @@ main {
 .main-section {
     position: relative;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     height: calc(100vh - 150px);
     padding-bottom: 150px;
 }
@@ -634,6 +634,7 @@ main {
     border-radius: 50%;
     overflow: hidden;
     grid-area: av;
+    background: var(--dark-gray-color);
 }
 .project-item__client-name {
     grid-area: name;
@@ -661,9 +662,13 @@ main {
     margin-bottom: 20px;
 }
 .project-item__desc {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border-left: 1px solid var(--orange-color);
 }
 .project-item__name {
+    flex-shrink: 0;
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
@@ -673,6 +678,7 @@ main {
     background: var(--light-orange-color);
 }
 .project-item__table {
+    flex-grow: 1;
     background: var(--light-orange-color);
     border-radius: 0 0 var(--base-radius) 0;
 }

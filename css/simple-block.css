@@ -13,6 +13,15 @@
     border: 1px solid var(--orange-color);
 }
 
+.simple-block_inverse .link.link_btn {
+    color: var(--orange-color);
+    background: var(--light-orange-color);
+}
+.simple-block:not(.simple-block_inverse) .link.link_btn {
+    color: var(--orange-color);
+    background: var(--white-color);
+}
+
 .simple-block__top {
 
 }

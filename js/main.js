@@ -8,7 +8,8 @@ import {
 
 
 $('.projects-slider').slick({
-    dots: true
+    dots: true,
+    adaptiveHeight: true
 });
 
 
@@ -128,3 +129,29 @@ fullReviewBtns.forEach(btn => {
         modalFullReviewImage.show();
     });
 })
+
+
+
+/* Изменения в отображении интерфейса при изменении ширины экрана */
+document.addEventListener('DOMContentLoaded', () => changeClassCellService());
+window.addEventListener('resize', () => changeClassCellService());
+
+function changeClassCellService() {
+    const cellsService = document.querySelectorAll('.cell-service.simple-block');
+    if (document.documentElement.clientWidth < 768) {
+        cellsService.forEach((element, index) => {
+            index % 2 === 0 
+                ? element.classList.add('simple-block_inverse')
+                : element.classList.remove('simple-block_inverse');
+        });
+    } else {
+        const searchIndexes = Array.from(cellsService).map((el, index) => 1 + 3 * ((index + 1) - 1));
+        cellsService.forEach((element, index) => {
+            searchIndexes.includes(index + 1)
+                ? element.classList.add('simple-block_inverse')
+                : element.classList.remove('simple-block_inverse');
+        });
+    }
+}
+
+
