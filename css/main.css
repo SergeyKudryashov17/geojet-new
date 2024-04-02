@@ -628,6 +628,15 @@ main {
     grid-column-gap: 10px;
     margin-bottom: 30px;
 }
+.project-item__client_empty-avatar {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    grid-template-areas: 'name'
+                        'pos';
+}
+.project-item__client_empty-avatar .project-item__client-avatar {
+    display: none;
+}
 .project-item__client-avatar {
     width: 70px;
     height: 70px;
@@ -918,7 +927,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
-    height: 950px;
+    height: 700px;
 }
 .main-feedback-block__bg {
     position: relative;
@@ -941,7 +950,7 @@ main {
     background: #fff;
     padding: 30px 40px;
     border-radius: var(--base-radius);
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
 .secondary-page-start {

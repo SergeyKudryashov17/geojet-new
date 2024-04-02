@@ -115,10 +115,6 @@
         padding: 20px;
     }
 
-    .main-feedback-block {
-        height: 850px
-    }
-
     .mini-feedback-form {
         padding: 40px 80px;
     }
@@ -148,11 +144,11 @@
     .phone-block {
         flex-grow: 1;
         flex-shrink: 0;
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .header__action-btn, .footer__action_btn {
         font-size: 12px;
-        padding: 7px 12px;
+        padding: 7px 7px;
         white-space: nowrap;
     }
 
