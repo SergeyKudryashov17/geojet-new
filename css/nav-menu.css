@@ -52,6 +52,7 @@
 .nav-menu__submenu {
     display: none;
     position: absolute;
+    z-index: 3;
     top: 100%;
     right: 4px;
     transform: translateX(50%);

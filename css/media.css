@@ -875,7 +875,7 @@
         grid-gap: 25px 30px;
     }
     .grid-partners__logo:last-child {
-        grid-column: span 3;
+        display: none;
     }
 
     .grid-main-achievements {

@@ -650,6 +650,7 @@ main {
     font-weight: 700;
     line-height: 1;
     align-self: center;
+    margin-bottom: 5px;
 }
 .project-item__client-position {
     grid-area: pos;
@@ -984,7 +985,7 @@ main {
 }
 .secondary-page-start__image {
     width: 100%;
-    margin-top: 50pxh;
+    margin-top: 50px;
 }
 
 /* row-data */
@@ -1062,4 +1063,54 @@ main {
 }
 .action-block__text {
     line-height: 1.3;
+}
+
+.block-achieving-commercial-goals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.block-achieving-commercial-goals__desc {
+    position: relative;
+    z-index: 1;
+}
+.block-achieving-commercial-goals__info {
+    padding-left: 120px;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.block-achieving-commercial-goals__wrp-img {
+    position: relative;
+    height: 100%;
+}
+.block-achieving-commercial-goals__img {
+    position: absolute;
+    right: -75px;
+    bottom: 0;
+}
+.block-achieving-commercial-goals__text {
+    line-height: 1.4;
+}
+
+.list-steps {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* block icon */
+.textWithIcon {
+    display: flex;
+    align-items: center;
+    border-radius: var(--base-radius);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.textWithIcon_white-bg {
+    background: var(--white-color);
+}
+.textWithIcon_orange-br {
+    border: var(--orange-border);
+}
+.textWithIcon__icon {
+    width: 35px;
+    margin-right: 10px;
 }

@@ -88,6 +88,17 @@ messengersCloseBtn?.addEventListener('click', () => displayControlMessengersBtns
 
 
 
+/* Постоянная анимация стрелочки на первом экране главной страницы */
+const arrowDown = document.querySelector('.main-section__slide-down');
+if (arrowDown) {
+    setInterval(() => {
+        arrowDown.classList.toggle('animate__animated');
+        arrowDown.classList.toggle('animate__bounce');
+    }, 1000);
+}
+
+
+
 /* Работа скролл-бара */
 scrollProgressBar();
 function scrollProgressBar() {
