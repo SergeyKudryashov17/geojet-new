@@ -53,6 +53,10 @@
     margin-right: auto;
 }
 
+.button_text-underline {
+    text-decoration: underline;
+}
+
 .button_full-width {
     width: 100%
 }
