@@ -23,6 +23,7 @@
 @import url('./simple-block.css');
 @import url('./pictureItem.css');
 @import url('./numberedItem.css');
+@import url('./row-data.css');
 
 
 body {
@@ -995,62 +996,6 @@ main {
     margin-top: 50px;
 }
 
-/* row-data */
-.row-data {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    overflow: hidden;
-    border: var(--base-border);
-    border-radius: var(--base-radius);
-    margin-bottom: 30px;
-}
-.row-data:last-child {
-    margin-bottom: 0;
-}
-.row-data_orange {
-    border: var(--orange-border);
-}
-.row-data__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px;
-    background: var(--white-color);
-    line-height: 1.3;
-}
-.row-data__content_wrp-image {
-    overflow: hidden;
-    padding: 0;
-}
-.row-data__title {
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-.row-data__subtitle {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-.row-data__image {
-    height: 100%;
-}
-.row-data__text {
-    margin-bottom: 30px;
-}
-.row-data__text p {
-    margin-bottom: 30px;
-}
-.row-data__text p:last-child {
-    margin-bottom: 0;
-}
-.row-data__tags {
-    padding-right: 50px;
-}
-
 
 /* quote-block */
 .quote-block {
@@ -1149,6 +1094,7 @@ main {
     padding-left: 0;
     list-style-type: none;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .tag {
@@ -1156,7 +1102,6 @@ main {
     border-radius: 50px;
     background: var(--light-orange-color);
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.3;
     color: var(--orange-color);
     margin-right: 10px;

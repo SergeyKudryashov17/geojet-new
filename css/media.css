@@ -856,6 +856,18 @@
         border: none;
         border-radius: 0;
     }
+    .row-data_mobile-border {
+        border: var(--base-border);
+        border-radius: var(--base-radius);
+        padding: 15px 15px 0;
+    }
+    .row-data_mobile-border .row-data__content_wrp-image {
+        margin: 0 -15px;
+    }
+    .row-data__icon_mobile {
+        display: inline-block;
+        width: 24px;
+    }
     .row-data__title {
         font-size: 18px;
         margin-bottom: 20px;
@@ -867,9 +879,13 @@
         display: flex;
         align-items: center;
         height: 250px;
+        grid-area: image;
     }
     .row-data__image {
         height: auto;
+    }
+    .row-data__content_text {
+        grid-area: text;
     }
     .row-data__text p {
         margin-bottom: 20px;
@@ -1402,12 +1418,14 @@
     }
 
     .secondary-page-start {
-        height: calc(100vh - 60px);
+        min-height: calc(100vh - 60px);
         padding-top: 100px;
         overflow: hidden;
+        padding-top: 30px;
     }
     .secondary-page-start__title {
         color: var(--white-color);
+        margin-bottom: 30px;
     }
     .secondary-page-start__shadow {
         display: block;
@@ -1424,11 +1442,12 @@
     .secondary-page-start__content {
         display: block;
         color: var(--white-color);
+        margin-bottom: 30px;
     }
     .secondary-page-start__main,
     .secondary-page-start__desc {
         border-left: 2px solid var(--white-color);
-        background: linear-gradient(90deg, rgb(255, 255, 255, .2), rgba(255, 255, 255, 0));
+        background: linear-gradient(90deg, rgb(255, 255, 255, .1), rgba(255, 255, 255, 0));
         padding-left: 10px;
         padding: 5px 10px;
     }
@@ -1441,6 +1460,8 @@
     .secondary-page-start__controls .button {
         width: 100%;
         margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .row-data {
@@ -1450,6 +1471,18 @@
                              'image';
         border: none;
         border-radius: 0;
+    }
+    .row-data_mobile-border {
+        border: var(--base-border);
+        border-radius: var(--base-radius);
+        padding: 15px 15px 0;
+    }
+    .row-data_mobile-border .row-data__content_wrp-image {
+        margin: 0 -15px;
+    }
+    .row-data__icon_mobile {
+        display: inline-block;
+        width: 24px;
     }
     .row-data__title {
         font-size: 16px;
@@ -1473,6 +1506,7 @@
     .row-data__image {
         height: auto;
     }
+    
 
     .block-stages-change__gallery {
         grid-gap: 5px
