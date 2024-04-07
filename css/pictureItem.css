@@ -1,0 +1,16 @@
+.pictureItem {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: var(--base-radius);
+    border: var(--base-border);
+    background: var(--white-color);
+}
+.pictureItem__img {
+
+}
+.pictureItem__text {
+    padding: 20px 30px;
+    text-align: center;
+    line-height: 1.3;
+}

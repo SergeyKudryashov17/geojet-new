@@ -176,7 +176,8 @@
         font-size: 16px;
     }
 
-    .grid-main-achievements {
+    .grid-main-achievements,
+    .grid-geophisics-achievements {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
@@ -589,7 +590,8 @@
         grid-column: span 3;
     }
 
-    .grid-main-achievements {
+    .grid-main-achievements,
+    .grid-geophisics-achievements {
         display: block;
     }
 
@@ -861,9 +863,6 @@
     .row-data__content {
         padding: 0;
     }
-    .row-data__content p {
-        margin-bottom: 20px;
-    }
     .row-data__content_wrp-image {
         display: flex;
         align-items: center;
@@ -871,6 +870,9 @@
     }
     .row-data__image {
         height: auto;
+    }
+    .row-data__text p {
+        margin-bottom: 20px;
     }
 
     .block-stages-change__gallery {
@@ -1035,7 +1037,8 @@
         display: none;
     }
 
-    .grid-main-achievements {
+    .grid-main-achievements,
+    .grid-geophisics-achievements {
         display: block;
     }
 
@@ -1455,13 +1458,17 @@
     .row-data__content {
         padding: 0;
     }
-    .row-data__content p {
-        margin-bottom: 20px;
+    .row-data__content_text {
+        grid-area: text;
     }
     .row-data__content_wrp-image {
         display: flex;
         align-items: center;
         height: 200px;
+        grid-area: image;
+    }
+    .row-data__text p {
+        margin-bottom: 20px;
     }
     .row-data__image {
         height: auto;

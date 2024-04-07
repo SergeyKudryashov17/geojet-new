@@ -104,9 +104,6 @@
     .form__input {
         padding: 20px 35px;
     }
-    .form__input::placeholder {
-
-    }
     .form__field_icon .form__input {
         padding-left: 67px;
     }

@@ -21,6 +21,8 @@
 @import url('./card.css');
 @import url('./modal-window.css');
 @import url('./simple-block.css');
+@import url('./pictureItem.css');
+@import url('./numberedItem.css');
 
 
 body {
@@ -309,7 +311,8 @@ main {
 }
 
 
-.grid-main-achievements {
+.grid-main-achievements,
+.grid-geophisics-achievements {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -365,11 +368,6 @@ main {
     background: var(--light-gray-color);
     border-radius: var(--base-radius);
     margin-bottom: 20px;
-}
-
-
-.bg-light-orange {
-
 }
 
 
@@ -970,7 +968,7 @@ main {
 }
 .secondary-page-start__content {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     margin-bottom: 50px;
 }
 .secondary-page-start__main,
@@ -987,6 +985,7 @@ main {
     font-weight: 600;
     font-size: 20px;
     font-style: italic;
+    padding-right: 50px;
 }
 .secondary-page-start__controls .button {
     margin-right: 10px;
@@ -1019,14 +1018,7 @@ main {
     background: var(--white-color);
     line-height: 1.3;
 }
-.row-data__content_text {
-    grid-area: text;
-}
-.row-data__content p {
-    margin-bottom: 30px;
-}
 .row-data__content_wrp-image {
-    grid-area: image;
     overflow: hidden;
     padding: 0;
 }
@@ -1036,9 +1028,29 @@ main {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
+.row-data__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 .row-data__image {
     height: 100%;
 }
+.row-data__text {
+    margin-bottom: 30px;
+}
+.row-data__text p {
+    margin-bottom: 30px;
+}
+.row-data__text p:last-child {
+    margin-bottom: 0;
+}
+.row-data__tags {
+    padding-right: 50px;
+}
+
 
 /* quote-block */
 .quote-block {
@@ -1112,7 +1124,7 @@ main {
     padding-left: 0;
 }
 
-/* block icon */
+/* textWithIcon */
 .textWithIcon {
     display: flex;
     align-items: center;
@@ -1129,4 +1141,70 @@ main {
 .textWithIcon__icon {
     width: 35px;
     margin-right: 10px;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.tag {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: var(--light-orange-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--orange-color);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-geophisics-achievements {
+    margin-bottom: 30px;
+}
+.geophisics-achievement {
+    height: 350px;
+}
+
+.short-feedback-form {
+    background: var(--light-gray-color);
+    padding: 20px;
+    border-radius: var(--base-radius);
+    margin-bottom: 30px;
+}
+.form_short .form__fields-group {
+    margin: 0;
+}
+.form_short .form__submit {
+    width: 270px;
+    flex-shrink: 0;
+    margin-left: 5px;
+}
+.form_short .form__input {
+    padding: 15px;
+}
+
+.feedabck-form-disclaimer {
+    text-align: center;
+    color: rgba(var(--black-color-rgb), .5);
+    padding: 0 14%;
+    line-height: 1.3;
+}
+
+.main-tasks-geo-stage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+
+.commercial-purposes-geo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
 }
