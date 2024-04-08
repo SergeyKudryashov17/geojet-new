@@ -32,6 +32,10 @@
     color: var(--black-color);
 }
 
+.alert-block_gray-border {
+    border: var(--base-border);
+}
+
 .alert-block_bold {
     font-weight: 600;
 }
