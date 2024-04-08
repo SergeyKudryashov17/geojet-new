@@ -116,6 +116,9 @@
     .form__input::placeholder {
         font-size: 18px;
     }
+    .form_short .form__submit {
+        width: 250px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {

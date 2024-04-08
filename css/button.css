@@ -147,6 +147,11 @@
         padding: 9px 17px;
     }
 }
+@media (max-width: 768px) {
+    .button {
+        padding: 14px 17px;
+    }
+}
 @media (max-width: 575px) {
     .button {
         padding: 15px;
