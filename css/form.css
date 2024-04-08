@@ -182,7 +182,7 @@
     .form__submit {
         display: block;
         margin: 0 auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }

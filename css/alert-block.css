@@ -45,5 +45,6 @@
 @media (max-width: 575px) {
     .alert-block {
         padding: 20px;
+        font-size: 14px;
     }
 }

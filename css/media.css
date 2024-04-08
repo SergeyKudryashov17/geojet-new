@@ -1067,6 +1067,9 @@
         font-size: 16px;
     }
 
+    .simple-block {
+        padding: 20px;
+    }
     .simple-block__title {
         font-size: 16px;
     }
@@ -1452,8 +1455,7 @@
         padding: 5px 10px;
     }
     .secondary-page-start__main {
-        font-size: 20px;
-        line-height: 1.3;
+        font-size: 16px;
         padding-left: 13px;
         margin-bottom: 30px;
     }
@@ -1507,7 +1509,9 @@
         height: auto;
     }
     
-
+    .block-stages-change {
+        margin-bottom: 0;
+    }
     .block-stages-change__gallery {
         grid-gap: 5px
     }
@@ -1552,6 +1556,7 @@
         padding: 20px;
     }
     .action-block__icon {
+        width: 25px;
         margin-bottom: 15px;
     }
     .action-block__title {
@@ -1611,6 +1616,10 @@
 
     .section-other-methods {
         padding-bottom: 50px;
+    }
+
+    .textWithIcon {
+        padding: 18px 15px;
     }
 }
 
