@@ -65,6 +65,21 @@ main {
 .header__top_slim {
     padding: 10px 0;
 }
+.header__link-mail,
+.footer__link-mail {
+    font-weight: 500;
+    line-height: 1.6;
+    text-decoration: none;
+}
+.header__link-mail {
+    display: inline-flex;
+    align-items: center;
+}
+.header__link-mail::before {
+    content: url('./../img/email.svg');
+    line-height: 1;
+    margin-right: 5px;
+}
 .header__action-btn,
 .footer__action_btn {
     font-size: 14px;
@@ -76,6 +91,16 @@ main {
 }
 .footer__top {
     border-bottom: var(--footer-border);
+}
+.footer__email {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__placeholder {
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.5);
 }
 .footer__bottom {
     background: var(--black-color2);
@@ -205,7 +230,7 @@ main {
 
 .logo {
     width: 100%;
-    max-width: 279px;
+    max-width: 219px;
 }
 
 

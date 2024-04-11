@@ -16,7 +16,7 @@
     }
 
     .logo {
-        max-width: 240px;
+        max-width: 200px;
     }
 
     .header__action-btn, .footer__action_btn {
@@ -153,12 +153,17 @@
     }
 
     .logo {
-        max-width: 213px;
-        margin-right: 20px;
+        max-width: 190px;
+        margin-right: 15px;
     }
 
     .header__link-mail, .footer__link-mail {
-        line-height: 22px;
+        line-height: 18px;
+        font-size: 14px;
+    }
+
+    .footer__placeholder_email {
+        display: none;
     }
 
     .phone-block {

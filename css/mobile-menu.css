@@ -22,6 +22,10 @@
 }
 
 .mobile-menu__close-btn {
+    display: inline-flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
     align-self: flex-end;
     background: rgba(255, 255, 255, 0.1);
     padding: 12px;
@@ -110,4 +114,11 @@
 .mobile-menu__phone-block .phone-block__city::before {
     width: 1px;
     height: 14px;
+}
+
+.mobile-menu__placeholder {
+    text-transform: none;
+    font-weight: 400;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
 }
