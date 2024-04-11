@@ -33,6 +33,12 @@ mobileMenuLabels.forEach(menuLabel => {
 const mobileFooterMenuLabels = document.querySelectorAll('.footer__nav-title');
 mobileFooterMenuLabels.forEach(menuLabel => {
     menuLabel.addEventListener('click', () => {
+        if (menuLabel.closest('.footer__nav-block').matches('.footer__nav-block_active')) {
+            menuLabel.closest('.footer__nav-block').classList.remove('footer__nav-block_active');
+            return;
+        }
+
+        menuLabel.closest('.footer__menu').querySelector('.footer__nav-block_active')?.classList.remove('footer__nav-block_active');
         menuLabel.closest('.footer__nav-block').classList.toggle('footer__nav-block_active');
     });
 });
