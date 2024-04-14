@@ -18,7 +18,8 @@
     font-weight: 500;
 }
 
-.link_menu {
+.link_menu,
+.link_icon {
     text-decoration: none;
 }
 
