@@ -936,6 +936,9 @@
     .page-section_pb {
         padding-bottom: 60px;
     }
+    .page-section_bordered {
+        border-radius: 20px;
+    }
 
     .main-section {
         align-items: center;
@@ -1316,13 +1319,17 @@
         display: block;
     }
     .secondary-page-start__image {
+        display: none;
         position: absolute;
         z-index: -2;
         top: 0;
         left: 0;
-        width: auto;
+        width: 100%;
         height: 100%;
         margin-top: 0;
+    }
+    .secondary-page-start__image_mobile {
+        display: block;
     }
     .secondary-page-start__content {
         display: block;
@@ -1389,6 +1396,9 @@
     }
     .row-data__image {
         height: auto;
+    }
+    .row-data__tags {
+        padding-right: 0;
     }
     
     .block-stages-change {
@@ -1522,6 +1532,7 @@
 
     .main-tasks-geo-stage {
         grid-template-columns: 1fr;
+        grid-gap: 10px;
     }
 
     .pictureItem__img {
@@ -1529,6 +1540,7 @@
     }
 
     .commercial-purposes-geo {
+        grid-gap: 10px;
         grid-template-columns: 1fr;
     }
 

@@ -84,8 +84,8 @@
     flex-direction: column;
     justify-content: center;
 }
+
 .footer__link-mail {
-    display: none;
     font-weight: 500;
     line-height: 1.6;
     text-decoration: none;
@@ -96,21 +96,23 @@
     text-transform: uppercase;
     padding: 10px 30px;
 }
+
 .footer__placeholder {
     font-weight: 400;
     line-height: 1.4;
     color: rgba(255, 255, 255, 0.5);
 }
-.footer__company-data {
-    text-align: right;
-}
+
+.footer__company-data,
 .footer__link-privacy {
     text-align: right;
 }
+
 .footer__slogan {
     font-size: 14px;
     line-height: 1.5;
 }
+
 .footer__social-links img {
     width: 45px;
 }
@@ -159,6 +161,7 @@
     .footer__nav-title {
         font-size: 15px;
     }
+
     .footer__menu-link {
         font-size: 13px;
     }
@@ -221,6 +224,7 @@
     .footer__top {
         border-bottom: none;
     }
+
     .footer__middle {
         grid-template-columns: auto 70%;
         grid-template-areas: 'wa tg';
@@ -228,6 +232,7 @@
         justify-content: flex-start;
         padding: 20px 0;
     }
+    
     .footer__bottom {
         background: var(--black-color);
     }

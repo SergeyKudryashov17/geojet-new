@@ -8,8 +8,7 @@ import {
 
 
 $('.projects-slider').slick({
-    dots: true,
-    adaptiveHeight: true
+    dots: true
 });
 
 
