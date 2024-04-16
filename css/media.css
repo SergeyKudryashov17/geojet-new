@@ -1122,18 +1122,13 @@
         width: 100%;
         margin-left: 0;
         padding: 5px 10px;
-        white-space: wrap;
+        white-space: normal;
     }
     .category-method__label:not(:first-child) {
         margin-left: 1px;
     }
     .category-method .category-method__label:last-of-type {
         padding-right: 12px;
-    }
-    .category-method__text {
-        width: 100%;
-        margin-left: 0;
-        padding: 5px 10px;
     }
 
     .projects-slider-container {
