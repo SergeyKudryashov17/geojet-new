@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="./assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <title>Статьи и новости</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="/">
+                    <img src="./img/logo/logo.svg" class="logo" alt="">
+                </a>
+                <a class="header__link-mail link link_primary" href="mailto:info@geojetexploration.com">info@geojet<wbr/>exploration.com</a>
+                <div class="phone-block">
+                    <a class="phone-block__number link link_primary" href="tel:+74954774332">+7 (495) 477-43-32</a>
+                    <span class="phone-block__city">Москва</span>
+                    <a class="phone-block__number link link_primary" href="tel:+77057770139">+7 (705) 777-01-39</a>
+                    <span class="phone-block__city">Алматы</span>
+                </div>
+                <button class="button button_primary button_rounded header__action-btn" data-bs-toggle="modal" data-bs-target="#submitApp">
+                    Оставить заявку
+                </button>
+                <button class="button button_icon mobile-menu-btn">
+                    <img class="mobile-menu-btn__icon" src="./img/logo/menu-icon.svg">
+                    <span class="mobile-menu-btn__label">Меню</span>
+                </button>
+            </div>
+            <div class="header__bottom">
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__label" href="./index.html">Главная</a>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Виды работ</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="./predictive-modeling.html" class="nav-menu__sublabel">Прогнозное моделирование</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Анализ данных ДЗЗ</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="./geophysics.html" class="nav-menu__sublabel">Геофизические работы</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Гидрогеология</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Для кого</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Недропользователей</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Инвесторов</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Методы</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Электроразведка</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">ВИЭР</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Электротомография</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">ВП, ВП-СГ, ВП-ВЭЗ</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">ЗСБ</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Магниторазведка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Проекты</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Рудные месторождения</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Россыпные месторождения</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Нерудные месторождения</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Гидрогеологические</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">О компании</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">О нас</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="./blog.html" class="nav-menu__sublabel">Блог</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Полезное</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="progress-bar"></div>
+    </header>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu__wrp">
+            <button class="mobile-menu__close-btn">
+                <img src="./img/logo/close-icon.svg" alt="">
+            </button>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="./index.html" class="mobile-menu__label">Главная</a>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <div class="mobile-menu__label">Виды работ</div>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="./predictive-modeling.html" class="mobile-menu__sublabel">Прогнозное моделирование</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Анализ данных ДЗЗ</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="./geophysics.html" class="mobile-menu__sublabel">Геофизические работы</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Гидрогеология</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">Для кого</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Недропользователей</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Инвесторов</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">Методы</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Электроразведка</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">ВИЭР</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Электротомография</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">ВП, ВП-СГ, ВП-ВЭЗ</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">ЗСБ</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Магниторазведка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">Проекты</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Рудные месторождения</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Россыпные месторождения</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Нерудные месторождения</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Гидрогеологические</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">О компании</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">О нас</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Блог</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Полезное</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__footer">
+                <a class="mobile-menu__email-link" href="mailto:info@geojetexploration.com">
+                    info@geojetexploration.com
+                </a>
+                <div class="mobile-menu__phone-block phone-block">
+                    <a class="phone-block__number link link_primary" href="tel:+74954774332">+7 (495) 477-43-32</a>
+                    <span class="phone-block__city">Москва</span>
+                    <a class="phone-block__number link link_primary" href="tel:+77057770139">+7 (705) 777-01-39</a>
+                    <span class="phone-block__city">Алматы</span>
+                </div>
+                <div class="mobile-menu__social-links">
+                    <a href="" target="_blank">
+                        <img src="./img/whatsapp_color.svg" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./img/telegram_color.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="secondary-page-start">
+            <div class="container">
+                <h1 class="secondary-page-start__title headline headline_page">Статьи и новости</h1>
+            </div>
+        </section>
+
+        <section class="page-section pt-0 page-section_pb">
+            <div class="container">
+                <div class="articles-block">
+                    <div class="articles-block__list">
+                        <div class="articleItem">
+                            <div class="articleItem__picture-wrp">
+                                <img class="articleItem__image" src="./img/articleImage.png" />
+                            </div>
+                            <div class="articleItem__content">
+                                <div class="articleItem__title">Спектральный анализ</div>
+                                <div class="articleItem__desc">
+                                    Спектральный анализ (СА) – это способ определения химического состава вещества 
+                                    с помощью спектров, испускаемых и поглощаемых его атомами и молекулами. Он широко 
+                                    применяется в
+                                </div>
+                                <div class="articleItem__footer">
+                                    <a class="articleItem__link link link_semibold link_light-orange link_btn" href="#">
+                                        Подробнее
+                                    </a>
+                                    <div class="articleItem__date">02.04.2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articleItem">
+                            <div class="articleItem__picture-wrp">
+                                <img class="articleItem__image" src="./img/articleImage.png" />
+                            </div>
+                            <div class="articleItem__content">
+                                <div class="articleItem__title">Спектральный анализ</div>
+                                <div class="articleItem__desc">
+                                    Спектральный анализ (СА) – это способ определения химического состава вещества 
+                                    с помощью спектров, испускаемых и поглощаемых его атомами и молекулами. Он широко 
+                                    применяется в
+                                </div>
+                                <div class="articleItem__footer">
+                                    <a class="articleItem__link link link_semibold link_light-orange link_btn" href="#">
+                                        Подробнее
+                                    </a>
+                                    <div class="articleItem__date">02.04.2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articleItem">
+                            <div class="articleItem__picture-wrp">
+                                <img class="articleItem__image" src="./img/articleImage.png" />
+                            </div>
+                            <div class="articleItem__content">
+                                <div class="articleItem__title">Спектральный анализ</div>
+                                <div class="articleItem__desc">
+                                    Спектральный анализ (СА) – это способ определения химического состава вещества 
+                                    с помощью спектров, испускаемых и поглощаемых его атомами и молекулами. Он широко 
+                                    применяется в
+                                </div>
+                                <div class="articleItem__footer">
+                                    <a class="articleItem__link link link_semibold link_light-orange link_btn" href="#">
+                                        Подробнее
+                                    </a>
+                                    <div class="articleItem__date">02.04.2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attention-block">
+                            <div class="attention-block__content">
+                                <div class="attetion-block__title">
+                                    Хотите узнать, какой метод геофизики лучше всего подойдет 
+                                    для решения ваших задач?
+                                </div>
+                                <div class="attetion-block__text">
+                                    Отправляйте заявку и получите консультацию <br>от наших проффессионалов
+                                </div>
+                                <button class="button button_rounded button_primary">Оставить заявку</button>
+                            </div>
+                            <img class="attention-block__image" src="./img/attention-block-img.png" alt="">
+                        </div>
+                        <div class="articleItem">
+                            <div class="articleItem__picture-wrp">
+                                <img class="articleItem__image" src="./img/articleImage.png" />
+                            </div>
+                            <div class="articleItem__content">
+                                <div class="articleItem__title">Спектральный анализ</div>
+                                <div class="articleItem__desc">
+                                    Спектральный анализ (СА) – это способ определения химического состава вещества 
+                                    с помощью спектров, испускаемых и поглощаемых его атомами и молекулами. Он широко 
+                                    применяется в
+                                </div>
+                                <div class="articleItem__footer">
+                                    <a class="articleItem__link link link_semibold link_light-orange link_btn" href="#">
+                                        Подробнее
+                                    </a>
+                                    <div class="articleItem__date">02.04.2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articleItem">
+                            <div class="articleItem__picture-wrp">
+                                <img class="articleItem__image" src="./img/articleImage.png" />
+                            </div>
+                            <div class="articleItem__content">
+                                <div class="articleItem__title">Спектральный анализ</div>
+                                <div class="articleItem__desc">
+                                    Спектральный анализ (СА) – это способ определения химического состава вещества 
+                                    с помощью спектров, испускаемых и поглощаемых его атомами и молекулами. Он широко 
+                                    применяется в
+                                </div>
+                                <div class="articleItem__footer">
+                                    <a class="articleItem__link link link_semibold link_light-orange link_btn" href="#">
+                                        Подробнее
+                                    </a>
+                                    <div class="articleItem__date">02.04.2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articleItem">
+                            <div class="articleItem__picture-wrp">
+                                <img class="articleItem__image" src="./img/articleImage.png" />
+                            </div>
+                            <div class="articleItem__content">
+                                <div class="articleItem__title">Спектральный анализ</div>
+                                <div class="articleItem__desc">
+                                    Спектральный анализ (СА) – это способ определения химического состава вещества 
+                                    с помощью спектров, испускаемых и поглощаемых его атомами и молекулами. Он широко 
+                                    применяется в
+                                </div>
+                                <div class="articleItem__footer">
+                                    <a class="articleItem__link link link_semibold link_light-orange link_btn" href="#">
+                                        Подробнее
+                                    </a>
+                                    <div class="articleItem__date">02.04.2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="light-gray-block rounded-block interesting-block">
+                            <div class="headline headline_simple">Вас может заинтересовать</div>
+                            <div class="grid-company-service grid-company-service_default">
+                                <div class="simple-block simple-block_default">
+                                    <div class="simple-block__top">
+                                        <img class="simple-block__logo" src="./img/logo/planet.svg" alt="">
+                                        <div class="simple-block__title">Анализ данных дистанционного зондирования (ДЗЗ)</div>
+                                        <div class="simple-block__desc">
+                                            Дешифрирование, обработка и интерпретация данных космических и аэроснимков Земли
+                                        </div>
+                                    </div>
+                                    <div class="simple-block__bottom">
+                                        <a href="#" class="link link_semibold link_btn link_btn-simple link_light-orange">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="simple-block simple-block_default">
+                                    <div class="simple-block__top">
+                                        <img class="simple-block__logo" src="./img/logo/geolocation.svg" alt="">
+                                        <div class="simple-block__title">Прогнозное <br>моделирование</div>
+                                        <div class="simple-block__desc">
+                                            Прогнозная карта с выделенными перспективными участками на рудные и россыпные месторождения
+                                        </div>
+                                    </div>
+                                    <div class="simple-block__bottom">
+                                        <a href="#" class="link link_semibold link_btn link_btn-simple link_light-orange">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="simple-block simple-block_default">
+                                    <div class="simple-block__top">
+                                        <img class="simple-block__logo" src="./img/logo/impuls.svg" alt="">
+                                        <div class="simple-block__title">Геофизические <br>исследования</div>
+                                        <div class="simple-block__desc">
+                                            Применение всех классических, а также бесконтактных полевых геофизических методов высокого разрешения
+                                        </div>
+                                    </div>
+                                    <div class="simple-block__bottom">
+                                        <a href="#" class="link link_semibold link_btn link_btn-simple link_light-orange">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="simple-block simple-block_default">
+                                    <div class="simple-block__top">
+                                        <img class="simple-block__logo" src="./img/logo/drop.svg" alt="">
+                                        <div class="simple-block__title">Гидрогеологические <br>работы</div>
+                                        <div class="simple-block__desc">
+                                            Поиск водоносных горизонтов и изучение гидрогеологических условий
+                                        </div>
+                                    </div>
+                                    <div class="simple-block__bottom">
+                                        <a href="#" class="link link_semibold link_btn link_btn-simple link_light-orange">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articleItem">
+                            <div class="articleItem__picture-wrp">
+                                <img class="articleItem__image" src="./img/articleImage.png" />
+                            </div>
+                            <div class="articleItem__content">
+                                <div class="articleItem__title">Спектральный анализ</div>
+                                <div class="articleItem__desc">
+                                    Спектральный анализ (СА) – это способ определения химического состава вещества 
+                                    с помощью спектров, испускаемых и поглощаемых его атомами и молекулами. Он широко 
+                                    применяется в
+                                </div>
+                                <div class="articleItem__footer">
+                                    <a class="articleItem__link link link_semibold link_light-orange link_btn" href="#">
+                                        Подробнее
+                                    </a>
+                                    <div class="articleItem__date">02.04.2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articleItem">
+                            <div class="articleItem__picture-wrp">
+                                <img class="articleItem__image" src="./img/articleImage.png" />
+                            </div>
+                            <div class="articleItem__content">
+                                <div class="articleItem__title">Спектральный анализ</div>
+                                <div class="articleItem__desc">
+                                    Спектральный анализ (СА) – это способ определения химического состава вещества 
+                                    с помощью спектров, испускаемых и поглощаемых его атомами и молекулами. Он широко 
+                                    применяется в
+                                </div>
+                                <div class="articleItem__footer">
+                                    <a class="articleItem__link link link_semibold link_light-orange link_btn" href="#">
+                                        Подробнее
+                                    </a>
+                                    <div class="articleItem__date">02.04.2024</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articleItem">
+                            <div class="articleItem__picture-wrp">
+                                <img class="articleItem__image" src="./img/articleImage.png" />
+                            </div>
+                            <div class="articleItem__content">
+                                <div class="articleItem__title">Спектральный анализ</div>
+                                <div class="articleItem__desc">
+                                    Спектральный анализ (СА) – это способ определения химического состава вещества 
+                                    с помощью спектров, испускаемых и поглощаемых его атомами и молекулами. Он широко 
+                                    применяется в
+                                </div>
+                                <div class="articleItem__footer">
+                                    <a class="articleItem__link link link_semibold link_light-orange link_btn" href="#">
+                                        Подробнее
+                                    </a>
+                                    <div class="articleItem__date">02.04.2024</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles-block__controls">
+                        <button class="button button_rounded button_gray articles-block__prev">
+                            <img src="./img/chevron-left_black.svg" alt="">
+                            Назад
+                        </button>
+                        <div class="articles-block__pagination">
+                            <div class="articles-block__pagination-item articles-block__pagination-item_active">1</div>
+                            <div class="articles-block__pagination-item">2</div>
+                            <div class="articles-block__pagination-item">...</div>
+                            <div class="articles-block__pagination-item">4</div>
+                        </div>
+                        <button class="button button_rounded button_dark articles-block__next">
+                            Далее
+                            <img src="./img/chevron-right_white.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+    
+    <footer class="footer">
+        <button class="button button_icon button_scroll-up">
+            <img src="./img/logo/scroll-up.svg">
+        </button>
+        <div class="messenger-bts-wrp">
+            <button class="button button_icon button_messengers-close">
+                <img src="./img/logo/messenger-close.svg">
+            </button>
+            <button class="button button_icon button_messengers">
+                <img src="./img/logo/messenger-btn.png">
+            </button>
+            <button class="button button_icon button_telegramm">
+                <img src="./img/logo/telegram-btn.svg">
+            </button>
+            <button class="button button_icon button_whatsapp">
+                <img src="./img/logo/whatsapp-btn.svg">
+            </button>
+        </div>
+        
+        <div class="footer__wrp-top">
+            <div class="container">
+                <div class="footer__top">
+                    <img src="./img/logo/logo-white.svg" class="logo" alt="">
+                    <div class="footer__email">
+                        <div class="footer__placeholder footer__placeholder_email">Напишите нам</div>
+                        <a class="footer__link-mail link link_primary" href="mailto:info@geojetexploration.com">info@geojet<wbr/>exploration.com</a>
+                    </div>
+                    <div class="phone-block">
+                        <a class="phone-block__number link link_primary" href="tel:+74954774332">+7 (495) 477-43-32</a>
+                        <span class="phone-block__city">Москва</span>
+                        <a class="phone-block__number link link_primary" href="tel:+77057770139">+7 (705) 777-01-39</a>
+                        <span class="phone-block__city">Алматы</span>
+                    </div>
+                    <button class="button button_primary button_rounded footer__action_btn"  data-bs-toggle="modal" data-bs-target="#submitApp">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__wrp-menu">
+            <div class="container">
+                <div class="footer__menu">
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Виды работ</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="./predictive-modeling.html" class="footer__menu-link link">Прогнозное моделирование</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Анализ данных ДЗЗ</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./geophysics.html" class="footer__menu-link link">Геофизические работы</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Гидрогеология</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Для кого</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Недропользователям</a>
+                                <a href="#" class="footer__menu-link link">Инвесторам</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Методы</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Электроразведка</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Электротомография</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">ВП, ВП-СГ, ВП-ВЭЗ</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">ВИЭР</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">ЗСБ</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Магниторазведка</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Георадар</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Проекты</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Рудные месторождения</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Россыпные месторождения</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Нерудные месторождения</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Гидрогеологические</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">О компании</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">О нас</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./blog.html" class="footer__menu-link link">Блог</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Полезное</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__wrp-middle">
+            <div class="container">
+                <div class="footer__middle">
+                    <div class="footer__slogan">
+                        <b>Геоджет-Групп</b> - Сервисная геологоразведочная компания для тех, кто умеет выбирать
+                    </div>
+                    <div class="footer__inn">
+                        <div class="footer__inn-list">
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/russian_flag.svg" alt="">
+                                1137746288778 (ОГРН)
+                            </div>
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/kazah_flag.svg" alt="">
+                                220540033792 (БИН)
+                            </div>
+                        </div>
+                    </div>
+                    <a class="footer__whatsapp-link link link_icon" href="#">
+                        <img src="./img/whatsapp_color.svg" alt="">
+                    </a>
+                    <a href="#" class="telegram-chat-link">
+                        <img class="telegram-chat-link__logo" src="./img/logo/telegram_square.svg">
+                        <div>
+                            <div class="telegram-chat-link__title">ПроРазведку ГеоДжет</div>
+                            <div class="telegram-chat-link__desc">Присоединяйтесь к нашему геологоразведочному сообществу. Новости. Тренды. Мнения.</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer__second-middle">
+                    <div class="footer__email">
+                        <div class="footer__placeholder footer__placeholder_email">Напишите нам</div>
+                        <a class="footer__link-mail link link_primary" href="mailto:info@geojetexploration.com">info@geojet<wbr/>exploration.com</a>
+                    </div>
+                    <div class="footer__inn">
+                        <div class="footer__inn-list">
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/russian_flag.svg" alt="">
+                                1137746288778 (ОГРН)
+                            </div>
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/kazah_flag.svg" alt="">
+                                220540033792 (БИН)
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__link-privacy link">Политика конфиденциальности.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__wrapper-bottom">
+                    <div class="footer__copyright">
+                        <div>© 2014-2024 ГЕОДЖЕТ-ГРУПП</div>
+                    </div>
+                    <div class="footer__social-links">
+                        <a class="link link_icon" href="#">
+                            <img src="./img/whatsapp_color.svg" alt="">
+                        </a>
+                        <a class="link link_icon" href="#">
+                            <img src="./img/telegram_color.svg" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="footer__link-privacy link">Политика конфиденциальности.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="submitApp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button class="modal-close-btn" data-bs-dismiss="modal">
+            <img class="modal-close-btn__icon" src="./img/close-icon.svg" alt="">
+        </button>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-window modal-content">
+                <div class="modal-window__content modal-body">
+                    <form class="form">
+                        <div class="form__title text-center">
+                            Заполните форму, чтобы получить <span class="text-orange">бесплантую консультацию</span>
+                        </div>
+                        <div class="form__fields-group">
+                            <div class="form__field form__field_icon form__field_name">
+                                <input class="form__input form__input_full-width" type="text" placeholder="Ваше имя*">
+                            </div>
+                            <div class="form__field form__field_icon form__field_phone">
+                                <input class="form__input form__input_full-width" type="text" placeholder="Ваш телефон*">
+                            </div>
+                            <div class="form__field form__field_icon form__field_email">
+                                <input class="form__input form__input_full-width" type="text" placeholder="Ваш email*">
+                            </div>
+                        </div>
+                        <button class="button button_primary button_full-width button_big form__submit">
+                            Получить консультацию
+                        </button>
+                        <div class="form__subtext text-center">
+                            Заполняя данную форму вы соглашаетесь на обработку персональных данных «ГЕОДЖЕТ-ГРУПП» 
+                            в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAboutProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button class="modal-close-btn" data-bs-dismiss="modal">
+            <img class="modal-close-btn__icon" src="./img/close-icon.svg" alt="">
+        </button>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-window modal-window_default modal-content">
+                <div class="modal-window__content modal-body">
+                    <div class="reviewAboutProject">
+                        <div class="reviewAboutProject__title" data-project-info-item="title"></div>
+                        <div class="reviewAboutProject__info">
+                            <div class="reviewAboutProject__label">Задача:</div>
+                            <div class="reviewAboutProject__content" data-project-info-item="task"></div>
+                        </div>
+                        <div class="reviewAboutProject__info">
+                            <div class="reviewAboutProject__label">Локация:</div>
+                            <div class="reviewAboutProject__content" data-project-info-item="location"></div>
+                        </div>
+                        <div class="reviewAboutProject__info">
+                            <div class="reviewAboutProject__label">Срок:</div>
+                            <div class="reviewAboutProject__content" data-project-info-item="term"></div>
+                        </div>
+                        <div class="reviewAboutProject__info">
+                            <div class="reviewAboutProject__label">Результат:</div>
+                            <div class="reviewAboutProject__content" data-project-info-item="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFullReviewImage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button class="modal-close-btn" data-bs-dismiss="modal">
+            <img class="modal-close-btn__icon" src="./img/close-icon.svg" alt="">
+        </button>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-window modal-window_default modal-content">
+                <div class="modal-window__content modal-body">
+                    <img class="fullReviewImage" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

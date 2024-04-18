@@ -1,0 +1,63 @@
+.articleItem {
+    display: grid;
+    grid-template-columns: 245px 1fr;
+    grid-template-rows: 1fr;
+    border: var(--orange-border);
+    border-radius: var(--base-radius);
+    overflow: hidden;
+}
+.articleItem:last-child {
+    margin-bottom: 0;
+}
+
+.articleItem__picture-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.articleItem__image {
+    height: 100%;
+}
+
+.articleItem__content {
+    padding: 30px;
+}
+
+.articleItem__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.articleItem__desc {
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.articleItem__footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.articleItem__link {
+
+}
+
+.articleItem__date {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgba(44, 44, 44, 0.5);
+}
+.articleItem__date::before {
+    content: url('../img/calendarIcon.svg');
+    line-height: 1;
+    margin-right: 10px;
+}

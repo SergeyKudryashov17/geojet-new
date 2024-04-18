@@ -21,6 +21,11 @@
     font-size: 25px;
 }
 
+.headline_simple {
+    font-size: var(--base-fs);
+    margin-bottom: 20px;
+}
+
 .headline_page {
     text-transform: uppercase;
     font-size: 60px;

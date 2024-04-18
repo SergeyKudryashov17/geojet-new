@@ -29,13 +29,27 @@
     padding: 15px 25px;
     border-radius: 50px;
 }
+.link_btn-simple {
+    padding: 10px 20px;
+}
 
 .link_light-orange {
     color: var(--orange-color);
     background: var(--light-orange-color);
+    border: 1px solid var(--light-orange-color);
+    transition: background .3s, border .3s;
+}
+.link_light-orange:hover {
+    background: var(--white-color);
+    border: 1px solid var(--orange-color);
 }
 
 .link_white {
     color: var(--orange-color);
     background: var(--white-color);
+    border: 1px solid var(--white-color);
+    transition: border .3s;
+}
+.link_white:hover {
+    border: 1px solid var(--orange-color);
 }

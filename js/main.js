@@ -20,10 +20,18 @@ window.addEventListener('scroll', () => {
 
 
 const mobileMenuLabels = document.querySelectorAll('.mobile-menu__label');
+const mobileItemActiveClass = 'mobile-menu__sublist_show';
 mobileMenuLabels.forEach(menuLabel => {
     menuLabel.addEventListener('click', () => {
         const menuSubList = menuLabel.nextElementSibling;
-        menuSubList.classList.toggle('mobile-menu__sublist_show');
+
+        if (menuSubList.matches(`.${mobileItemActiveClass}`)) {
+            menuSubList.classList.remove(mobileItemActiveClass);
+            return;
+        }
+
+        menuLabel.closest('.mobile-menu__list').querySelector(`.${mobileItemActiveClass}`)?.classList.remove(mobileItemActiveClass);
+        menuSubList.classList.add(mobileItemActiveClass);
     });
 });
 
@@ -156,16 +164,24 @@ function changeClassCellService() {
     const cellsService = document.querySelectorAll('.cell-service.simple-block');
     if (document.documentElement.clientWidth < 768) {
         cellsService.forEach((element, index) => {
-            index % 2 === 0 
-                ? element.classList.add('simple-block_inverse')
-                : element.classList.remove('simple-block_inverse');
+            if (index % 2 === 0) {
+                element.classList.add('simple-block_orange');
+                element.classList.remove('simple-block_gray');
+            } else {
+                element.classList.remove('simple-block_orange');
+                element.classList.add('simple-block_gray');
+            }
         });
     } else {
         const searchIndexes = Array.from(cellsService).map((el, index) => 1 + 3 * ((index + 1) - 1));
         cellsService.forEach((element, index) => {
-            searchIndexes.includes(index + 1)
-                ? element.classList.add('simple-block_inverse')
-                : element.classList.remove('simple-block_inverse');
+            if (searchIndexes.includes(index + 1)) {
+                element.classList.add('simple-block_orange');
+                element.classList.remove('simple-block_gray');
+            } else {
+                element.classList.remove('simple-block_orange');
+                element.classList.add('simple-block_gray');
+            }
         });
     }
 }

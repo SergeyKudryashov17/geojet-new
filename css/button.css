@@ -5,6 +5,7 @@
     outline: none;
     border-radius: 10px;
     text-decoration: none;
+    transition: all .3s;
 }
 
 .button_rounded {
@@ -33,6 +34,14 @@
 .button_dark:hover {
     background: var(--white-color);
     color: var(--dark-gray-color);
+}
+
+.button_gray {
+    background: var(--light-gray-color);
+    border: var(--base-border);
+}
+.button_gray:hover {
+    background: var(--white-color);
 }
 
 .button_primary-light {

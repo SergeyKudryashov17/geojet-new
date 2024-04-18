@@ -46,10 +46,15 @@
     background: var(--3, linear-gradient(180deg, #F9FAFB 0%, #EEF2F6 100%));
 }
 
-.rounded {
-    border-radius: 20px;
+.rounded-block {
+    border-radius: var(--base-radius);
 }
 
 .mb-50 {
     margin-bottom: 50px;
+}
+
+.light-gray-block {
+    padding: 30px;
+    background: var(--light-gray-color);
 }
