@@ -1,5 +1,6 @@
 .attention-block {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 40%;
     justify-content: space-between;
     background: #37211c;
     border-radius: var(--base-radius);
@@ -8,7 +9,10 @@
 }
 
 .attention-block__content {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
     padding: 30px;
     padding-right: 15px;
 }
@@ -22,11 +26,11 @@
 
 .attetion-block__text {
     line-height: 1.3;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .attention-block__image {
-    width: 40%;
+    min-width: 40%;
     height: 100%;
 }
 
@@ -52,12 +56,18 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .attention-block {
+        grid-template-columns: 1fr;
+    }
     .attetion-block__title {
         font-size: 19px;
     }
 }
 
 @media (max-width: 575px) {
+    .attention-block {
+        grid-template-columns: 1fr;
+    }
     .attetion-block__title {
         font-size: 16px;
     }
