@@ -1146,6 +1146,10 @@ main {
     cursor: pointer;
     margin: 0 10px;
     color: var(--dark-gray-color);
+    transition: all .3s;
+}
+.articles-block__pagination-item:hover {
+    color: var(--orange-color);
 }
 .articles-block__pagination-item_active {
     display: flex;
