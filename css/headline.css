@@ -42,6 +42,9 @@
     .headline_page {
         font-size: 48px;
     }
+    .headline_simple {
+        font-size: var(--base-fs);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -50,6 +53,9 @@
     }
     .headline_page {
         font-size: 36px;
+    }
+    .headline_simple {
+        font-size: var(--base-fs);
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -69,6 +75,9 @@
     .headline_desktop {
         display: none;
     }
+    .headline_simple {
+        font-size: var(--base-fs);
+    }
 }
 @media (max-width: 575px) {
     .headline {
@@ -86,5 +95,8 @@
     }
     .headline_page {
         font-size: 30px;
+    }
+    .headline_simple {
+        font-size: var(--base-fs);
     }
 }

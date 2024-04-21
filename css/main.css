@@ -124,6 +124,7 @@ main {
 .phone-block__number {
     font-weight: 600;
     text-decoration: none;
+    text-align: right;
 }
 .phone-block__city {
     position: relative;

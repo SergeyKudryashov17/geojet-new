@@ -8,6 +8,7 @@
 }
 
 .attention-block__content {
+    width: 60%;
     padding: 30px;
     padding-right: 15px;
 }
@@ -25,5 +26,39 @@
 }
 
 .attention-block__image {
+    width: 40%;
     height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .attention-block__content {
+        padding: 20px;
+    }
+
+    .attetion-block__title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .attention-block__content {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .attention-block__image {
+        display: none;
+    } 
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .attetion-block__title {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 575px) {
+    .attetion-block__title {
+        font-size: 16px;
+    }
 }

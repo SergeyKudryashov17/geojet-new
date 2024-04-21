@@ -34,7 +34,7 @@
     }
 
     .simple-block{
-        padding: 28px;
+        padding: 25px;
     }
     .simple-block__title {
         font-size: 23px;
@@ -125,6 +125,10 @@
         left: 15px;
         bottom: 12px;
         font-size: 22px;
+    }
+
+    .grid-company-service_default {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -393,6 +397,10 @@
         bottom: -55px;
         right: initial;
         font-size: 220px;
+    }
+
+    .grid-company-service_default {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1551,6 +1559,10 @@
         font-size: 200px;
         height: 100%;
         line-height: 1;
+    }
+
+    articles-block__pagination-item {
+        
     }
 }
 
