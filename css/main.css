@@ -26,6 +26,7 @@
 @import url('./row-data.css');
 @import url('./articleItem.css');
 @import url('./attention-block.css');
+@import url('./articles-block.css');
 
 /* Page parts */
 @import url('./footer.css');
@@ -1124,51 +1125,3 @@ main {
 .interesting-block {
 }
 
-.articles-block__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    margin-bottom: 40px;
-}
-.articles-block__controls {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.articles-block__pagination {
-    display: flex;
-    align-items: center;
-}
-.articles-block__pagination-item {
-    font-weight: 500;
-    font-size: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 0 10px;
-    color: var(--dark-gray-color);
-    transition: all .3s;
-}
-.articles-block__pagination-item:hover {
-    color: var(--orange-color);
-}
-.articles-block__pagination-item_active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    background: var(--orange-color);
-    color: var(--white-color);
-    border-radius: 50%;
-}
-.articles-block__prev, 
-.articles-block__next {
-    display: inline-flex;
-    align-items: center;
-}
-.articles-block__prev img {
-    margin-right: 10px;
-} 
-.articles-block__next img {
-    margin-left: 10px;
-}

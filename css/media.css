@@ -1560,19 +1560,6 @@
         height: 100%;
         line-height: 1;
     }
-
-    .articles-block__pagination-item {
-        font-size: 15px;
-        margin: 0 7px;
-    }
-    .articles-block__pagination-item_active {
-        width: 28px;
-        height: 28px;
-    }
-    .articles-block__prev, .articles-block__next {
-        padding: 10px 8px;
-        font-size: 12px;
-    }
 }
 
 @media (max-width: 460px) {
