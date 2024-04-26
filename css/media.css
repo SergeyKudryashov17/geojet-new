@@ -1399,6 +1399,7 @@
     }
     .row-data__image {
         height: auto;
+        width: 100%;
     }
     .row-data__tags {
         padding-right: 0;
