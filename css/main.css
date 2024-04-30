@@ -9,27 +9,29 @@
 @import url('../fonts/OpenSans/stylesheet.css');
 
 /* Components */
-@import url('./nav-menu.css');
-@import url('./custom-list.css');
-@import url('./button.css');
-@import url('./link.css');
-@import url('./headline.css');
-@import url('./form.css');
-@import url('./alert-block.css');
-@import url('./mobile-menu.css');
-@import url('./slick-slider.css');
-@import url('./card.css');
-@import url('./modal-window.css');
-@import url('./simple-block.css');
-@import url('./pictureItem.css');
-@import url('./numberedItem.css');
-@import url('./row-data.css');
-@import url('./articleItem.css');
-@import url('./attention-block.css');
-@import url('./articles-block.css');
+@import url('./components/nav-menu.css');
+@import url('./components/custom-list.css');
+@import url('./components/button.css');
+@import url('./components/link.css');
+@import url('./components/headline.css');
+@import url('./components/form.css');
+@import url('./components/alert-block.css');
+@import url('./components/mobile-menu.css');
+@import url('./components/slick-slider.css');
+@import url('./components/card.css');
+@import url('./components/modal-window.css');
+@import url('./components/simple-block.css');
+@import url('./components/pictureItem.css');
+@import url('./components/numberedItem.css');
+@import url('./components/row-data.css');
+@import url('./components/articleItem.css');
+@import url('./components/attention-block.css');
+@import url('./components/articles-block.css');
+@import url('./components/page-section.css');
 
 /* Page parts */
-@import url('./footer.css');
+@import url('./page-parts/header.css');
+@import url('./page-parts/footer.css');
 
 
 body {
@@ -45,47 +47,6 @@ main {
     padding-top: 150px;
 }
 
-.header {
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    z-index: 3;
-    background: var(--white-color);
-    box-shadow: 0 4px 15px 0 rgba(44, 44, 44, .1);
-}
-
-.header__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 17px 0;
-    transition: padding .4s;
-}
-.header__top {
-    border-bottom: var(--simple-border);
-}
-.header__top_slim {
-    padding: 10px 0;
-}
-.header__link-mail {
-    font-weight: 500;
-    line-height: 1.6;
-    text-decoration: none;
-}
-.header__link-mail {
-    display: inline-flex;
-    align-items: center;
-}
-.header__link-mail::before {
-    content: url('./../img/email.svg');
-    line-height: 1;
-    margin-right: 5px;
-}
-.header__action-btn {
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 10px 30px;
-}
 
 .mobile-menu-btn {
     display: none;
@@ -149,36 +110,6 @@ main {
 .logo {
     width: 100%;
     max-width: 219px;
-}
-
-
-.page-section {
-    overflow: hidden;
-    padding-top: 100px;
-}
-.page-section_pb {
-    padding-bottom: 100px;
-}
-.page-section_reviews {
-    padding-bottom: 40px;
-}
-.page-section_gray-bg {
-    background: var(--light-gray-color);
-}
-.page-section_first {
-    padding-top: 40px;
-}
-.page-section_bordered {
-    border-radius: 50px;
-}
-.page-section_gray {
-    background: var(--light-gray-color);
-}
-.page-section_only-mobile {
-    display: none;
-}
-.page-section_articles-page {
-    padding: 0;
 }
 
 
@@ -409,9 +340,6 @@ main {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 300px);
     grid-column-gap: 30px;
-    /* position: relative;
-    overflow: hidden;
-    margin-top: 50px; */
 }
 .list-categories-methods-bg {
     position: relative;
@@ -678,6 +606,7 @@ main {
 #modalAboutProject .modal-window {
     max-width: 400px;
 }
+
 .reviewAboutProject {
 
 }
@@ -1121,7 +1050,3 @@ main {
 .geophisics-form_mobile {
     display: none;
 }
-
-.interesting-block {
-}
-

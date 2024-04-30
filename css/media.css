@@ -19,10 +19,6 @@
         max-width: 200px;
     }
 
-    .header__action-btn {
-        font-size: 12px;
-    }
-
     .achievements-block {
         height: 260px;
     }
@@ -149,20 +145,10 @@
         margin-right: 15px;
     }
 
-    .header__link-mail {
-        line-height: 18px;
-        font-size: 14px;
-    }
-
     .phone-block {
         flex-grow: 1;
         flex-shrink: 0;
         margin-right: 10px;
-    }
-    .header__action-btn {
-        font-size: 12px;
-        padding: 7px 7px;
-        white-space: nowrap;
     }
 
     .main-section__desc {
@@ -425,41 +411,17 @@
         padding-top: 77px;
     }
 
-    .header__top {
-        padding: 10px 0;
-    }
-    .header__top {
-        border-bottom: none;
-    }
-    .header__bottom {
-        display: none;
-    }
-
     .logo {
         max-width: 213px;
-    }
-
-    .header__link-mail {
-        display: none;
     }
 
     .phone-block {
         font-size: 14px;
         flex-shrink: 0;
     }
-    .header__action-btn {
-        display: none;
-    }
 
     .mobile-menu-btn {
         display: inline-block;
-    }
-
-    .page-section {
-        padding: 50px 0 0;
-    }
-    .page-section_pb {
-        padding-bottom: 50px;
     }
 
     .main-section {
@@ -909,43 +871,12 @@
         padding-top: 60px;
     }
 
-    .header__top {
-        border-bottom: none;
-        padding: 10px 0;
-    }
-    .header__bottom {
-        display: none;
-    }
-
     .logo {
         max-width: 150px;
     }
 
-    .header__link-mail {
-        display: none;
-    }
-
-    .header .phone-block {
-        font-size: 10px;
-        flex-shrink: 0;
-        margin-right: 0;
-    }
-    .header__action-btn {
-        display: none;
-    }
-
     .mobile-menu-btn {
         display: inline-block;
-    }
-
-    .page-section {
-        padding-top: 60px;
-    }
-    .page-section_pb {
-        padding-bottom: 60px;
-    }
-    .page-section_bordered {
-        border-radius: 20px;
     }
 
     .main-section {
@@ -1401,7 +1332,8 @@
         height: auto;
         width: 100%;
     }
-    .row-data__tags {
+    .row-data__tags 
+    {
         padding-right: 0;
     }
     
@@ -1506,10 +1438,6 @@
         display: none;
     }
 
-    .page-section_only-mobile {
-        display: block;
-    }
-
     .section-other-methods {
         padding-bottom: 50px;
     }
@@ -1574,5 +1502,4 @@
     .telegram-chat-link__desc {
         display: none;
     }
-
 }
