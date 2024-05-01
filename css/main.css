@@ -46,6 +46,11 @@ a {
 main {
     padding-top: 150px;
 }
+hr {
+    margin: 0;
+    height: 1px;
+    background: var(--border-color);
+}
 
 
 .mobile-menu-btn {
@@ -286,6 +291,12 @@ main {
     box-shadow: 0px 10px 20px 0px rgba(44, 44, 44, 0.10);
     border-radius: 20px;
     background: var(--white-color);
+}
+
+.feedback-block {
+    padding: 30px 30px 35px;
+    box-shadow: 0 10px 20px 0 rgba(44, 44, 44, .1);
+    border-radius: 10px;
 }
 
 
@@ -1049,4 +1060,207 @@ main {
 
 .geophisics-form_mobile {
     display: none;
+}
+
+/* company-mission-block */
+.company-mission-block {
+    display: flex;
+    height: 500px;
+}
+.company-mission-block__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex-grow: 1;
+    margin-right: 30px;
+    background: var(--brown-color);
+    color: var(--white-color);
+    border-radius: var(--base-radius);
+    padding: 50px;
+}
+.company-mission-block__image-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 366px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: var(--base-radius);
+    height: 100%;
+}
+.company-mission-block__label {
+    color: var(--orange-color);
+    font-style: italic;
+    font-weight: 500;
+}
+.company-mission-block__label::before {
+    content: '\2014';
+    margin-right: 4px;
+}
+.company-mission-block__title {
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+.company-mission-block__text {
+    font-weight: 500;
+    line-height: 1.3;
+}
+.company-mission-block__image {
+    height: 100%;
+}
+
+/* grid-experience */
+.grid-experience {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 105px;
+}
+
+/* experienceItem */
+.experienceItem__title {
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--orange-color);
+    margin-bottom: 10px;
+}
+.experienceItem__desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--white-color);
+}
+
+.employees-list {
+
+}
+
+/* employeeItem */
+.employeeItem {
+    display: flex;
+    border: var(--base-border);
+    border-radius: var(--base-radius);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.employeeItem:last-child {
+    margin-bottom: 0;
+}
+.employeeItem__avatar-wrp {
+    display: flex;
+    align-items: center;
+    width: 262px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.employeeItem__avatar {
+    width: 100%;
+}
+.employeeItem__info {
+    padding: 43px 30px;
+}
+.employeeItem__name {
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.employeeItem__position {
+    font-weight: 500;
+    line-height: 1.3;
+    color: rgba(var(--black-color-rgb), .5);
+    margin-bottom: 30px;
+}
+.employeeItem__desc {
+    line-height: 1.3;
+}
+
+/* contacts-block */
+.contacts-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 40px;
+}
+.contacts-block__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* contact-item */
+.contact-item {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+.contact-item__country {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.contact-item__data {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-item__data:last-child {
+    margin-bottom: 0;
+}
+.contact-item__icon {
+    margin-right: 10px;
+}
+.contact-item__value {
+    font-size: 20px;
+    line-height: 130%;
+}
+
+/* address-block */
+.address-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding-top: 40px;
+}
+.address-block__info {
+    padding: 40px 5px 40px 20px;
+}
+.address-block__section {
+    margin-bottom: 50px;
+}
+.address-block__section:last-child {
+    margin-bottom: 0;
+}
+.address-block__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--orange-color);
+    margin-bottom: 20px;
+}
+.address-block__data-item {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.address-block__data-label {
+    font-weight: 700;
+}
+.address-block__text {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.address-block__contacts {
+    margin-left: 0;
+}
+.address-block__map iframe {
+    border-radius: var(--base-radius);
+    overflow: hidden;
 }

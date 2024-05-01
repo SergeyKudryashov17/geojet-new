@@ -162,6 +162,8 @@ window.addEventListener('resize', () => changeClassCellService());
 
 function changeClassCellService() {
     const cellsService = document.querySelectorAll('.cell-service.simple-block');
+    if (cellsService[0].closest('.not-change-classes')) return;
+
     if (document.documentElement.clientWidth < 768) {
         cellsService.forEach((element, index) => {
             if (index % 2 === 0) {

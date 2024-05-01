@@ -52,15 +52,15 @@
     height: 30px;
 }
 .form__field_name::before {
-    background: url('../img/logo/user.svg');
+    background: url('../../img/logo/user.svg');
     background-size: cover;
 }
 .form__field_phone::before {
-    background: url('../img/logo/phone.svg');
+    background: url('../../img/logo/phone.svg');
     background-size: cover;
 }
 .form__field_email::before {
-    background: url('../img/logo/mail.svg');
+    background: url('../../img/logo/mail.svg');
     background-size: cover;
 }
 .form__field_inline {

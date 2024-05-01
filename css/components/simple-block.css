@@ -11,6 +11,10 @@
     border: 1px solid var(--orange-color);
 }
 
+.simple-block_white {
+    background: var(--white-color);
+}
+
 .simple-block_default {
     background: var(--white-color);
     padding: 20px;

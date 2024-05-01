@@ -8,17 +8,22 @@
 .page-section_reviews {
     padding-bottom: 40px;
 }
-.page-section_gray-bg {
+.page-section_gray-bg,
+.page-section_gray {
     background: var(--light-gray-color);
+}
+.page-section_dark-gray-bg {
+    background-color: var(--dark-gray-color);
+}
+.page-section_brown-bg {
+    background: var(--brown-color);
 }
 .page-section_first {
     padding-top: 40px;
 }
-.page-section_bordered {
+.page-section_bordered,
+.page-section_rounded {
     border-radius: 50px;
-}
-.page-section_gray {
-    background: var(--light-gray-color);
 }
 .page-section_only-mobile {
     display: none;

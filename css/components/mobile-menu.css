@@ -52,11 +52,11 @@
     margin-bottom: 15px;
 }
 .mobile-menu__item_with-sub .mobile-menu__label::after {
-    content: url('../img/logo/chevron.svg');
+    content: url('../../img/logo/chevron.svg');
     margin-left: 10px;
 }
 .mobile-menu__item_with-sub .mobile-menu__label:hover::after {
-    content: url('../img/logo/chevron_active.svg');
+    content: url('../../img/logo/chevron_active.svg');
 }
 
 .mobile-menu__label {

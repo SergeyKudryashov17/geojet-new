@@ -33,14 +33,14 @@
     position: absolute;
     top: 5px;
     right: 0;
-    content: url('../img/logo/chevron.svg');
+    content: url('../../img/logo/chevron.svg');
     transition: content .2s;
 }
 .nav-menu__item_group:hover .nav-menu__submenu {
     display: block;
 }
 .nav-menu__item_group:hover .nav-menu__label::after {
-    content: url('../img/logo/chevron_active.svg');
+    content: url('../../img/logo/chevron_active.svg');
 }
 
 .nav-menu__label {

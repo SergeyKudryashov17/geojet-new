@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="./assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <title>О компании</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="/">
+                    <img src="./img/logo/logo.svg" class="logo" alt="">
+                </a>
+                <a class="header__link-mail link link_primary" href="mailto:info@geojetexploration.com">info@geojet<wbr/>exploration.com</a>
+                <div class="phone-block">
+                    <a class="phone-block__number link link_primary" href="tel:+74954774332">+7 (495) 477-43-32</a>
+                    <span class="phone-block__city">Москва</span>
+                    <a class="phone-block__number link link_primary" href="tel:+77057770139">+7 (705) 777-01-39</a>
+                    <span class="phone-block__city">Алматы</span>
+                </div>
+                <button class="button button_primary button_rounded header__action-btn" data-bs-toggle="modal" data-bs-target="#submitApp">
+                    Оставить заявку
+                </button>
+                <button class="button button_icon mobile-menu-btn">
+                    <img class="mobile-menu-btn__icon" src="./img/logo/menu-icon.svg">
+                    <span class="mobile-menu-btn__label">Меню</span>
+                </button>
+            </div>
+            <div class="header__bottom">
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__label" href="./index.html">Главная</a>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Виды работ</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="./predictive-modeling.html" class="nav-menu__sublabel">Прогнозное моделирование</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Анализ данных ДЗЗ</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="./geophysics.html" class="nav-menu__sublabel">Геофизические работы</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Гидрогеология</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Для кого</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Недропользователей</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Инвесторов</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Методы</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Электроразведка</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">ВИЭР</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Электротомография</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">ВП, ВП-СГ, ВП-ВЭЗ</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">ЗСБ</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Магниторазведка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Проекты</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Рудные месторождения</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Россыпные месторождения</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Нерудные месторождения</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Гидрогеологические</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">О компании</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">О нас</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="./blog.html" class="nav-menu__sublabel">Блог</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Полезное</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="progress-bar"></div>
+    </header>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu__wrp">
+            <button class="mobile-menu__close-btn">
+                <img src="./img/logo/close-icon.svg" alt="">
+            </button>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="./index.html" class="mobile-menu__label">Главная</a>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <div class="mobile-menu__label">Виды работ</div>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="./predictive-modeling.html" class="mobile-menu__sublabel">Прогнозное моделирование</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Анализ данных ДЗЗ</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="./geophysics.html" class="mobile-menu__sublabel">Геофизические работы</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Гидрогеология</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">Для кого</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Недропользователей</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Инвесторов</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">Методы</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Электроразведка</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">ВИЭР</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Электротомография</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">ВП, ВП-СГ, ВП-ВЭЗ</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">ЗСБ</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Магниторазведка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">Проекты</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Рудные месторождения</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Россыпные месторождения</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Нерудные месторождения</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Гидрогеологические</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">О компании</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">О нас</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="./blog.html" class="mobile-menu__sublabel">Блог</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Полезное</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__footer">
+                <div class="mobile-menu__placeholder">Напишите нам:</div>
+                <a class="mobile-menu__email-link" href="mailto:info@geojetexploration.com">
+                    info@geojetexploration.com
+                </a>
+                <div class="mobile-menu__phone-block phone-block">
+                    <a class="phone-block__number link link_primary" href="tel:+74954776332">+ 7 (495) 477-63-32</a>
+                    <span class="phone-block__city">Москва</span>
+                    <a class="phone-block__number link link_primary" href="tel:+77273304832">+ 7 (727) 330-48-32</a>
+                    <span class="phone-block__city">Алматы</span>
+                </div>
+                <div class="mobile-menu__social-links">
+                    <a href="" target="_blank">
+                        <img src="./img/whatsapp_color.svg" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./img/telegram_color.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Миссия компании -->
+        <section class="page-section">
+            <div class="container">
+                <div class="company-mission-block">
+                    <div class="company-mission-block__desc">
+                        <div class="company-mission-block__label">Миссия компании</div>
+                        <div class="company-mission-block__title">Внедрение эффективных методов ГРР под требования горнодобывающей отрасли</div>
+                        <div class="company-mission-block__text">Внедрение эффективных методов ГРР под <br>требования горнодобывающей отрасли</div>
+                    </div>
+                    <div class="company-mission-block__image-wrp">
+                        <img class="company-mission-block__image" src="./img/about-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Компании партнеры -->
+        <section class="page-section page-section_pb">
+            <div class="container">
+                <h2 class="headline headline_section">
+                    Недропользователи, которые нам доверяют решение своих геологоразведочных задач:
+                </h2>
+                <div class="grid-partners">
+                    <img class="grid-partners__logo" src="./img/partners/nornickel.png" alt="">
+                    <img class="grid-partners__logo" src="./img/partners/polymetal.png" alt="">
+                    <img class="grid-partners__logo" src="./img/partners/seligdar.png" alt="">
+                    <img class="grid-partners__logo" src="./img/partners/gv-gold.png" alt="">
+                    <img class="grid-partners__logo" src="./img/partners/nordgold.png" alt="">
+                    <img class="grid-partners__logo" src="./img/partners/yer-tai.png" alt="">
+                    <img class="grid-partners__logo" src="./img/partners/auriant.png" alt="">
+                    <img class="grid-partners__logo" src="./img/partners/samruk.png" alt="">
+                    <img class="grid-partners__logo" src="./img/partners/oyna.png" alt="">
+                    <img class="grid-partners__logo" src="./img/partners/kazzinc.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Опыт -->
+        <section class="page-section page-section_pb page-section_brown-bg page-section_rounded">
+            <div class="container">
+                <h2 class="headline headline_section headline_white">
+                    Опыт компании Геоджет-Групп поможет <br>вам открыть новые перспективы
+                </h2>
+                <div class="grid-experience">
+                    <div class="experienceItem">
+                        <div class="experienceItem__title">100+</div>
+                        <div class="experienceItem__desc">Проектов выполнили на разных типах месторождений</div>
+                    </div>
+                    <div class="experienceItem">
+                        <div class="experienceItem__title">5</div>
+                        <div class="experienceItem__desc">Континентов, где мы выполняли работы</div>
+                    </div>
+                    <div class="experienceItem">
+                        <div class="experienceItem__title">3000+</div>
+                        <div class="experienceItem__desc">Квадратных километров обследовано в 2023 году</div>
+                    </div>
+                    <div class="experienceItem">
+                        <div class="experienceItem__title">120</div>
+                        <div class="experienceItem__desc">Научных работ написаны нашими сотрудниками</div>
+                    </div>
+                    <div class="experienceItem">
+                        <div class="experienceItem__title">10+</div>
+                        <div class="experienceItem__desc">Лет безупречной репутации на рынке</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="page-section">
+            <div class="container">
+                <h2 class="headline headline_section">Преимущества наших клиентов</h2>
+            </div>
+        </section>
+
+        <!-- Почему так? -->
+        <section class="page-section">
+            <div class="container">
+                <h2 class="headline headline_section">Почему это будет так?</h2>
+            </div>
+        </section>
+
+        <!-- Ключевые лица компании -->
+        <section class="page-section">
+            <div class="container">
+                <h2 class="headline headline_section">Ключевые лица компании</h2>
+                <div class="employees-list">
+                    <div class="employeeItem">
+                        <div class="employeeItem__avatar-wrp">
+                            <img class="employeeItem__avatar" src="./img/employee1.png" alt="">
+                        </div>
+                        <div class="employeeItem__info">
+                            <div class="employeeItem__name">Антоний Томашевский</div>
+                            <div class="employeeItem__position">Генеральный директор</div>
+                            <div class="employeeItem__desc">
+                                Отвечает в компании за операционную деятельность и стратегическое развитие, 
+                                является участником и спикером международных профильных горнопромышленных форумов 
+                                и конференций таких как Mining Tech (Чили), Mining Investment (Аргентина), MINEX 
+                                Central Asia (Казахстан) и другие.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employeeItem">
+                        <div class="employeeItem__avatar-wrp">
+                            <img class="employeeItem__avatar" src="./img/employee2.png" alt="">
+                        </div>
+                        <div class="employeeItem__info">
+                            <div class="employeeItem__name">ВЛАДИМИР КАДУРИН</div>
+                            <div class="employeeItem__position">Советник генерального директора по геологоразведке</div>
+                            <div class="employeeItem__desc">
+                                Отвечает в компании за операционную деятельность и стратегическое развитие, 
+                                является участником и спикером международных профильных горнопромышленных форумов 
+                                и конференций таких как Mining Tech (Чили), Mining Investment (Аргентина), MINEX 
+                                Central Asia (Казахстан) и другие.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employeeItem">
+                        <div class="employeeItem__avatar-wrp">
+                            <img class="employeeItem__avatar" src="./img/employee3.png" alt="">
+                        </div>
+                        <div class="employeeItem__info">
+                            <div class="employeeItem__name">СЕРГЕЙ ШАТАЛИН</div>
+                            <div class="employeeItem__position">Руководитель отдела прогнозного моделирования</div>
+                            <div class="employeeItem__desc">
+                                Отвечает в компании за операционную деятельность и стратегическое развитие, 
+                                является участником и спикером международных профильных горнопромышленных форумов 
+                                и конференций таких как Mining Tech (Чили), Mining Investment (Аргентина), MINEX 
+                                Central Asia (Казахстан) и другие.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employeeItem">
+                        <div class="employeeItem__avatar-wrp">
+                            <img class="employeeItem__avatar" src="./img/employee4.png" alt="">
+                        </div>
+                        <div class="employeeItem__info">
+                            <div class="employeeItem__name">ПЕТР МАНУКОВ</div>
+                            <div class="employeeItem__position">Руководитель проектов</div>
+                            <div class="employeeItem__desc">
+                                Отвечает в компании за операционную деятельность и стратегическое развитие, 
+                                является участником и спикером международных профильных горнопромышленных форумов 
+                                и конференций таких как Mining Tech (Чили), Mining Investment (Аргентина), MINEX 
+                                Central Asia (Казахстан) и другие.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Внутренние и внешние процессы -->
+        <section class="page-section page-section_pb">
+            <div class="container">
+                <h2 class="headline headline_section">Внутренние и внешние процессы работы</h2>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="page-section page-section_pb page-section_dark-gray-bg page-section_rounded">
+            <div class="container">
+                <h2 class="headline headline_section headline_white">
+                    Геоджет-Групп оказывает наиболее эффективные для отрасли услуги по геологоразведке
+                </h2>
+                <div class="grid-company-service not-change-classes">
+                    <div class="cell-service simple-block simple-block_white">
+                        <div class="simple-block__top">
+                            <img class="simple-block__logo" src="./img/logo/planet.svg" alt="">
+                            <div class="simple-block__title">Анализ данных дистанционного зондирования (ДЗЗ)</div>
+                        </div>
+                        <div class="simple-block__bottom cell-service__content">
+                            <div class="cell-service__desc">
+                                Дешифрирование, обработка и интерпретация данных космических и аэроснимков Земли
+                            </div>
+                            <a href="#" class="link link_semibold link_light-orange link_btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="cell-service simple-block simple-block_gray">
+                        <div class="simple-block__top">
+                            <img class="simple-block__logo" src="./img/logo/geolocation.svg" alt="">
+                            <div class="simple-block__title">Прогнозное <br>моделирование</div>
+                        </div>
+                        <div class="simple-block__bottom cell-service__content">
+                            <div class="cell-service__desc">
+                                Прогнозная карта с выделенными перспективными участками на рудные и россыпные месторождения
+                            </div>
+                            <a href="./predictive-modeling.html" class="link link_semibold link_btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="cell-service simple-block simple-block_gray">
+                        <div class="simple-block__top">
+                            <img class="simple-block__logo" src="./img/logo/impuls.svg" alt="">
+                            <div class="simple-block__title">Геофизические <br>исследования</div>
+                        </div>
+                        <div class="simple-block__bottom cell-service__content">
+                            <div class="cell-service__desc">
+                                Применение всех классических, а также бесконтактных полевых геофизических методов высокого разрешения
+                            </div>
+                            <a href="./geophysics.html" class="link link_semibold link_btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="cell-service simple-block simple-block_white">
+                        <div class="simple-block__top">
+                            <img class="simple-block__logo" src="./img/logo/drop.svg" alt="">
+                            <div class="simple-block__title">Гидрогеологические <br>работы</div>
+                        </div>
+                        <div class="simple-block__bottom cell-service__content">
+                            <div class="cell-service__desc">
+                                Поиск водоносных горизонтов и изучение гидрогеологических условий
+                            </div>
+                            <a href="#" class="link link_semibold link_light-orange link_btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="page-section page-section_pb">
+            <div class="container">
+                <div class="contacts-block">
+                    <div class="contacts-block__info">
+                        <h2 class="headline headline_section">Свяжитесь с нами</h2>
+                        <div class="contact-item">
+                            <div class="contact-item__country">Казахстан</div>
+                            <div class="contact-item__data">
+                                <img class="contact-item__icon" src="./img/logo/phone-orange.svg" alt="">
+                                <div class="contact-item__value">+7 (705) 777-01-39</div>
+                            </div>
+                            <div class="contact-item__data">
+                                <img class="contact-item__icon" src="./img/logo/mail-orage.svg" alt="">
+                                <div class="contact-item__value">info@geojetexploration.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item__country">Россия</div>
+                            <div class="contact-item__data">
+                                <img class="contact-item__icon" src="./img/logo/phone-orange.svg" alt="">
+                                <div class="contact-item__value">+7 (495) 477-43-32</div>
+                            </div>
+                            <div class="contact-item__data">
+                                <img class="contact-item__icon" src="./img/logo/mail-orage.svg" alt="">
+                                <div class="contact-item__value">info@geojetexploration.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-block__feedback">
+                        <form class="form feedback-block">
+                            <div class="form__title text-center">
+                                Или заполните форму, чтобы получить <span class="text-orange">бесплантую консультацию</span>
+                            </div>
+                            <div class="form__fields-group">
+                                <div class="form__field form__field_icon form__field_name">
+                                    <input class="form__input form__input_full-width" type="text" placeholder="Ваше имя*">
+                                </div>
+                                <div class="form__field form__field_icon form__field_phone">
+                                    <input class="form__input form__input_full-width" type="text" placeholder="Ваш телефон*">
+                                </div>
+                                <div class="form__field form__field_icon form__field_email">
+                                    <input class="form__input form__input_full-width" type="text" placeholder="Ваш email*">
+                                </div>
+                            </div>
+                            <button class="button button_primary button_full-width button_big form__submit">
+                                Получить консультацию
+                            </button>
+                            <div class="form__subtext text-center">
+                                Заполняя данную форму вы соглашаетесь на обработку персональных данных «ГЕОДЖЕТ-ГРУПП» 
+                                в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="address-block">
+                    <div class="address-block__info">
+                        <div class="address-block__section">
+                            <div class="address-block__title">г. Алматы – Республика Казахстан Т00 «GeoJet KZ (ГеоДжет КЗ)»</div>
+                            <div class="address-block__data-item">
+                                <span class="address-block__data-label">БИН:</span> 220540033792
+                            </div>
+                            <address class="address-block__data-item">
+                                <span class="address-block__data-label">Юридический адрес:</span> 050040, Республика Казахстан, город Алматы, Бостандыкский район, улица Байзакова, дом 280.
+                            </address>
+                            <address class="address-block__data-item">
+                                <span class="address-block__data-label">Почтовый адрес:</span> 050040, Республика Казахстан, город Алматы, Бостандыкский район, улица Байзакова, дом 280
+                            </address>
+                        </div>
+                        
+                        <div class="address-block__section">
+                            <div class="address-block__title">Режим работы:</div>
+                            <div class="address-block__text">Понедельник — Пятница <br> с 9:00 до 20:00</div>
+                            <div class="address-block__contacts contact-item">
+                                <div class="contact-item__data">
+                                    <img class="contact-item__icon" src="./img/logo/phone-orange.svg" alt="">
+                                    <div class="contact-item__value">+7 (705) 777-01-39</div>
+                                </div>
+                                <div class="contact-item__data">
+                                    <img class="contact-item__icon" src="./img/logo/mail-orage.svg" alt="">
+                                    <div class="contact-item__value">info@geojetexploration.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address-block__map">
+                        <script 
+                            type="text/javascript" 
+                            charset="utf-8" 
+                            async 
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4717115dda201710524b82a2169bda156e31b096a59af0ca4c16763615fc53f2&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true">
+                        </script>
+                    </div>
+                </div>
+                <div class="address-block">
+                    <div class="address-block__map">
+                        <script 
+                            type="text/javascript" 
+                            charset="utf-8" 
+                            async 
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A60cd8699e9e83ff35d11ee09b6967e06f58144e8b03f70d0d3c8451920d5722c&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true">
+                        </script>
+                    </div>
+                    <div class="address-block__info">
+                        <div class="address-block__section">
+                            <div class="address-block__title">г. Москва – Российская Федерация ООО «ГеоДжет Эксплорейшн»</div>
+                            <div class="address-block__data-item">
+                                <span class="address-block__data-label">ОГРН:</span> 1137746288778
+                            </div>
+                            <address class="address-block__data-item">
+                                <span class="address-block__data-label">Юридический адрес:</span> 119571, г. Москва, улица 26-ти Бакинских Комиссаров, д. 3, к. 1, офис 333
+                            </address>
+                            <address class="address-block__data-item">
+                                <span class="address-block__data-label">Почтовый адрес:</span> 119571, г. Москва, улица 26-ти Бакинских Комиссаров, д.3, к. 1, офис 333
+                            </address>
+                        </div>
+                        
+                        <div class="address-block__section">
+                            <div class="address-block__title">Режим работы:</div>
+                            <div class="address-block__text">Понедельник — Пятница <br> с 9:00 до 20:00</div>
+                            <div class="address-block__contacts contact-item">
+                                <div class="contact-item__data">
+                                    <img class="contact-item__icon" src="./img/logo/phone-orange.svg" alt="">
+                                    <div class="contact-item__value">+7 (495) 477-43-32</div>
+                                </div>
+                                <div class="contact-item__data">
+                                    <img class="contact-item__icon" src="./img/logo/mail-orage.svg" alt="">
+                                    <div class="contact-item__value">info@geojetexploration.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <button class="button button_icon button_scroll-up">
+            <img src="./img/logo/scroll-up.svg">
+        </button>
+        <div class="messenger-bts-wrp">
+            <button class="button button_icon button_messengers-close">
+                <img src="./img/logo/messenger-close.svg">
+            </button>
+            <button class="button button_icon button_messengers">
+                <img src="./img/logo/messenger-btn.png">
+            </button>
+            <button class="button button_icon button_telegramm">
+                <img src="./img/logo/telegram-btn.svg">
+            </button>
+            <button class="button button_icon button_whatsapp">
+                <img src="./img/logo/whatsapp-btn.svg">
+            </button>
+        </div>
+        
+        <div class="footer__wrp-top">
+            <div class="container">
+                <div class="footer__top">
+                    <img src="./img/logo/logo-white.svg" class="logo" alt="">
+                    <div class="footer__email">
+                        <div class="footer__placeholder footer__placeholder_email">Напишите нам:</div>
+                        <a class="footer__link-mail link link_primary" href="mailto:info@geojetexploration.com">info@geojet<wbr/>exploration.com</a>
+                    </div>
+                    <div class="phone-block">
+                        <a class="phone-block__number link link_primary" href="tel:+74954774332">+7 (495) 477-43-32</a>
+                        <span class="phone-block__city">Москва</span>
+                        <a class="phone-block__number link link_primary" href="tel:+77057770139">+7 (705) 777-01-39</a>
+                        <span class="phone-block__city">Алматы</span>
+                    </div>
+                    <button class="button button_primary button_rounded footer__action_btn"  data-bs-toggle="modal" data-bs-target="#submitApp">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__wrp-menu">
+            <div class="container">
+                <div class="footer__menu">
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Виды работ</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="./predictive-modeling.html" class="footer__menu-link link">Прогнозное моделирование</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Анализ данных ДЗЗ</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./geophysics.html" class="footer__menu-link link">Геофизические работы</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Гидрогеология</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Для кого</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Недропользователям</a>
+                                <a href="#" class="footer__menu-link link">Инвесторам</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Методы</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Электроразведка</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Электротомография</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">ВП, ВП-СГ, ВП-ВЭЗ</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">ВИЭР</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">ЗСБ</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Магниторазведка</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Георадар</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Проекты</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Рудные месторождения</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Россыпные месторождения</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Нерудные месторождения</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Гидрогеологические</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">О компании</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">О нас</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./blog.html" class="footer__menu-link link">Блог</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Полезное</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__wrp-middle">
+            <div class="container">
+                <div class="footer__middle">
+                    <div class="footer__slogan">
+                        <b>Геоджет-Групп</b> - Сервисная геологоразведочная компания для тех, кто умеет выбирать
+                    </div>
+                    <div class="footer__inn">
+                        <div class="footer__inn-list">
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/russian_flag.svg" alt="">
+                                1137746288778 (ОГРН)
+                            </div>
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/kazah_flag.svg" alt="">
+                                220540033792 (БИН)
+                            </div>
+                        </div>
+                    </div>
+                    <a class="footer__whatsapp-link link link_icon" href="#">
+                        <img src="./img/whatsapp_color.svg" alt="">
+                    </a>
+                    <a href="#" class="telegram-chat-link">
+                        <img class="telegram-chat-link__logo" src="./img/logo/telegram_square.svg">
+                        <div>
+                            <div class="telegram-chat-link__title">ПроРазведку ГеоДжет</div>
+                            <div class="telegram-chat-link__desc">Присоединяйтесь к нашему геологоразведочному сообществу. Новости. Тренды. Мнения.</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer__second-middle">
+                    <div class="footer__email">
+                        <div class="footer__placeholder footer__placeholder_email">Напишите нам:</div>
+                        <a class="footer__link-mail link link_primary" href="mailto:info@geojetexploration.com">info@geojet<wbr/>exploration.com</a>
+                    </div>
+                    <div class="footer__inn">
+                        <div class="footer__inn-list">
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/russian_flag.svg" alt="">
+                                1137746288778 (ОГРН)
+                            </div>
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/kazah_flag.svg" alt="">
+                                220540033792 (БИН)
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__link-privacy link">Политика конфиденциальности.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__wrapper-bottom">
+                    <div class="footer__copyright">
+                        <div>© 2014-2024 ГЕОДЖЕТ-ГРУПП</div>
+                    </div>
+                    <div class="footer__social-links">
+                        <a class="link link_icon" href="#">
+                            <img src="./img/whatsapp_color.svg" alt="">
+                        </a>
+                        <a class="link link_icon" href="#">
+                            <img src="./img/telegram_color.svg" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="footer__link-privacy link">Политика конфиденциальности.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="submitApp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button class="modal-close-btn" data-bs-dismiss="modal">
+            <img class="modal-close-btn__icon" src="./img/close-icon.svg" alt="">
+        </button>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-window modal-content">
+                <div class="modal-window__content modal-body">
+                    <form class="form">
+                        <div class="form__title text-center">
+                            Заполните форму, чтобы получить <span class="text-orange">бесплантую консультацию</span>
+                        </div>
+                        <div class="form__fields-group">
+                            <div class="form__field form__field_icon form__field_name">
+                                <input class="form__input form__input_full-width" type="text" placeholder="Ваше имя*">
+                            </div>
+                            <div class="form__field form__field_icon form__field_phone">
+                                <input class="form__input form__input_full-width" type="text" placeholder="Ваш телефон*">
+                            </div>
+                            <div class="form__field form__field_icon form__field_email">
+                                <input class="form__input form__input_full-width" type="text" placeholder="Ваш email*">
+                            </div>
+                        </div>
+                        <button class="button button_primary button_full-width button_big form__submit">
+                            Получить консультацию
+                        </button>
+                        <div class="form__subtext text-center">
+                            Заполняя данную форму вы соглашаетесь на обработку персональных данных «ГЕОДЖЕТ-ГРУПП» 
+                            в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

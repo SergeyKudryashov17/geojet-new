@@ -31,6 +31,10 @@
     font-size: 60px;
 }
 
+.headline_white {
+    color: var(--white-color);
+}
+
 .headline_mobile {
     display: none;
 }

@@ -30,7 +30,7 @@
     align-items: center;
 }
 .header__link-mail::before {
-    content: url('./../img/email.svg');
+    content: url('../../img/email.svg');
     line-height: 1;
     margin-right: 5px;
 }
