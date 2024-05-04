@@ -50,6 +50,7 @@
     .header__link-mail {
         line-height: 18px;
         font-size: 14px;
+        margin-left: 10px;
     }
 
     .header__action-btn {

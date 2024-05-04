@@ -126,6 +126,21 @@
     .grid-company-service_default {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .company-mission-block__image-wrp {
+        width: 300px;
+    }
+    .company-mission-block__title {
+        font-size: 33px;
+    }
+
+    .grid-experience {
+        grid-gap: 70px;
+    }
+
+    .employeeItem__avatar {
+        height: 100%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -387,6 +402,65 @@
 
     .grid-company-service_default {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .company-mission-block__desc {
+        padding: 30px;
+        margin-right: 10px;
+    }
+    .company-mission-block__image-wrp {
+        width: 200px;
+    }
+    .company-mission-block__title {
+        font-size: 29px;
+    }
+
+    .grid-experience {
+        grid-gap: 40px;
+    }
+
+    .experienceItem__desc {
+        font-size: 14px;
+    }
+
+    .advantages-block__text-content {
+        padding: 10px;
+    }
+
+    .companyAdvantagesItem {
+        width: 25%;
+        padding: 30px 15px;
+    }
+
+    .employeeItem {
+        grid-template-columns: 300px auto;
+    }
+    .employeeItem__info {
+        padding: 30px 30px 0;
+    }
+    .employeeItem__avatar-wrp {
+        width: 300px;
+    }
+    .employeeItem__avatar {
+        width: 100%;
+        height: 100%;
+    }
+    .employeeItem__position {
+        margin-bottom: 15px;
+    }
+
+    .contacts-block {
+        grid-gap: 5px;
+    }
+
+    .contact-item__value {
+        font-size: 18px;
+    }
+
+    .address-block__title,
+    .address-block__text,
+    .address-block__data-item {
+        font-size: 18px;
     }
 }
 
@@ -858,6 +932,111 @@
     .geophisics-achievement {
         height: 250px;
         margin-bottom: 20px;
+    }
+
+    .company-mission-block__desc {
+        padding: 30px;
+        margin-right: 0;
+    }
+    .company-mission-block__image-wrp {
+        display: none;
+    }
+    .company-mission-block__title {
+        font-size: 29px;
+    }
+
+    .grid-experience {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px 60px;
+    }
+
+    .advantages-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .advantages-block__text-content {
+        margin: 0;
+        padding: 10px 0;
+    }
+    .advantages-block__text-content:nth-child(2) {
+        padding-left: 20px;
+    }
+    .advantages-block__text-content:first-child {
+        margin-right: 20px;
+    }
+    .advantages-block__image-container {
+        display: none;
+    }
+    .advantages-block__label {
+        margin-bottom: 40px;
+    }
+
+    .company-advantages-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .companyAdvantagesItem {
+        padding: 30px 15px;
+        border-right: none;
+    }
+    .companyAdvantagesItem__icon {
+        margin-bottom: 50px;
+        height: 40px;
+    }
+
+    .employeeItem {
+        padding: 20px;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 'av info'
+                             'desc desc';
+    }
+    .employeeItem__avatar-wrp {
+        width: 150px;
+        height: 150px;
+        border-radius: var(--base-radius);
+        overflow: hidden;
+    }
+    .employeeItem__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    .employeeItem__position {
+        margin-bottom: 0;
+    }
+    .employeeItem__desc {
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .contact-item__value {
+        font-size: 17px;
+    }
+
+    .contacts-block {
+        grid-template-columns: 1fr;
+        grid-gap: 70px;
+    }
+
+    .address-block {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .address-block_reverse-mobile > div:nth-child(1) {
+        order: 2;
+    }
+    .address-block_reverse-mobile > div:nth-child(2) {
+        order: 1;
+    }
+    .address-block__title,
+    .address-block__text,
+    .address-block__data-item {
+        font-size: 17px;
+    }
+    .address-block__map {
+        height: 300px;
     }
 }
 
@@ -1488,6 +1667,147 @@
         font-size: 200px;
         height: 100%;
         line-height: 1;
+    }
+
+    .company-mission-block {
+        flex-direction: column;
+        background: var(--brown-color);
+        border-radius: var(--base-radius);
+        height: auto;
+    }
+    .company-mission-block__desc {
+        padding: 20px;
+        margin-right: 0;
+    }
+    .company-mission-block__image-wrp {
+        width: 100%;
+        padding: 20px;
+    }
+    .company-mission-block__label {
+        margin-bottom: 50px;
+    }
+    .company-mission-block__title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .company-mission-block__image {
+        display: none;
+        border: 1px solid var(--white-color);
+        border-radius: var(--base-radius);
+        overflow: hidden;
+    }
+    .company-mission-block__image_mobile {
+        display: inline;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .grid-experience {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    .advantages-block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .advantages-block__text-content {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .advantages-block__text-content:first-child {
+        border-right: none;
+        padding-bottom: 50px;
+        border-bottom: 1px solid var(--white-color);
+    }
+    .advantages-block__image-container {
+        display: none;
+    }
+    .advantages-block__label {
+        margin-bottom: 40px;
+    }
+    
+    .company-advantages-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .companyAdvantagesItem {
+        padding: 30px 15px;
+        border-right: none;
+        border-bottom: var(--base-border);
+    }
+    .companyAdvantagesItem:last-child {
+        border-bottom: none;
+    }
+    .companyAdvantagesItem__icon {
+        margin-bottom: 20px;
+        height: 40px;
+    }
+
+    .employeeItem {
+        padding: 15px;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 'av info'
+                             'desc desc';
+    }
+    .employeeItem__avatar-wrp {
+        width: 110px;
+        height: 110px;
+        border-radius: var(--base-radius);
+        overflow: hidden;
+    }
+    .employeeItem__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .employeeItem__position {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+    .employeeItem__desc {
+        padding: 0;
+        padding-top: 20px;
+    }
+    .employeeItem__name {
+        font-size: 16px;
+    }
+
+    .contacts-block {
+        grid-template-columns: 1fr;
+        grid-gap: 70px;
+    }
+
+    .contact-item__country {
+        font-size: 16px;
+    }
+    .contact-item__value {
+        font-size: 14px;
+    }
+
+    .address-block {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .address-block_reverse-mobile > div:nth-child(1) {
+        order: 2;
+    }
+    .address-block_reverse-mobile > div:nth-child(2) {
+        order: 1;
+    }
+    .address-block__info {
+        padding-left: 0;
+    }
+    .address-block__title,
+    .address-block__text,
+    .address-block__data-item {
+        font-size: 14px;
+    }
+    .address-block__map {
+        height: 250px;
     }
 }
 

@@ -1118,6 +1118,9 @@ hr {
 .company-mission-block__image {
     height: 100%;
 }
+.company-mission-block__image_mobile {
+    display: none;
+}
 
 /* grid-experience */
 .grid-experience {
@@ -1136,7 +1139,6 @@ hr {
 }
 .experienceItem__desc {
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.3;
     color: var(--white-color);
 }
@@ -1147,7 +1149,11 @@ hr {
 
 /* employeeItem */
 .employeeItem {
-    display: flex;
+    display: grid;
+    grid-template-columns: 262px auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'av info'
+                         'av desc';
     border: var(--base-border);
     border-radius: var(--base-radius);
     overflow: hidden;
@@ -1157,17 +1163,20 @@ hr {
     margin-bottom: 0;
 }
 .employeeItem__avatar-wrp {
+    grid-area: av;
     display: flex;
     align-items: center;
-    width: 262px;
+    width: 100%;
     flex-shrink: 0;
     overflow: hidden;
 }
 .employeeItem__avatar {
     width: 100%;
+    height: 100%;
 }
 .employeeItem__info {
-    padding: 43px 30px;
+    grid-area: info;
+    padding: 43px 30px 0;
 }
 .employeeItem__name {
     font-weight: 700;
@@ -1182,7 +1191,10 @@ hr {
     margin-bottom: 30px;
 }
 .employeeItem__desc {
+    grid-area: desc;
     line-height: 1.3;
+    padding: 0 30px;
+    word-break: break-all;
 }
 
 /* contacts-block */
@@ -1304,6 +1316,7 @@ hr {
     padding-right: 50px;
 }
 .advantages-block__image {
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid var(--white-color);
