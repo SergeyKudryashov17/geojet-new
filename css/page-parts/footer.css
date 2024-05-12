@@ -257,7 +257,7 @@
         color: var(--orange-color);
     }
     .footer__nav-block_active .footer__nav-title::after {
-        content: url(../img/logo/chevron_active.svg);
+        content: url(../../img/logo/chevron_active.svg);
         transform: rotate(180deg);
     }
     .footer__nav-block_active .footer__menu-list {
@@ -273,7 +273,7 @@
     .footer__nav-title::after {
         position: absolute;
         right: 0;
-        content: url(../img/logo/chevron.svg);
+        content: url(../../img/logo/chevron.svg);
     }
 
     .footer__menu-list {

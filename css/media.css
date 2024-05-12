@@ -423,15 +423,6 @@
         font-size: 14px;
     }
 
-    .advantages-block__text-content {
-        padding: 10px;
-    }
-
-    .companyAdvantagesItem {
-        width: 25%;
-        padding: 30px 15px;
-    }
-
     .employeeItem {
         grid-template-columns: 300px auto;
     }
@@ -950,39 +941,10 @@
         grid-gap: 40px 60px;
     }
 
-    .advantages-block {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .advantages-block__text-content {
-        margin: 0;
-        padding: 10px 0;
-    }
-    .advantages-block__text-content:nth-child(2) {
-        padding-left: 20px;
-    }
-    .advantages-block__text-content:first-child {
-        margin-right: 20px;
-    }
-    .advantages-block__image-container {
-        display: none;
-    }
-    .advantages-block__label {
-        margin-bottom: 40px;
-    }
-
     .company-advantages-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-    }
-
-    .companyAdvantagesItem {
-        padding: 30px 15px;
-        border-right: none;
-    }
-    .companyAdvantagesItem__icon {
-        margin-bottom: 50px;
-        height: 40px;
     }
 
     .employeeItem {
@@ -1706,44 +1668,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
     }
-
-    .advantages-block {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .advantages-block__text-content {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 20px;
-    }
-    .advantages-block__text-content:first-child {
-        border-right: none;
-        padding-bottom: 50px;
-        border-bottom: 1px solid var(--white-color);
-    }
-    .advantages-block__image-container {
-        display: none;
-    }
-    .advantages-block__label {
-        margin-bottom: 40px;
-    }
     
     .company-advantages-list {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
-    }
-
-    .companyAdvantagesItem {
-        padding: 30px 15px;
-        border-right: none;
-        border-bottom: var(--base-border);
-    }
-    .companyAdvantagesItem:last-child {
-        border-bottom: none;
-    }
-    .companyAdvantagesItem__icon {
-        margin-bottom: 20px;
-        height: 40px;
+        grid-gap: 10px;
+        background: transparent;
     }
 
     .employeeItem {

@@ -28,6 +28,8 @@
 @import url('./components/attention-block.css');
 @import url('./components/articles-block.css');
 @import url('./components/page-section.css');
+@import url('./components/advantages-block.css');
+@import url('./components/companyAdvantagesItem.css');
 
 /* Page parts */
 @import url('./page-parts/header.css');
@@ -39,6 +41,9 @@ body {
     color: var(--black-color);
     font-size: var(--base-fs);
     line-height: var(--base-lh);
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 a {
     color: inherit;
@@ -1143,10 +1148,6 @@ hr {
     color: var(--white-color);
 }
 
-.employees-list {
-
-}
-
 /* employeeItem */
 .employeeItem {
     display: grid;
@@ -1194,7 +1195,6 @@ hr {
     grid-area: desc;
     line-height: 1.3;
     padding: 0 30px;
-    word-break: break-all;
 }
 
 /* contacts-block */
@@ -1288,61 +1288,13 @@ hr {
     -o-filter: grayscale(1);
 }
 
-.advantages-block {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) auto;
-    padding: 20px;
-    border-radius: 20px;
-    background: var(--dark-gray-color);
-}
-.advantages-block__text-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px 0;
-    padding: 30px;
-    color: var(--white-color);
-}
-.advantages-block__text-content:first-child {
-    border-right: 1px solid var(--white-color);
-}
-.advantages-block__label {
-    opacity: .5;
-}
-.advantages-block__title {
-    font-weight: 700;
-    line-height: 1.3;
-    text-transform: uppercase;
-    padding-right: 50px;
-}
-.advantages-block__image {
-    width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid var(--white-color);
-}
+
 
 .company-advantages-list {
     display: flex;
     background: var(--light-orange-color);
     border-radius: 20px;
     padding: 30px 20px;
-}
-.companyAdvantagesItem {
-    width: 100%;
-    border-right: var(--base-border);
-    padding: 30px 40px;
-}
-.companyAdvantagesItem:last-child {
-    border-right: none;
-}
-.companyAdvantagesItem__icon {
-    margin-bottom: 130px;
-}
-.companyAdvantagesItem__title {
-    font-weight: 700;
-    line-height: 1.3;
-    text-transform: uppercase;
 }
 
 .ymaps-layers-pane {
