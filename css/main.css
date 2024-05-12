@@ -41,9 +41,6 @@ body {
     color: var(--black-color);
     font-size: var(--base-fs);
     line-height: var(--base-lh);
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
 }
 a {
     color: inherit;
@@ -1195,6 +1192,9 @@ hr {
     grid-area: desc;
     line-height: 1.3;
     padding: 0 30px;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 /* contacts-block */
