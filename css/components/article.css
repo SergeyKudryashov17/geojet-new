@@ -67,6 +67,11 @@
     background: var(--light-gray-color);
 }
 
+.article__content img {
+    max-width: 100%;
+    border-radius: var(--base-radius);
+}
+
 @media (max-width: 575px) {
     .article__content h2 {
         font-size: 25px;
