@@ -41,7 +41,7 @@
     margin-bottom: 20px;
 }
 
-.article__content mark {
+.article__content blockquote {
     display: block;
     line-height: 1.5;
     font-weight: 600;
@@ -51,7 +51,8 @@
     margin-bottom: 25px;
 }
 
-.article__content blockquote {
+.article__content mark {
+    display: block;
     padding: 20px;
     border-radius: var(--base-radius);
     font-style: italic;
@@ -59,10 +60,10 @@
     line-height: 1.5;
     margin-bottom: 25px;
 }
-.article__blockquote_orange {
+.article__mark_orange {
     background: var(--light-orange-color);
 }
-.article__blockquote_gray {
+.article__mark_gray {
     background: var(--light-gray-color);
 }
 
