@@ -30,6 +30,7 @@
 @import url('./components/page-section.css');
 @import url('./components/advantages-block.css');
 @import url('./components/companyAdvantagesItem.css');
+@import url('./components/article.css');
 
 /* Page parts */
 @import url('./page-parts/header.css');

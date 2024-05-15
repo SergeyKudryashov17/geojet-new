@@ -26,9 +26,15 @@
     margin-bottom: 20px;
 }
 
-.headline_page {
+.headline_page,
+.headline_article {
     text-transform: uppercase;
     font-size: 60px;
+}
+
+.headline_article {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .headline_white {

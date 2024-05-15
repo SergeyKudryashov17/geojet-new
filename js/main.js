@@ -189,3 +189,14 @@ function changeClassCellService() {
 }
 
 
+/* Окрашивание цитат в статьях в зависимости от нумерации */
+const articleBlockquotes = document.querySelectorAll('.article blockquote');
+if (articleBlockquotes.length) {
+    articleBlockquotes.forEach((blockquote, index) => {
+        if (index === 0 || (index + 1) % 2 !== 0) {
+            blockquote.classList.add('article__blockquote_orange');
+        } else {
+            blockquote.classList.add('article__blockquote_gray');
+        }
+    })
+}
