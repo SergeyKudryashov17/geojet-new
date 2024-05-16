@@ -937,6 +937,7 @@ hr {
     border: var(--base-border);
     border-radius: var(--base-radius);
     margin-bottom: 10px;
+    background: var(--white-color);
 }
 .action-block:last-child {
     margin-bottom: 0;

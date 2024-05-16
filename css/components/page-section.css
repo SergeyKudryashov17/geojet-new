@@ -18,6 +18,9 @@
 .page-section_brown-bg {
     background: var(--brown-color);
 }
+.page-section_light-orange-bg {
+    background: var(--light-orange-color);
+}
 .page-section_first {
     padding-top: 40px;
 }
@@ -31,7 +34,12 @@
 .page-section_articles-page {
     padding: 0;
 }
-
+.page-section_in-article {
+    padding: 40px 0;
+}
+.page-section_empty_padding {
+    padding-top: 0;
+}
 
 @media (min-width: 576px) and (max-width: 767px) {
     .page-section {
