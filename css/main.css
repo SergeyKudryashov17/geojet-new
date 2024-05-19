@@ -31,6 +31,8 @@
 @import url('./components/advantages-block.css');
 @import url('./components/companyAdvantagesItem.css');
 @import url('./components/article.css');
+@import url('./components/work-processes-item.css');
+@import url('./components/avatar.css');
 
 /* Page parts */
 @import url('./page-parts/header.css');
@@ -1194,9 +1196,6 @@ hr {
     grid-area: desc;
     line-height: 1.3;
     padding: 0 30px;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
 }
 
 /* contacts-block */
@@ -1299,8 +1298,9 @@ hr {
     padding: 30px 20px;
 }
 
-.ymaps-layers-pane {
-
-    
-
+.work-processes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 30px;
 }

@@ -453,6 +453,10 @@
     .address-block__data-item {
         font-size: 18px;
     }
+
+    .work-processes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 767px) {
@@ -999,6 +1003,10 @@
     }
     .address-block__map {
         height: 300px;
+    }
+
+    .work-processes-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1738,6 +1746,11 @@
     }
     .address-block__map {
         height: 250px;
+    }
+
+    .work-processes-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
     }
 }
 

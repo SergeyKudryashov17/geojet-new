@@ -1,0 +1,23 @@
+.avatar-list {
+    display: flex;
+}
+
+.avatar-list .avatar {
+    margin-left: -10px;
+}
+
+.avatar-list .avatar:first-child {
+    margin-left: 0;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--white-color);
+    overflow: hidden;
+}
+.avatar__img {
+    width: 100%;
+    height: 100%;
+}
