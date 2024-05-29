@@ -1,0 +1,21 @@
+.grid-full-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-full-wrapper__content {
+    grid-column: span 7;
+}
+.grid-full-wrapper__content_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-full-wrapper__image-container {
+    grid-column: span 5;
+}
+
+.grid-full-wrapper__picture {
+    height: 100%;
+}

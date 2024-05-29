@@ -7,6 +7,7 @@
 /* Fonts */
 @import url('../fonts/Montserrat/stylesheet.css');
 @import url('../fonts/OpenSans/stylesheet.css');
+@import url('../assets/font-awesome/css/font-awesome.min.css');
 
 /* Components */
 @import url('./components/nav-menu.css');
@@ -33,6 +34,9 @@
 @import url('./components/article.css');
 @import url('./components/work-processes-item.css');
 @import url('./components/avatar.css');
+@import url('./components/grid-full-wrapper.css');
+@import url('./components/icon-text-block.css');
+@import url('./components/case-section.css');
 
 /* Page parts */
 @import url('./page-parts/header.css');
@@ -941,6 +945,12 @@ hr {
     margin-bottom: 10px;
     background: var(--white-color);
 }
+.action-block_orange {
+    background: var(--light-orange-color);
+}
+.action-block_gray {
+    background: var(--light-gray-color);
+}
 .action-block:last-child {
     margin-bottom: 0;
 }
@@ -1289,8 +1299,6 @@ hr {
     -o-filter: grayscale(1);
 }
 
-
-
 .company-advantages-list {
     display: flex;
     background: var(--light-orange-color);
@@ -1303,4 +1311,31 @@ hr {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 300px);
     grid-gap: 30px;
+}
+
+.grid-main-tasks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 100px;
+    margin-right: 50px;
+}
+
+.picture-legend {
+    margin-bottom: 5px;
+}
+
+.picture-legend__label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: rgb(255, 253, 84);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.picture-legend__desc {
+    font-size: 18px;
 }

@@ -1,0 +1,10 @@
+.icon-text-block {
+
+}
+.icon-text-block__icon {
+    margin-bottom: 20px;
+}
+.icon-text-block__text {
+    font-weight: 500;
+    line-height: 1.3;
+}

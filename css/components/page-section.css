@@ -2,12 +2,15 @@
     overflow: hidden;
     padding-top: 100px;
 }
+
 .page-section_pb {
     padding-bottom: 100px;
 }
+
 .page-section_reviews {
     padding-bottom: 40px;
 }
+
 .page-section_gray-bg,
 .page-section_gray {
     background: var(--light-gray-color);
@@ -21,13 +24,16 @@
 .page-section_light-orange-bg {
     background: var(--light-orange-color);
 }
+
 .page-section_first {
     padding-top: 40px;
 }
+
 .page-section_bordered,
 .page-section_rounded {
     border-radius: 50px;
 }
+
 .page-section_only-mobile {
     display: none;
 }
@@ -39,6 +45,13 @@
 }
 .page-section_empty_padding {
     padding-top: 0;
+}
+.page-section_min-padding {
+    padding: 40px 0;
+}
+
+.page-section_case {
+    margin: 40px 0;
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
