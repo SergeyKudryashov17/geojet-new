@@ -19,3 +19,21 @@
 .grid-full-wrapper__picture {
     height: 100%;
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .grid-full-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .grid-full-wrapper__image-container {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .grid-full-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .grid-full-wrapper__image-container {
+        display: none;
+    }
+}

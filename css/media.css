@@ -457,6 +457,10 @@
     .work-processes-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .grid-main-tasks {
+        grid-gap: 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1007,6 +1011,26 @@
 
     .work-processes-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ore-map {
+        display: none;
+    }
+    .ore-map-mini {
+        display: block;
+    }
+
+    .list-map-points {
+        display: flex;
+    }
+
+    .list-deposits {
+        display: block;
+    }
+
+    .grid-main-tasks {
+        margin-right: 0;
+        grid-gap: 50px;
     }
 }
 
@@ -1751,6 +1775,37 @@
     .work-processes-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
+    }
+
+    .ore-map {
+        display: none;
+    }
+    .ore-map-mini {
+        display: block;
+    }
+
+    .list-map-points {
+        display: flex;
+    }
+
+    .list-deposits {
+        display: block;
+    }
+
+    .grid-main-tasks {
+        margin-right: 0;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .list-deposits__items {
+        grid-template-columns: repeat(auto-fit, 100px);
+        justify-content: space-around;
+    }
+
+    .depositsItem {
+        width: 100px;
+        padding: 0;
     }
 }
 

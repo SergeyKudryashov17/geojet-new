@@ -80,3 +80,15 @@
     justify-content: center;
     text-align: center;
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .case-section {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .case-section {
+        padding: 30px 15px;
+    }
+}

@@ -61,6 +61,9 @@
     .page-section_pb {
         padding-bottom: 50px;
     }
+    .page-section_empty_padding {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 575px) {
@@ -76,5 +79,8 @@
     }
     .page-section_only-mobile {
         display: block;
+    }
+    .page-section_empty_padding {
+        padding-top: 0;
     }
 }

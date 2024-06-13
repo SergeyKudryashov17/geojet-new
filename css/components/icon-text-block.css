@@ -8,3 +8,19 @@
     font-weight: 500;
     line-height: 1.3;
 }
+
+@media (max-width: 575px) {
+    .icon-text-block {
+        padding: 20px;
+        border-radius: var(--base-radius);
+    }
+
+    .icon-text-block:nth-child(2n + 1) {
+        border: var(--orange-border);
+    }
+
+    .icon-text-block:nth-child(2n) {
+        border: 1px solid var(--light-gray-color);
+        background: var(--light-gray-color);
+    }
+}

@@ -1339,3 +1339,72 @@ hr {
 .picture-legend__desc {
     font-size: 18px;
 }
+
+.ore-map {
+    width: 100%;
+}
+.ore-map-mini {
+    display: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.list-map-points {
+    display: none;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.map-point {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.map-point__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--orange-color);
+    color: var(--white-color);
+}
+.map-point__title {
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+.list-deposits {
+    display: none;
+}
+.list-deposits__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.list-deposits__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 20px;
+}
+
+.depositsItem {
+    padding: 0 15px;
+}
+.depositsItem__picutre {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.depositsItem__picutre img {
+    width: 100%;
+}
+.depositsItem__title {
+    text-align: center;
+    line-height: 1.3;
+}
