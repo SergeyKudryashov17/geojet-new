@@ -72,7 +72,17 @@
     border-radius: var(--base-radius);
 }
 
+@media (max-width: 768px) {
+    .article__content {
+        max-width: 576px;
+    }
+}
+
 @media (max-width: 575px) {
+    .article__content {
+        padding: 0 10px;
+    }
+
     .article__content h2 {
         font-size: 25px;
         color: var(--orange-color);
