@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="./assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <title>Россыпные месторождения</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="/">
+                    <img src="./img/logo/logo.svg" class="logo" alt="">
+                </a>
+                <a class="header__link-mail link link_primary" href="mailto:info@geojetexploration.com">info@geojet<wbr/>exploration.com</a>
+                <div class="phone-block">
+                    <a class="phone-block__number link link_primary" href="tel:+74954774332">+7 (495) 477-43-32</a>
+                    <span class="phone-block__city">Москва</span>
+                    <a class="phone-block__number link link_primary" href="tel:+77057770139">+7 (705) 777-01-39</a>
+                    <span class="phone-block__city">Алматы</span>
+                </div>
+                <button class="button button_primary button_rounded header__action-btn" data-bs-toggle="modal" data-bs-target="#submitApp">
+                    Оставить заявку
+                </button>
+                <button class="button button_icon mobile-menu-btn">
+                    <img class="mobile-menu-btn__icon" src="./img/logo/menu-icon.svg">
+                    <span class="mobile-menu-btn__label">Меню</span>
+                </button>
+            </div>
+            <div class="header__bottom">
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__label" href="./index.html">Главная</a>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Виды работ</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="./predictive-modeling.html" class="nav-menu__sublabel">Прогнозное моделирование</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Анализ данных ДЗЗ</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="./geophysics.html" class="nav-menu__sublabel">Геофизические работы</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Гидрогеология</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Для кого</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Недропользователей</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Инвесторов</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Методы</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Электроразведка</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">ВИЭР</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Электротомография</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">ВП, ВП-СГ, ВП-ВЭЗ</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">ЗСБ</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Магниторазведка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">Проекты</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="./ore-deposits.html" class="nav-menu__sublabel">Рудные месторождения</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Россыпные месторождения</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Нерудные месторождения</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Гидрогеологические</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu__item nav-menu__item_group">
+                            <span class="nav-menu__label">О компании</span>
+                            <ul class="nav-menu__submenu">
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">О нас</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="./blog.html" class="nav-menu__sublabel">Блог</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Полезное</a>
+                                </li>
+                                <li class="nav-menu__subitem">
+                                    <a href="#" class="nav-menu__sublabel">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="progress-bar"></div>
+    </header>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu__wrp">
+            <button class="mobile-menu__close-btn">
+                <img src="./img/logo/close-icon.svg" alt="">
+            </button>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="./index.html" class="mobile-menu__label">Главная</a>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <div class="mobile-menu__label">Виды работ</div>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="./predictive-modeling.html" class="mobile-menu__sublabel">Прогнозное моделирование</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Анализ данных ДЗЗ</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="./geophysics.html" class="mobile-menu__sublabel">Геофизические работы</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Гидрогеология</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">Для кого</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Недропользователей</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Инвесторов</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">Методы</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Электроразведка</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">ВИЭР</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Электротомография</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">ВП, ВП-СГ, ВП-ВЭЗ</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">ЗСБ</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Магниторазведка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">Проекты</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="./ore-deposits.html" class="mobile-menu__sublabel">Рудные месторождения</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Россыпные месторождения</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Нерудные месторождения</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Гидрогеологические</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item_with-sub">
+                        <a class="mobile-menu__label">О компании</a>
+                        <ul class="mobile-menu__sublist">
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">О нас</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="./blog.html" class="mobile-menu__sublabel">Блог</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Полезное</a>
+                            </li>
+                            <li class="mobile-menu__subitem">
+                                <a href="#" class="mobile-menu__sublabel">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__footer">
+                <div class="mobile-menu__placeholder">Напишите нам:</div>
+                <a class="mobile-menu__email-link" href="mailto:info@geojetexploration.com">
+                    info@geojetexploration.com
+                </a>
+                <div class="mobile-menu__phone-block phone-block">
+                    <a class="phone-block__number link link_primary" href="tel:+74954776332">+ 7 (495) 477-63-32</a>
+                    <span class="phone-block__city">Москва</span>
+                    <a class="phone-block__number link link_primary" href="tel:+77273304832">+ 7 (727) 330-48-32</a>
+                    <span class="phone-block__city">Алматы</span>
+                </div>
+                <div class="mobile-menu__social-links">
+                    <a href="" target="_blank">
+                        <img src="./img/whatsapp_color.svg" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./img/telegram_color.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="project-page-start">
+            <div class="container">
+                <h1 class="project-page-start__title headline headline_page">Россыпные месторождения</h1>
+                <ul class="tags-list">
+                    <li class="tag">Месторождения</li>
+                    <li class="tag">Регионы</li>
+                    <li class="tag">Основные решаемые задачи</li>
+                    <li class="tag">Результаты работы</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="page-section page-section_gray page-section_rounded page-section_pb">
+            <div class="container">
+                <h2 class="headline headline_section">География наших работ и месторождения</h2>
+                <img class="ore-map" src="./img/placer-dep-map.png" alt="">
+                <img class="ore-map-mini" src="./img/placer-dep-map-mini.svg" alt="">
+                <div class="list-map-points">
+                    <div class="map-point">
+                        <div class="map-point__num">1</div>
+                        <div class="map-point__title">Африка</div>
+                    </div>
+                    <div class="map-point">
+                        <div class="map-point__num">2</div>
+                        <div class="map-point__title">Казахстан</div>
+                    </div>
+                    <div class="map-point">
+                        <div class="map-point__num">3</div>
+                        <div class="map-point__title">Россия</div>
+                    </div>
+                </div>
+                <div class="list-deposits">
+                    <div class="list-deposits__title">Месторождениия</div>
+                    <div class="list-deposits__items">
+                        <div class="depositsItem">
+                            <div class="depositsItem__picutre">
+                                <img src="./img/gold.png" alt="">
+                            </div>
+                            <div class="depositsItem__title">Золото</div>
+                        </div>
+                        <div class="depositsItem">
+                            <div class="depositsItem__picutre">
+                                <img src="./img/tantal.png" alt="">
+                            </div>
+                            <div class="depositsItem__title">Тантал-колумбит</div>
+                        </div>
+                        <div class="depositsItem">
+                            <div class="depositsItem__picutre">
+                                <img src="./img/diamonds.png" alt="">
+                            </div>
+                            <div class="depositsItem__title">Алмазы</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_pb">
+            <div class="container">
+                <div class="grid-full-wrapper">
+                    <div class="grid-full-wrapper__content grid-full-wrapper__content_center">
+                        <h2 class="headline headline_section">Основные решаемые <br>задачи</h2>
+                        <div class="grid-main-tasks grid-main-tasks_inline">
+                            <div class="icon-text-block icon-text-block_inline">
+                                <img class="icon-text-block__icon" src="./img/logo/impuls-orange.svg" alt="">
+                                <div class="icon-text-block__text">Определение мощности аллювиальных отложений</div>
+                            </div>
+                            <div class="icon-text-block icon-text-block_inline">
+                                <img class="icon-text-block__icon" src="./img/logo/soil-section-orange.svg" alt="">
+                                <div class="icon-text-block__text">Расчленение верхней части геологического разреза с выделением разных слоев и горизонтов</div>
+                            </div>
+                            <div class="icon-text-block icon-text-block_inline">
+                                <img class="icon-text-block__icon" src="./img/logo/big-stone-orange.svg" alt="">
+                                <div class="icon-text-block__text">Картирование поверхности коренных пород</div>
+                            </div>
+                            <div class="icon-text-block icon-text-block_inline">
+                                <img class="icon-text-block__icon" src="./img/logo/map-anchor-orange.svg" alt="">
+                                <div class="icon-text-block__text">Прослеживание и картирование продуктивных горизонтов</div>
+                            </div>
+                            <div class="icon-text-block icon-text-block_inline">
+                                <img class="icon-text-block__icon" src="./img/logo/geological-orange.svg" alt="">
+                                <div class="icon-text-block__text">Картирование элементов палеорельефа (палеорусла, палеотеррасы)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-full-wrapper__image-container">
+                        <img class="grid-full-wrapper__picture" src="./img/ore-deposits-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_gray">
+            <div class="container">
+                <div class="case-section">
+                    <h2 class="headline headline_section">Скарновый тип месторождения золота</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="text-align: center">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__subtitle">Решаемые задачи по объекту:</div>
+                            <ul class="case-section__list">
+                                <li class="case-section__item">Выявление и картирование структурно-тектонических нарушений</li>
+                                <li class="case-section__item">Выявление и картирование геофизических аномалий повышенной проводимости, связанных с зонами оруденения</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="case-section__dotted-line"></div>
+                            <div class="case-section__text">
+                                Электроразведочные работы проводились в ноябре при температуре -25○С. Рудное поле представляет собой достаточно крупный (2×3&nbsp;км) провис
+                                кровли интрузивного массива, вмещающий в себя осадочно-вулканогенные и в том числе карбонатные отложения. На контактах интрузивного массива с
+                                карбонатными породами наблюдаются значительные масштабы скарнирования. Основной задачей являлось выделение в зонах контакта предполагаемых зон
+                                оруденения.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_case page-section_empty_padding">
+            <div class="container">
+                <div class="attention-block">
+                    <div class="attention-block__content">
+                        <div class="attetion-block__title">
+                            Хотите узнать, <span class="text-orange">какие технологические решения</span>
+                            применимы для ваших геологоразведочных задач?
+                        </div>
+                        <div class="attetion-block__text">
+                            Отправляйте заявку и получите консультацию <br>от наших проффессионалов
+                        </div>
+                        <button class="button button_rounded button_primary" data-bs-toggle="modal" data-bs-target="#submitApp">Оставить заявку</button>
+                    </div>
+                    <img class="attention-block__image" src="./img/attention-block-img.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_case page-section_empty_padding">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-2-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-2-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="case-section__text">При анализе геоэлектрических данных была выявлена крупная аномалия повышенной проводимости, которая прослеживалась вдоль структурно-тектонического нарушения.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="case-section__text" style="margin-top: 15px">В ходе дальнейших ГРР было подтверждено присутствие кварцево-жильного тела с содержанием золота 1,3 г/т. </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-2-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-2-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_gray page-section_case">
+            <div class="container">
+                <div class="case-section">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-1.webp">
+                                <img src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-1.png" alt="" class="case-section__img">
+                            </picture>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-5.webp">
+                                <img src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-5.png" alt="" class="case-section__img">
+                            </picture>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-2.webp">
+                                <img src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-2.png" alt="" class="case-section__img">
+                            </picture>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-3.webp">
+                                <img src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-3.png" alt="" class="case-section__img">
+                            </picture>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-4.webp">
+                                <img src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-3-4.png" alt="" class="case-section__img">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-xs-12">
+                            <div class="case-section__text">
+                                Комплексный анализ полученных геофизических данных наглядно отображает наличие в
+                                геоэлектрических полях крупной аномальной зоны, которая сформировалась на контакте
+                                магматических и осадочных пород.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-xs-12" style="margin-bottom: 15px">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-4.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-4.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="case-section__text">
+                                По результатам комплексирования геофизических данных была построена пространственная
+                                3D-модель залегания и простирания рудной зоны. Полученные результаты были полностью
+                                подтверждены дальнейшими ГРР.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="alert-block alert-block_light-orange-bg alert-with-btns">
+                    <div class="alert-block__text">
+                        Получите нужный результат за разумные бюджет и сроки.
+                    </div>
+                    <div>
+                        <button class="button button_primary"
+                                data-bs-toggle="modal" data-bs-target="#submitApp">
+                            Заказать работы
+                        </button>
+                        <button class="button button_dark"
+                                data-bs-toggle="modal" data-bs-target="#submitApp">
+                            Нужна консультация
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <h2 class="headline headline_section">КИМБЕРЛИТОВЫЕ ТРУБКИ. КОРЕННОЕ МЕСТОРОЖДЕНИЕ АЛМАЗОВ</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="text-align: center">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-5.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-5.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__subtitle">Решаемые задачи по объекту:</div>
+                            <ul class="case-section__list">
+                                <li class="case-section__item">Поиск и картирование структур, соответствующих кимберлитовым</li>
+                                <li class="case-section__item">Определение структурно-тектонических элементов, связанных с зонами внедрения</li>
+                                <li class="case-section__item">Определение внутренних границ разных стадий/этапов внедрения кимберлитов</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="case-section__dotted-line"></div>
+                            <div class="case-section__text">На лицензионном участке были выполнены поисково-разведочные работы с использованием бесконтактных методов электроразведки.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case page-section_gray">
+            <div class="container">
+                <div class="case-section">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-6-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-6-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__text">На этапе рекогносцировочных работ была выделена аномалия низких удельных сопротивлений. На локализованном участке были проведены дополнительные электроразведочные работы с целью изучения элементов строения и особенностей выделенной аномалии.</div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">1</span>
+                                <span class="picture-legend__desc">Непрорывная часть</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">2</span>
+                                <span class="picture-legend__desc">Прорывная часть</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-6-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-6-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__text">На представленных вариантах обработки данных
+                                в секундном диапазоне отчетливо прослеживаются аномалии низких удельных сопротивлений.
+                                На верхнем разрезе такая аномалия фиксируется
+                                в нижней части разреза. На нижнем можно увидеть наличие двух основных элементов: нижняя непрорывная часть <span class="picture-legend__label">1</span> и прорывная часть <span class="picture-legend__label">2</span>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_in-article">
+            <div class="container">
+                <h2 class="headline headline_section">Какие услуги оказывает Геоджет-Групп?</h2>
+                <div class="action-block action-block_orange">
+                    <img src="./img/logo/planet-gray.svg" alt="" class="action-block__icon">
+                    <div class="action-block__main">
+                        <div class="action-block__title">Анализ данных дистанционного зондирования (ДЗЗ)</div>
+                        <div class="action-block__text">Анализ данных дистанционного зондирования (ДЗЗ)</div>
+                    </div>
+                    <div>
+                        <a class="link link_semibold link_white link_btn" data-bs-toggle="modal" data-bs-target="#submitApp">Подробнее</a>
+                    </div>
+                </div>
+                <div class="action-block action-block_gray">
+                    <img src="./img/diagram-round.svg" alt="" class="action-block__icon">
+                    <div class="action-block__main">
+                        <div class="action-block__title">Прогнозное моделирование</div>
+                        <div class="action-block__text">Выделение перспективных участков возможной рудной минерализации и формулировка поисковых признаков</div>
+                    </div>
+                    <div>
+                        <a class="link link_semibold link_white link_btn" data-bs-toggle="modal" data-bs-target="#submitApp">Подробнее</a>
+                    </div>
+                </div>
+                <div class="action-block action-block_orange">
+                    <img src="./img/logo/impuls-gray.svg" alt="" class="action-block__icon">
+                    <div class="action-block__main">
+                        <div class="action-block__title">Геофизические исследования</div>
+                        <div class="action-block__text">Применение всех классических, а также бесконтактных полевых <br>геофизических методов высокого разрешения</div>
+                    </div>
+                    <div>
+                        <a class="link link_semibold link_white link_btn" data-bs-toggle="modal" data-bs-target="#submitApp">Подробнее</a>
+                    </div>
+                </div>
+                <div class="action-block action-block_gray">
+                    <img src="./img/logo/drop-gray.svg" alt="" class="action-block__icon">
+                    <div class="action-block__main">
+                        <div class="action-block__title">Гидрогеологические работы</div>
+                        <div class="action-block__text">Поиск водоносных горизонтов и изучение гидрогеологических условий</div>
+                    </div>
+                    <div>
+                        <a class="link link_semibold link_white link_btn" data-bs-toggle="modal" data-bs-target="#submitApp">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-7-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-7-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-7-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-7-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 case-section__text">
+                            <p>В диапазоне милли- микросекунд четко прослеживается дифференциация верхней части разреза по слоям с разной электропроводимостью.</p>
+                            <p>Прорывная часть <span class="picture-legend__label">2</span> нарушает горизонтальную сплошность слоев и изолиний, образуя в верхней части разреза диатрему.</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">1</span>
+                                <span class="picture-legend__desc">непрорывная часть</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">2</span>
+                                <span class="picture-legend__desc">прорывная часть</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">3</span>
+                                <span class="picture-legend__desc">блок метаморфизованных пород</span>
+                            </div>
+                            <div class="case-section__dotted-line"></div>
+                            <div class="case-section__text">Справа от прорывной части фиксируется блок метаморфизованных пород <span class="picture-legend__label">3</span>, которые перекрывают породы первой фазы внедрения.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case page-section_gray">
+            <div class="container">
+                <div class="case-section">
+                    <div class="row">
+                        <div class="col-md-12 case-section__text">
+                            По результатам комплексирования данных была составлена сводная геолого-геоэлектрическая модель возможного геологического разреза. При анализе было сделано предположение о двух фазах внедрения. Так, породы кимберлитовой группы в правой части разреза относятся к первой фазе внедрения.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__text">В левой части происходила вторая фаза внедрения. Вторая фаза прорвала верхние геологические горизонты и вышла на поверхность.</div>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-8-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-8-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__text">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="picture-legend">
+                                            <span class="picture-legend__label">1</span>
+                                            <span class="picture-legend__desc">кимберлиты разных стадий внедрения</span>
+                                        </div>
+                                        <div class="picture-legend">
+                                            <span class="picture-legend__label">2</span>
+                                            <span class="picture-legend__desc">кимберлиты разных стадий внедрения</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="picture-legend">
+                                            <span class="picture-legend__label">3</span>
+                                            <span class="picture-legend__desc">вмещающие мигматиты</span>
+                                        </div>
+                                        <div class="picture-legend">
+                                            <span class="picture-legend__label">4</span>
+                                            <span class="picture-legend__desc">метаморфизованные породы</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-8-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-8-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-9.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-9.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <div class="case-section__text">
+                                <p>Открытие кимберлитовой трубки стало значимым событием как внутри страны, так и за её пределами.</p>
+                                <p>С момента обнаружения до момента бурения прошло 4 месяца.</p>
+                                <p>Применяемые геофизические методы доказали свою высокую эффективность.</p>
+                            </div>
+                            <div class="case-section__text">
+                                <p>Для заверки геофизических данных было выполнено бурение наклонной скважины глубиной 200 метров.</p>
+                                <p>Данными бурения подтверждены породы кимберлитовой группы на глубине 93 метров.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case page-section_gray">
+            <div class="container">
+                <div class="case-section">
+                    <h2 class="headline headline_section">Кимберлитовые трубки. Коренное месторождение алмазов</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 ercol-xs-12" style="text-align: center">
+                            <picture style="margin-bottom: 25px">
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-10.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-10.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__subtitle">Решаемые задачи по объекту:</div>
+                            <ul class="case-section__list">
+                                <li class="case-section__item">Поиск и картирование структур, соответствующих кимберлитовым трубкам</li>
+                                <li class="case-section__item">Определение структурно-тектонических элементов</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 case-section__text">
+                            <div class="case-section__dotted-line"></div>
+                            На лицензионном участке, расположенном в восточной части страны, провинция Маникаленд (Маранге), были выполнены поисково-разведочные геологические работы с использованием передовых электроразведочных методов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__text">Известный геологический разрез представлен (снизу вверх):</div>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-11-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-11-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__text">
+                                <ul>
+                                    <li>гранитами интрудированные базальтами и долеритами,</li>
+                                    <li>известняками и песчаниками.</li>
+                                </ul>
+                            </div>
+                            <div class="case-section__text">Электроразведка выполнена установками с рабочими частотами Гц-МГц.</div>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-11-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-11-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-12-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-12-1.png" alt="">
+                            </picture>
+                            <div class="case-section__text" style="margin-top: 15px">
+                                <div class="picture-legend">
+                                    <span class="picture-legend__label">1</span>
+                                    <span class="picture-legend__desc">кимберлитовая трубка 1</span>
+                                </div>
+                                <div class="picture-legend">
+                                    <span class="picture-legend__label">2</span>
+                                    <span class="picture-legend__desc">кимберлитовая трубка 1</span>
+                                </div>
+                                <div class="picture-legend">
+                                    <span class="picture-legend__label">3</span>
+                                    <span class="picture-legend__desc">дайка долеритов</span>
+                                </div>
+                            </div>
+                            <div class="case-section__text">
+                                Аномалии в начале и конце профиля также залегают вертикально, но имеют значительно меньшее сечение и непрорывной характер.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__text">
+                                <p>При обработке данных в двух диапазонах выделены аномалии, соответствующие зонам повышенной проводимости.</p>
+                                <p>Аномалии имеют вертикальное залегание. На представленных разрезах две центральные аномалии прорывают нижний геоэлектрический горизонт и частично слой залегающий выше по разрезу.</p>
+                            </div>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-12-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-12-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-12 case-section__text">
+                            Анализ разреза в микросекундном диапазоне помог выделить внутренние зоны, соответствующие разным характеристикам проводимости.
+                            В контурах аномалии 1 наглядно прослеживаются внутренние границы. Данные границы могут соответствовать разным фазам
+                            кристаллизации вещества и формированию зональности.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-13-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-13-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-13-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-13-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 case-section__text" style="margin-top: 15px">
+                            Наносекундный диапазон более подробно дифференцировал верхнюю часть разреза, что позволило уточнить геологический разрез
+                            на глубину до 100 метров. Также, в нижней части разреза виден разрыв горизонтальной корреляции геоэлектрических изолиний
+                            на контакте кимберлитовой трубки и вмещающих пород.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-14-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-14-1.png" alt="">
+                            </picture>
+                            <div class="case-section__text">
+                                <div class="picture-legend">
+                                    <span class="picture-legend__label">1</span>
+                                    <span class="picture-legend__desc">кимберлитовая трубка 1</span>
+                                </div>
+                                <div class="picture-legend">
+                                    <span class="picture-legend__label">2</span>
+                                    <span class="picture-legend__desc">кимберлитовая трубка 2</span>
+                                </div>
+                                <div class="picture-legend">
+                                    <span class="picture-legend__label">3</span>
+                                    <span class="picture-legend__desc">дайка долеритов</span>
+                                </div>
+                            </div>
+                            <div class="case-section__dotted-line"></div>
+                            <div class="case-section__text">
+                                В контуре центральной аномалии были выделены внутренние границы, предположительно
+                                соответствующие зональному строению кимберлитовой трубки.
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__text">
+                                <p>По результатам комплексного анализа данных были построены геолого-геоэлектрические модели разности проводимости сред.</p>
+                                <p>Были сделаны предположения о типе вмещающих пород и их структурно-тектонических элементах залегания.</p>
+                            </div>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-14-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-14-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-15-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-15-1.png" alt="">
+                            </picture>
+                            <div class="case-section__text">
+                                Для заверки центральной аномалий были пройдены 2 скважины, которые подтвердили породы кимберлитовой группы.
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <div class="case-section__text">
+                                <p>По результатам площадной обработки была предложена площадная геометрическая модель кимберлитовой трубки.</p>
+                                <p>Работы по поиску и картированию на площади 29 км2 были проведены в сжатые сроки (50 дней), что позволило выполнить бурение и заверку аномалий в рамках одного сезона.</p>
+                            </div>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-15-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-15-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case page-section_gray">
+            <div class="container">
+                <div class="case-section">
+                    <h2 class="headline headline_section">Медно-порфировый тип месторождения</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="text-align: center">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-16.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-16.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__subtitle">Решаемые задачи по объекту:</div>
+                            <ul class="case-section__list">
+                                <li class="case-section__item">Выявление и картирование геоэлектрических аномалий повышенной проводимости</li>
+                                <li class="case-section__item">Картирование структурно-тектонических элементов строения</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="case-section__dotted-line"></div>
+                            <div class="case-section__text">
+                                Поисково-разведочные работы были проведены в пределах медно-порфировой рудной зоны. Целью работ являлось выделение и детализирование геологического разреза в пределах обширной рудной зоны.По результатам проведенных работ были выделены зоны повышенной проводимости, а также определен участок выхода медьсодержащих руд на дневную поверхность.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-17-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-17-1.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">1</span>
+                                <span class="picture-legend__desc">Зоны рудной минерализации</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 case-section__text">
+                            В пределах геоэлектрического разреза фиксируются аномалии субвертикального и вертикального залегания, соответствующие зонам повышенной проводимости.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-17-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-17-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 case-section__text">
+                            В геоэлектрическом разрезе зоны рудной минерализации представлены субвертикально залегающими телами. В верхней части разреза фиксируются участки выхода рудных зон на поверхность.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-18-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-18-1.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 case-section__text" style="margin-top: 15px">
+                            <p>По результатам выполненных поисково-разведочных работ с использованием бесконтактных электроразведочных методов были выделены контрастные геоэлектрические аномалии низких значений сопротивлений и повышенной проводимости.</p>
+                            <p>Результаты межпрофильной увязки аномалий позволили проследить простирание рудных тел, а также локализовать места выхода рудных тел на дневную поверхность.</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-18-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-18-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case page-section_gray">
+            <div class="container">
+                <div class="case-section">
+                    <h2 class="headline headline_section">Месторождение хрома</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="text-align: center">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-19-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-19-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__subtitle">Решаемые задачи по объекту:</div>
+                            <ul class="case-section__list">
+                                <li class="case-section__item">Выявление и картирование структурных разломов</li>
+                                <li class="case-section__item">Выявление и картирование геофизических аномалий повышенной проводимости</li>
+                            </ul>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-19-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-19-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="case-section__dotted-line"></div>
+                            <div class="case-section__text">
+                                По результатам проведенных работ была составлена карта крупных тектонических разломов, в пределах которых  фиксируются значимые структурные сдвиги, являющиеся индикаторами процессов рудообразования.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-20-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-20-1.png" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-20-3.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-20-3.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__text">
+                                Зоны минерализации структурно связаны с крупным разломом северо-западного простирания, образующего контакт между вмещающими метаморфизованными породами фундамента и ультраосновными породами.
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">1</span>
+                                <span class="picture-legend__desc">Зоны рудной минерализации</span>
+                            </div>
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-20-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-20-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-21-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-21-1.png" alt="">
+                            </picture>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">1</span>
+                                <span class="picture-legend__desc">Зона подтвержденной рудной минерализации</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 case-section__text">
+                            Выделяемые зоны рудной минерализации имеют контрастные геоэлектрические свойства по сравнению с вмещающими породами.
+                            Комплексирование данных, полученных в разных частотных / временных диапазонах позволяет получать максимально полную
+                            информацию о геоэлектрических параметрах геологической среды с высокой разрешающей детализацией.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-21-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-21-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-21-3.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-21-3.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case page-section_gray">
+            <div class="container">
+                <div class="case-section">
+                    <h2 class="headline headline_section">Магнетитовое месторождение</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="text-align: center">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-19-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-19-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="case-section__subtitle">Решаемые задачи по объекту:</div>
+                            <ul class="case-section__list">
+                                <li class="case-section__item">Поиск и локализация зон рудной минерализации</li>
+                                <li class="case-section__item">Картирование зон тектонических нарушений различных генетических типов</li>
+                                <li class="case-section__item">Инженерно-геологический мониторинг бортов карьера</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="case-section__dotted-line"></div>
+                            <div class="case-section__text">
+                                На действующем магнетитовом месторождении были выполнены геофизические работы с целью изучения
+                                флангов месторождения, инженерно-технического мониторинга бортов действующего карьера, поиска и
+                                локализации водосборных структур для проекта водопонижения.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-23-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-23-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">1</span>
+                                <span class="picture-legend__desc">рудное тело (магнетит)</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">2</span>
+                                <span class="picture-legend__desc">гнейс</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">3</span>
+                                <span class="picture-legend__desc">амфиболиты</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">4</span>
+                                <span class="picture-legend__desc">кристаллические сланцы</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">5</span>
+                                <span class="picture-legend__desc">конгломераты</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 case-section__text" style="margin-top: 15px">
+                            <p>Геологический разрез карьера представлен гнейсами, кварцевыми сланцами, биотитом, выше которых залегают метаморфизованные известняки перекрытые толщей конгломератов. Рудные тела залегают на контакте гнейсови кристаллических сланцев, а также в зоне скарнирования по известнякам.</p>
+                            <p>Геологический разрез по результатам бурения. <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-23-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-23-2.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-24-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-24-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-24-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-24-2.png" alt="">
+                            </picture>
+                            <div class="case-section__text">
+                                На рассматриваемом примере геоэлектрические аномалии имеют контрастное отображение и фиксируются в зоне крупного разлома на контакте гнейсов-кристаллических сланцев и известняков.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-24-3.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-24-3.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">1</span>
+                                <span class="picture-legend__desc">рудное тело (магнетит)</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">2</span>
+                                <span class="picture-legend__desc">гнейс</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">3</span>
+                                <span class="picture-legend__desc">кристаллические сланцы</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">4</span>
+                                <span class="picture-legend__desc">зона разлома, скарн</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">5</span>
+                                <span class="picture-legend__desc">известняк</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">6</span>
+                                <span class="picture-legend__desc">конгломераты</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-25-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-25-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 case-section__text">
+                            <p>Комплексирование данных разных частотных диапазонах значительно повышают информативность и достоверность итоговых геолого-геофизических моделей.</p>
+                            <p>Это существенно повышает информативность выполняемого поисково-заверочного бурения.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-25-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-25-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">1</span>
+                                <span class="picture-legend__desc">рудное тело (магнетит)</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">2</span>
+                                <span class="picture-legend__desc">гнейс</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">3</span>
+                                <span class="picture-legend__desc">кристаллические сланцы</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">4</span>
+                                <span class="picture-legend__desc">скарн по известнякам</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">5</span>
+                                <span class="picture-legend__desc">известняк</span>
+                            </div>
+                            <div class="picture-legend">
+                                <span class="picture-legend__label">6</span>
+                                <span class="picture-legend__desc">конгломераты</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_empty_padding page-section_case">
+            <div class="container">
+                <div class="case-section case-section_orange-border">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-26-1.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-26-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 case-section__text">
+                            <p>По результатам проведенных работ были выявлены зоны повышенной проводимости, которые связаны с зонами рудной минерализации.</p>
+                            <p>Закартированы выделенные рудные тела и зоны, а также было определено их пространственное ориентирование.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-26-2.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-26-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <picture>
+                                <source srcset="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-26-3.webp" type="image/webp">
+                                <img class="case-section__img" src="https://geojetexploration.com/wp-content/themes/artrange/case-pages/case-img/case-primary-deposits/slide-26-3.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section page-section_pb page-section_gray">
+            <div class="bottom-feedback-form">
+                <div class="container">
+                    <form class="form mini-feedback-form">
+                        <h3 class="form__title text-center">
+                            Заполните форму, чтобы стать <br>
+                            <span class="text-orange">клиентом Геоджет-Групп</span>
+                        </h3>
+                        <div class="form__fields-group form__fields-group_inline">
+                            <div class="form__field form__field_icon form__field_name">
+                                <input class="form__input form__input_icon form__input_full-width" type="text" placeholder="Ваше имя*">
+                            </div>
+                            <div class="form__field form__field_icon form__field_phone">
+                                <input class="form__input form__input_icon form__input_full-width" type="text" placeholder="Ваш телефон*">
+                            </div>
+                            <div class="form__field form__field_icon form__field_email">
+                                <input class="form__input form__input_icon form__input_full-width" type="text" placeholder="Ваш email*">
+                            </div>
+                        </div>
+                        <button class="button button_primary button_full-width form__submit">Стать клиентом</button>
+                        <div class="form__subtext text-center">
+                            Заполняя данную форму вы соглашаетесь на <a href="#" class="link" target="_blank">обработку персональных данных</a> «ГЕОДЖЕТ-ГРУПП»
+                            в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <button class="button button_icon button_scroll-up">
+            <img src="./img/logo/scroll-up.svg">
+        </button>
+        <div class="messenger-bts-wrp">
+            <button class="button button_icon button_messengers-close">
+                <img src="./img/logo/messenger-close.svg">
+            </button>
+            <button class="button button_icon button_messengers">
+                <img src="./img/logo/messenger-btn.png">
+            </button>
+            <button class="button button_icon button_telegramm">
+                <img src="./img/logo/telegram-btn.svg">
+            </button>
+            <button class="button button_icon button_whatsapp">
+                <img src="./img/logo/whatsapp-btn.svg">
+            </button>
+        </div>
+        
+        <div class="footer__wrp-top">
+            <div class="container">
+                <div class="footer__top">
+                    <img src="./img/logo/logo-white.svg" class="logo" alt="">
+                    <div class="footer__email">
+                        <div class="footer__placeholder footer__placeholder_email">Напишите нам:</div>
+                        <a class="footer__link-mail link link_primary" href="mailto:info@geojetexploration.com">info@geojet<wbr/>exploration.com</a>
+                    </div>
+                    <div class="phone-block">
+                        <a class="phone-block__number link link_primary" href="tel:+74954774332">+7 (495) 477-43-32</a>
+                        <span class="phone-block__city">Москва</span>
+                        <a class="phone-block__number link link_primary" href="tel:+77057770139">+7 (705) 777-01-39</a>
+                        <span class="phone-block__city">Алматы</span>
+                    </div>
+                    <button class="button button_primary button_rounded footer__action_btn"  data-bs-toggle="modal" data-bs-target="#submitApp">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__wrp-menu">
+            <div class="container">
+                <div class="footer__menu">
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Виды работ</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="./predictive-modeling.html" class="footer__menu-link link">Прогнозное моделирование</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Анализ данных ДЗЗ</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./geophysics.html" class="footer__menu-link link">Геофизические работы</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Гидрогеология</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Для кого</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Недропользователям</a>
+                                <a href="#" class="footer__menu-link link">Инвесторам</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Методы</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Электроразведка</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Электротомография</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">ВП, ВП-СГ, ВП-ВЭЗ</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">ВИЭР</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">ЗСБ</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Магниторазведка</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Георадар</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">Проекты</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="./ore-deposits.html" class="footer__menu-link link">Рудные месторождения</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Россыпные месторождения</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Нерудные месторождения</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Гидрогеологические</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-block">
+                        <div class="footer__nav-title">О компании</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">О нас</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="./blog.html" class="footer__menu-link link">Блог</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Полезное</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__wrp-middle">
+            <div class="container">
+                <div class="footer__middle">
+                    <div class="footer__slogan">
+                        <b>Геоджет-Групп</b> - Сервисная геологоразведочная компания для тех, кто умеет выбирать
+                    </div>
+                    <div class="footer__inn">
+                        <div class="footer__inn-list">
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/russian_flag.svg" alt="">
+                                1137746288778 (ОГРН)
+                            </div>
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/kazah_flag.svg" alt="">
+                                220540033792 (БИН)
+                            </div>
+                        </div>
+                    </div>
+                    <a class="footer__whatsapp-link link link_icon" href="#">
+                        <img src="./img/whatsapp_color.svg" alt="">
+                    </a>
+                    <a href="#" class="telegram-chat-link">
+                        <img class="telegram-chat-link__logo" src="./img/logo/telegram_square.svg">
+                        <div>
+                            <div class="telegram-chat-link__title">ПроРазведку ГеоДжет</div>
+                            <div class="telegram-chat-link__desc">Присоединяйтесь к нашему геологоразведочному сообществу. Новости. Тренды. Мнения.</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer__second-middle">
+                    <div class="footer__email">
+                        <div class="footer__placeholder footer__placeholder_email">Напишите нам:</div>
+                        <a class="footer__link-mail link link_primary" href="mailto:info@geojetexploration.com">info@geojet<wbr/>exploration.com</a>
+                    </div>
+                    <div class="footer__inn">
+                        <div class="footer__inn-list">
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/russian_flag.svg" alt="">
+                                1137746288778 (ОГРН)
+                            </div>
+                            <div class="footer__inn-item">
+                                <img src="./img/logo/kazah_flag.svg" alt="">
+                                220540033792 (БИН)
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__link-privacy link">Политика конфиденциальности.</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__wrapper-bottom">
+                    <div class="footer__copyright">
+                        <div>© 2014-2024 ГЕОДЖЕТ-ГРУПП</div>
+                    </div>
+                    <div class="footer__social-links">
+                        <a class="link link_icon" href="#">
+                            <img src="./img/whatsapp_color.svg" alt="">
+                        </a>
+                        <a class="link link_icon" href="#">
+                            <img src="./img/telegram_color.svg" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="footer__link-privacy link">Политика конфиденциальности.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="submitApp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button class="modal-close-btn" data-bs-dismiss="modal">
+            <img class="modal-close-btn__icon" src="./img/close-icon.svg" alt="">
+        </button>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-window modal-content">
+                <div class="modal-window__content modal-body">
+                    <form class="form">
+                        <div class="form__title text-center">
+                            Заполните форму, чтобы получить <span class="text-orange">бесплантую консультацию</span>
+                        </div>
+                        <div class="form__fields-group">
+                            <div class="form__field form__field_icon form__field_name">
+                                <input class="form__input form__input_full-width" type="text" placeholder="Ваше имя*">
+                            </div>
+                            <div class="form__field form__field_icon form__field_phone">
+                                <input class="form__input form__input_full-width" type="text" placeholder="Ваш телефон*">
+                            </div>
+                            <div class="form__field form__field_icon form__field_email">
+                                <input class="form__input form__input_full-width" type="text" placeholder="Ваш email*">
+                            </div>
+                        </div>
+                        <button class="button button_primary button_full-width button_big form__submit">
+                            Получить консультацию
+                        </button>
+                        <div class="form__subtext text-center">
+                            Заполняя данную форму вы соглашаетесь на обработку персональных данных «ГЕОДЖЕТ-ГРУПП» 
+                            в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

@@ -1321,6 +1321,9 @@ hr {
     grid-gap: 50px 100px;
     margin-right: 50px;
 }
+.grid-main-tasks_inline {
+    grid-template-columns: 1fr;
+}
 
 .picture-legend {
     margin-bottom: 5px;

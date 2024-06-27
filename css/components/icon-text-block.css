@@ -1,12 +1,25 @@
 .icon-text-block {
 
 }
+.icon-text-block_inline {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-gap: 15px;
+    align-items: center;
+}
+
 .icon-text-block__icon {
     margin-bottom: 20px;
 }
 .icon-text-block__text {
     font-weight: 500;
     line-height: 1.3;
+}
+
+.icon-text-block_inline .icon-text-block__icon {
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: 50px;
 }
 
 @media (max-width: 575px) {
